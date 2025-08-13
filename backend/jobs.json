@@ -1,0 +1,316 @@
+{
+  "14177315-86ab-4da0-b2b6-d3cbcd4a83f4": {
+    "status": "completed",
+    "result": {
+      "agreement_name": "CREDIT AGREEMENT",
+      "agreement_date": "2017-04-18",
+      "parties": [
+        {
+          "name": "ALVAREZ & MARSAL CANADA INC., solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC. and not in its personal or corporate capacity",
+          "role": "Construction Receiver"
+        },
+        {
+          "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
+          "role": "Administrative Agent"
+        },
+        {
+          "name": "THE FINANCIAL INSTITUTIONS from time to time parties hereto",
+          "role": "Lenders"
+        }
+      ],
+      "clauses": [
+        {
+          "article_number": "1",
+          "article_title": "INTERPRETATION",
+          "sections": [
+            {
+              "number": "1.01",
+              "title": "Definitions"
+            },
+            {
+              "number": "1.02",
+              "title": "Extended Meanings"
+            },
+            {
+              "number": "1.03",
+              "title": "Interest Calculations and Payments"
+            },
+            {
+              "number": "1.04",
+              "title": "Permitted Encumbrances"
+            },
+            {
+              "number": "1.05",
+              "title": "Time of the Essence"
+            },
+            {
+              "number": "1.06",
+              "title": "Currency"
+            },
+            {
+              "number": "1.07",
+              "title": "Conflicts"
+            },
+            {
+              "number": "1.08",
+              "title": "Nature of Lenders’ Obligations"
+            },
+            {
+              "number": "1.09",
+              "title": "Limitation of Recourse against Construction Receiver"
+            },
+            {
+              "number": "1.10",
+              "title": "Schedules"
+            }
+          ]
+        },
+        {
+          "article_number": "2",
+          "article_title": "THE CREDIT FACILITY",
+          "sections": [
+            {
+              "number": "2.01",
+              "title": "Credit Facility"
+            },
+            {
+              "number": "2.02",
+              "title": "Purpose of Credit Facility"
+            },
+            {
+              "number": "2.03",
+              "title": "Drawdowns"
+            },
+            {
+              "number": "2.04",
+              "title": "Administrative Agent’s Obligations with Respect to Loans"
+            },
+            {
+              "number": "2.05",
+              "title": "Lenders’ and Administrative Agent’s Obligations with Respect to Loans"
+            },
+            {
+              "number": "2.06",
+              "title": "Irrevocability"
+            },
+            {
+              "number": "2.07",
+              "title": "Account of Record"
+            },
+            {
+              "number": "2.08",
+              "title": "Interest on Excess Loans, Unpaid Costs and Expenses"
+            }
+          ]
+        },
+        {
+          "article_number": "3",
+          "article_title": "DISBURSEMENT CONDITIONS",
+          "sections": [
+            {
+              "number": "3.01",
+              "title": "Conditions Precedent to First Drawdown"
+            },
+            {
+              "number": "3.02",
+              "title": "Conditions Precedent to all Subsequent Drawdowns – Leslieville Facilities"
+            },
+            {
+              "number": "3.03",
+              "title": "Provisos"
+            },
+            {
+              "number": "3.04",
+              "title": "Waiver"
+            },
+            {
+              "number": "3.05",
+              "title": "Condition to Construction Receiver’s Execution"
+            }
+          ]
+        },
+        {
+          "article_number": "4",
+          "article_title": "PAYMENTS OF INTEREST AND COMMITMENT FEES",
+          "sections": [
+            {
+              "number": "4.01",
+              "title": "Interest on Prime Rate Loans"
+            },
+            {
+              "number": "4.02",
+              "title": "Deferred Commitment Fee"
+            },
+            {
+              "number": "4.03",
+              "title": "Maximum Rate of Interest"
+            }
+          ]
+        },
+        {
+          "article_number": "5",
+          "article_title": "REPAYMENT",
+          "sections": [
+            {
+              "number": "5.01",
+              "title": "Mandatory Repayment"
+            }
+          ]
+        },
+        {
+          "article_number": "6",
+          "article_title": "PLACE AND APPLICATION OF PAYMENTS",
+          "sections": [
+            {
+              "number": "6.01",
+              "title": "Place of Payment of Principal, Interest and Fees"
+            }
+          ]
+        },
+        {
+          "article_number": "7",
+          "article_title": "COVENANTS",
+          "sections": [
+            {
+              "number": "7.01",
+              "title": "Positive Covenants"
+            },
+            {
+              "number": "7.02",
+              "title": "Negative Covenants"
+            }
+          ]
+        },
+        {
+          "article_number": "8",
+          "article_title": "SECURITY",
+          "sections": [
+            {
+              "number": "8.01",
+              "title": "Security"
+            }
+          ]
+        },
+        {
+          "article_number": "9",
+          "article_title": "DEFAULT",
+          "sections": [
+            {
+              "number": "9.01",
+              "title": "Events of Default"
+            },
+            {
+              "number": "9.02",
+              "title": "Acceleration and Enforcement"
+            },
+            {
+              "number": "9.03",
+              "title": "Remedies Cumulative"
+            },
+            {
+              "number": "9.04",
+              "title": "Perform Obligations"
+            },
+            {
+              "number": "9.05",
+              "title": "Third Parties"
+            },
+            {
+              "number": "9.06",
+              "title": "Application of Payments"
+            }
+          ]
+        },
+        {
+          "article_number": "10",
+          "article_title": "THE ADMINISTRATIVE AGENT AND THE LENDERS",
+          "sections": [
+            {
+              "number": "10.01",
+              "title": "Payments by the Construction Receiver"
+            },
+            {
+              "number": "10.02",
+              "title": "Payments by Administrative Agent"
+            },
+            {
+              "number": "10.03",
+              "title": "Administration of the Credit Facility"
+            },
+            {
+              "number": "10.04",
+              "title": "Rights of Administrative Agent"
+            },
+            {
+              "number": "10.05",
+              "title": "Representations, Acknowledgements and Covenants of Lenders"
+            },
+            {
+              "number": "10.06",
+              "title": "Provisions Operative Between Lenders and Administrative Agent Only"
+            },
+            {
+              "number": "10.07",
+              "title": "Maintenance of Security"
+            },
+            {
+              "number": "10.08",
+              "title": "Application of Proceeds for Distribution"
+            },
+            {
+              "number": "10.09",
+              "title": "No Partnership"
+            },
+            {
+              "number": "10.10",
+              "title": "Sharing of Information"
+            }
+          ]
+        },
+        {
+          "article_number": "11",
+          "article_title": "GENERAL",
+          "sections": [
+            {
+              "number": "11.01",
+              "title": "Addresses, Etc. for Notices"
+            },
+            {
+              "number": "11.02",
+              "title": "Governing Law and Submission to Jurisdiction"
+            },
+            {
+              "number": "11.03",
+              "title": "Effect of Assignment"
+            },
+            {
+              "number": "11.04",
+              "title": "Survival"
+            },
+            {
+              "number": "11.05",
+              "title": "Severability"
+            },
+            {
+              "number": "11.06",
+              "title": "Further Assurances"
+            },
+            {
+              "number": "11.07",
+              "title": "Amendments and Waivers"
+            },
+            {
+              "number": "11.08",
+              "title": "Reasonableness"
+            },
+            {
+              "number": "11.09",
+              "title": "Time of the Essence"
+            }
+          ]
+        }
+      ]
+    },
+    "filename": "2-syndicate_construction_loan_agreement_0.pdf"
+  }
+}
