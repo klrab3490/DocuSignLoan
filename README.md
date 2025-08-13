@@ -110,6 +110,7 @@ This document outlines the **architecture**, **integration strategy**, **data mo
 
 
 ## 🛠 Tech Stack (Example)
+- **Frontend:** React / Next.js
 - **Backend:** Node.js / Java / Python
 - **API Gateway:** Kong / AWS API Gateway
 - **Messaging:** RabbitMQ
