@@ -1,0 +1,40 @@
+name: Frontend Ci
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./frontend
+    
+    env:
+      NODE_ENV: test
+      # NEXT_PUBLIC_BACKEND_URL: http://localhost:8000
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Node.js 22.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: 📦 Install frontend dependencies
+        run: npm install
+
+      - name: ✨ Lint on frontend
+        run: npm run lint
+
+      - name: ✅ Run Jest tests
+        run: npm run test -- --ci --watchAll=false
+
+      - name: 🔨 Build Next.js app
+        run: npm run build
