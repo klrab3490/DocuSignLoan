@@ -76,36 +76,3 @@ async def extract_and_format_pdf(
         processing_jobs[job_id]["result"] = str(e)
         save_jobs_to_file(processing_jobs)
         raise HTTPException(status_code=500, detail=f"Processing failed: {e}")
-
-@router.post("/extract-content/", response_model=ExtractResponse)
-async def extract_content_from_pdf(
-    file: UploadFile = File(...),
-    prompt: str = "Extract **all** text from the document exactly as it appears, preserving structure, spacing, and formatting as much as possible. Return only the raw extracted text without summaries or interpretations."
-):
-    if file.content_type != "application/pdf":
-        raise HTTPException(status_code=400, detail="Invalid file type. Please upload a PDF.")
-
-    pdf_bytes = await file.read()
-    if len(pdf_bytes) > MAX_FILE_SIZE_BYTES:
-        raise HTTPException(status_code=413, detail=f"File too large. Max size is {MAX_FILE_SIZE_MB} MB.")
-
-    job_id = str(uuid.uuid4())
-    processing_jobs[job_id] = {"status": "processing", "result": None}
-
-    try:
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=[
-                types.Part.from_bytes(data=pdf_bytes, mime_type="application/pdf"),
-                prompt
-            ],
-        )
-
-        processing_jobs[job_id]["status"] = "completed"
-        processing_jobs[job_id]["result"] = response.text
-        return ExtractResponse(job_id=job_id, text_content=response.text)
-
-    except Exception as e:
-        processing_jobs[job_id]["status"] = "failed"
-        processing_jobs[job_id]["result"] = str(e)
-        raise HTTPException(status_code=500, detail=f"Processing failed: {e}")
