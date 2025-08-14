@@ -3,25 +3,27 @@
     "status": "completed",
     "result": {
       "agreement_name": "CREDIT AGREEMENT",
-      "agreement_date": "2017-04-18",
+      "agreement_date": "April 18, 2017",
       "parties": [
         {
-          "name": "ALVAREZ & MARSAL CANADA INC., solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC. and not in its personal or corporate capacity",
-          "role": "Construction Receiver"
+          "name": "ALVAREZ & MARSAL CANADA INC.",
+          "role": "Construction Receiver",
+          "capacity": "solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC. and not in its personal or corporate capacity"
         },
         {
           "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
           "role": "Administrative Agent"
         },
         {
-          "name": "THE FINANCIAL INSTITUTIONS from time to time parties hereto",
-          "role": "Lenders"
+          "name": "THE FINANCIAL INSTITUTIONS",
+          "role": "Lenders",
+          "capacity": "from time to time parties hereto"
         }
       ],
       "clauses": [
         {
-          "article_number": "1",
-          "article_title": "INTERPRETATION",
+          "article": "ARTICLE 1",
+          "title": "INTERPRETATION",
           "sections": [
             {
               "number": "1.01",
@@ -66,8 +68,8 @@
           ]
         },
         {
-          "article_number": "2",
-          "article_title": "THE CREDIT FACILITY",
+          "article": "ARTICLE 2",
+          "title": "THE CREDIT FACILITY",
           "sections": [
             {
               "number": "2.01",
@@ -104,8 +106,8 @@
           ]
         },
         {
-          "article_number": "3",
-          "article_title": "DISBURSEMENT CONDITIONS",
+          "article": "ARTICLE 3",
+          "title": "DISBURSEMENT CONDITIONS",
           "sections": [
             {
               "number": "3.01",
@@ -130,8 +132,8 @@
           ]
         },
         {
-          "article_number": "4",
-          "article_title": "PAYMENTS OF INTEREST AND COMMITMENT FEES",
+          "article": "ARTICLE 4",
+          "title": "PAYMENTS OF INTEREST AND COMMITMENT FEES",
           "sections": [
             {
               "number": "4.01",
@@ -148,8 +150,8 @@
           ]
         },
         {
-          "article_number": "5",
-          "article_title": "REPAYMENT",
+          "article": "ARTICLE 5",
+          "title": "REPAYMENT",
           "sections": [
             {
               "number": "5.01",
@@ -158,8 +160,8 @@
           ]
         },
         {
-          "article_number": "6",
-          "article_title": "PLACE AND APPLICATION OF PAYMENTS",
+          "article": "ARTICLE 6",
+          "title": "PLACE AND APPLICATION OF PAYMENTS",
           "sections": [
             {
               "number": "6.01",
@@ -168,8 +170,8 @@
           ]
         },
         {
-          "article_number": "7",
-          "article_title": "COVENANTS",
+          "article": "ARTICLE 7",
+          "title": "COVENANTS",
           "sections": [
             {
               "number": "7.01",
@@ -182,8 +184,8 @@
           ]
         },
         {
-          "article_number": "8",
-          "article_title": "SECURITY",
+          "article": "ARTICLE 8",
+          "title": "SECURITY",
           "sections": [
             {
               "number": "8.01",
@@ -192,8 +194,8 @@
           ]
         },
         {
-          "article_number": "9",
-          "article_title": "DEFAULT",
+          "article": "ARTICLE 9",
+          "title": "DEFAULT",
           "sections": [
             {
               "number": "9.01",
@@ -222,8 +224,8 @@
           ]
         },
         {
-          "article_number": "10",
-          "article_title": "THE ADMINISTRATIVE AGENT AND THE LENDERS",
+          "article": "ARTICLE 10",
+          "title": "THE ADMINISTRATIVE AGENT AND THE LENDERS",
           "sections": [
             {
               "number": "10.01",
@@ -268,8 +270,8 @@
           ]
         },
         {
-          "article_number": "11",
-          "article_title": "GENERAL",
+          "article": "ARTICLE 11",
+          "title": "GENERAL",
           "sections": [
             {
               "number": "11.01",
