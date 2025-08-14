@@ -1,4 +1,4 @@
-name: Frontend Ci
+name: Frontend CI Workflow
 
 on:
   push:
