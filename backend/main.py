@@ -3,6 +3,7 @@ import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from app.api import pdf_extract, pdf_status, authentication
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load environment variables
 load_dotenv(dotenv_path=".env")
@@ -30,6 +31,15 @@ app = FastAPI(
         "securitySchemes": security_scheme
     },
     openapi_security=[{"bearerAuth": []}]
+)
+
+# CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # Your frontend origin
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Register authentication routes
