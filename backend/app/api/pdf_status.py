@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from typing import Optional, Union, List
+from typing import Optional, Union, List, Dict
 from pydantic import BaseModel
 from app.utils import load_jobs_from_file
 
@@ -10,6 +10,7 @@ class JobStatusResponse(BaseModel):
     status: str
     filename: str
     result: Optional[Union[str, dict]] = None
+    pages: Optional[Dict[int, str]] = None  # page_number → text
 
 @router.get("/status/{job_id}", response_model=JobStatusResponse)
 async def get_status(job_id: str):
