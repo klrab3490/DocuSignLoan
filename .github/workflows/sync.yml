@@ -10,40 +10,12 @@ jobs:
   sync:
     # Run only if NOT in the original repo
     if: github.repository != 'klrab3490/DocuSignLoan'
-    # The runner environment where the job will execute.
     runs-on: ubuntu-latest
 
-    # Steps for the job to perform.
     steps:
-      # Step 1: Checks out your repository's code.
-      # This is a required action to work with your repository files.
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: tgymnich/fork-sync@v2.0
         with:
-          # Fetches all history for all branches and tags.
-          fetch-depth: 0
-
-      # Step 2: Add the upstream remote.
-      # This connects your forked repository to the original parent repository.
-      - name: Add upstream remote
-        run: git remote add upstream https://github.com/klrab3490/DocuSignLoan.git
-        # IMPORTANT: Replace the URL above with the actual URL of your parent repository.
-
-      # Step 3: Fetch all branches from the upstream remote.
-      # This downloads all the commits and branches from the parent repo.
-      - name: Fetch upstream
-        run: git fetch upstream
-
-      # Step 4: Reset the local main branch to match the upstream main branch.
-      # The `--hard` flag discards any local commits and changes,
-      # ensuring a clean sync.
-      - name: Reset main to upstream
-        run: git reset --hard upstream/main
-        # If your default branch is not 'main', change it here.
-
-      # Step 5: Force push the changes to your repository.
-      # The `--force` flag is necessary to overwrite the history of your
-      # repository's main branch with the parent's history.
-      # This ensures your repo has no unique commits, as you requested.
-      - name: Push to origin
-        run: git push --force origin main
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          owner: rahul-genzoic
+          base: main
+          head: main
