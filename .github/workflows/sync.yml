@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '*/30 * * * *' # every 30 minutes
   workflow_dispatch:       # manual trigger
+  push:
 
 jobs:
   sync:
@@ -14,6 +15,6 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v2.0
         with:
-          owner: klrab3490
+          owner: rahul-genzoic
           base: main
           head: main
