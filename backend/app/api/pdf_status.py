@@ -17,8 +17,11 @@ class JobStatusResponse(BaseModel):
     pages: Optional[Dict[int, str]] = None  # page_number → text
 
 
-@router.get("/status/{job_id}", response_model=JobStatusResponse)
-async def get_status(job_id: str):
+@router.get("/jobs/{job_id}", response_model=JobStatusResponse)
+async def get_job_status(job_id: str):
+    """
+    Get the status and details of a specific job.
+    """
     data = load_jobs_from_file()
     job = data.get(job_id)
     if not job:
@@ -29,11 +32,13 @@ async def get_status(job_id: str):
         status=job.get("status", "unknown"),
         filename=job.get("filename", ""),
         result=job.get("result"),
-        pages=job.get("pages"),
     )
 
 
-@router.get("/status", response_model=list[str])
-async def get_all_statuses():
+@router.get("/status", response_model=List[str])
+async def get_all_jobs():
+    """
+    Get statuses of all jobs.
+    """
     data = load_jobs_from_file()
     return list(data.keys())
