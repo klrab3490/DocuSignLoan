@@ -2,1265 +2,364 @@
   "14177315-86ab-4da0-b2b6-d3cbcd4a83f4": {
     "status": "completed",
     "result": {
-      "agreement_name": "CREDIT AGREEMENT",
-      "agreement_date": "April 18, 2017",
-      "parties": [
-        {
-          "name": "ALVAREZ & MARSAL CANADA INC.",
-          "role": "Construction Receiver",
-          "capacity": "solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC. and not in its personal or corporate capacity"
-        },
-        {
-          "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
-          "role": "Administrative Agent"
-        },
-        {
-          "name": "THE FINANCIAL INSTITUTIONS",
-          "role": "Lenders",
-          "capacity": "from time to time parties hereto"
-        }
-      ],
-      "clauses": [
-        {
-          "article": "ARTICLE 1",
-          "title": "INTERPRETATION",
-          "sections": [
-            {
-              "number": "1.01",
-              "title": "Definitions"
-            },
-            {
-              "number": "1.02",
-              "title": "Extended Meanings"
-            },
-            {
-              "number": "1.03",
-              "title": "Interest Calculations and Payments"
-            },
-            {
-              "number": "1.04",
-              "title": "Permitted Encumbrances"
-            },
-            {
-              "number": "1.05",
-              "title": "Time of the Essence"
-            },
-            {
-              "number": "1.06",
-              "title": "Currency"
-            },
-            {
-              "number": "1.07",
-              "title": "Conflicts"
-            },
-            {
-              "number": "1.08",
-              "title": "Nature of Lenders’ Obligations"
-            },
-            {
-              "number": "1.09",
-              "title": "Limitation of Recourse against Construction Receiver"
-            },
-            {
-              "number": "1.10",
-              "title": "Schedules"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 2",
-          "title": "THE CREDIT FACILITY",
-          "sections": [
-            {
-              "number": "2.01",
-              "title": "Credit Facility"
-            },
-            {
-              "number": "2.02",
-              "title": "Purpose of Credit Facility"
-            },
-            {
-              "number": "2.03",
-              "title": "Drawdowns"
-            },
-            {
-              "number": "2.04",
-              "title": "Administrative Agent’s Obligations with Respect to Loans"
-            },
-            {
-              "number": "2.05",
-              "title": "Lenders’ and Administrative Agent’s Obligations with Respect to Loans"
-            },
-            {
-              "number": "2.06",
-              "title": "Irrevocability"
-            },
-            {
-              "number": "2.07",
-              "title": "Account of Record"
-            },
-            {
-              "number": "2.08",
-              "title": "Interest on Excess Loans, Unpaid Costs and Expenses"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 3",
-          "title": "DISBURSEMENT CONDITIONS",
-          "sections": [
-            {
-              "number": "3.01",
-              "title": "Conditions Precedent to First Drawdown"
-            },
-            {
-              "number": "3.02",
-              "title": "Conditions Precedent to all Subsequent Drawdowns – Leslieville Facilities"
-            },
-            {
-              "number": "3.03",
-              "title": "Provisos"
-            },
-            {
-              "number": "3.04",
-              "title": "Waiver"
-            },
-            {
-              "number": "3.05",
-              "title": "Condition to Construction Receiver’s Execution"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 4",
-          "title": "PAYMENTS OF INTEREST AND COMMITMENT FEES",
-          "sections": [
-            {
-              "number": "4.01",
-              "title": "Interest on Prime Rate Loans"
-            },
-            {
-              "number": "4.02",
-              "title": "Deferred Commitment Fee"
-            },
-            {
-              "number": "4.03",
-              "title": "Maximum Rate of Interest"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 5",
-          "title": "REPAYMENT",
-          "sections": [
-            {
-              "number": "5.01",
-              "title": "Mandatory Repayment"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 6",
-          "title": "PLACE AND APPLICATION OF PAYMENTS",
-          "sections": [
-            {
-              "number": "6.01",
-              "title": "Place of Payment of Principal, Interest and Fees"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 7",
-          "title": "COVENANTS",
-          "sections": [
-            {
-              "number": "7.01",
-              "title": "Positive Covenants"
-            },
-            {
-              "number": "7.02",
-              "title": "Negative Covenants"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 8",
-          "title": "SECURITY",
-          "sections": [
-            {
-              "number": "8.01",
-              "title": "Security"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 9",
-          "title": "DEFAULT",
-          "sections": [
-            {
-              "number": "9.01",
-              "title": "Events of Default"
-            },
-            {
-              "number": "9.02",
-              "title": "Acceleration and Enforcement"
-            },
-            {
-              "number": "9.03",
-              "title": "Remedies Cumulative"
-            },
-            {
-              "number": "9.04",
-              "title": "Perform Obligations"
-            },
-            {
-              "number": "9.05",
-              "title": "Third Parties"
-            },
-            {
-              "number": "9.06",
-              "title": "Application of Payments"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 10",
-          "title": "THE ADMINISTRATIVE AGENT AND THE LENDERS",
-          "sections": [
-            {
-              "number": "10.01",
-              "title": "Payments by the Construction Receiver"
-            },
-            {
-              "number": "10.02",
-              "title": "Payments by Administrative Agent"
-            },
-            {
-              "number": "10.03",
-              "title": "Administration of the Credit Facility"
-            },
-            {
-              "number": "10.04",
-              "title": "Rights of Administrative Agent"
-            },
-            {
-              "number": "10.05",
-              "title": "Representations, Acknowledgements and Covenants of Lenders"
-            },
-            {
-              "number": "10.06",
-              "title": "Provisions Operative Between Lenders and Administrative Agent Only"
-            },
-            {
-              "number": "10.07",
-              "title": "Maintenance of Security"
-            },
-            {
-              "number": "10.08",
-              "title": "Application of Proceeds for Distribution"
-            },
-            {
-              "number": "10.09",
-              "title": "No Partnership"
-            },
-            {
-              "number": "10.10",
-              "title": "Sharing of Information"
-            }
-          ]
-        },
-        {
-          "article": "ARTICLE 11",
-          "title": "GENERAL",
-          "sections": [
-            {
-              "number": "11.01",
-              "title": "Addresses, Etc. for Notices"
-            },
-            {
-              "number": "11.02",
-              "title": "Governing Law and Submission to Jurisdiction"
-            },
-            {
-              "number": "11.03",
-              "title": "Effect of Assignment"
-            },
-            {
-              "number": "11.04",
-              "title": "Survival"
-            },
-            {
-              "number": "11.05",
-              "title": "Severability"
-            },
-            {
-              "number": "11.06",
-              "title": "Further Assurances"
-            },
-            {
-              "number": "11.07",
-              "title": "Amendments and Waivers"
-            },
-            {
-              "number": "11.08",
-              "title": "Reasonableness"
-            },
-            {
-              "number": "11.09",
-              "title": "Time of the Essence"
-            }
-          ]
-        }
-      ]
-    },
-    "filename": "2-syndicate_construction_loan_agreement_0.pdf"
-  },
-  "f0ba8509-aa99-4bc7-b50d-10fac355ae9f": {
-    "status": "completed",
-    "result": {
-      "agreement_name": {
-        "name": "CREDIT AGREEMENT",
-        "page_number": 1
-      },
-      "agreement_date": {
-        "date": "April 18, 2017",
-        "page_number": 1
-      },
-      "parties": [
-        {
-          "name": "ALVAREZ & MARSAL CANADA INC.",
-          "role": "Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC.",
-          "capacity": "not in its personal or corporate capacity as Construction Receiver",
+      "dates": {
+        "agreement_date": {
+          "value": "April 18, 2017",
           "page_number": 1
         },
-        {
-          "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
-          "role": "Administrative Agent",
-          "page_number": 1
-        },
-        {
-          "name": "THE FINANCIAL INSTITUTIONS",
-          "role": "Lenders",
-          "capacity": "from time to time parties hereto",
-          "page_number": 1
-        }
-      ],
-      "clauses": [
-        {
-          "name": "ARTICLE 1 INTERPRETATION",
-          "page_number": 4
-        },
-        {
-          "name": "1.01 Definitions",
-          "page_number": 4
-        },
-        {
-          "name": "Definition of 'Administrative Agent’s Office'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Agreement'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Applicable Law'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Applicable Percentage'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Architect'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Architect Contract'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Architect’s Costs'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Beach Remaining Lands'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Beach Sale Process Order'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Builder'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Budgeted Development Costs'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Business Day'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Canadian Dollars' and 'Cdn. $'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Change Funder'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'Change Orders'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'City'",
-          "page_number": 5
-        },
-        {
-          "name": "Definition of 'CO Work'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Commitment'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Condominium Act'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Condominium Documents'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Construction'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Construction Completion'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Construction Receiver'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Construction Receiver’s Counsel'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Construction Receiver’s Reserve'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Construction Schedule'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Consultant Contract'",
-          "page_number": 6
-        },
-        {
-          "name": "Definition of 'Consultants'",
-          "page_number": 7
-        },
-        {
-          "name": "Definition of 'Contingency Amount'",
-          "page_number": 7
-        },
-        {
-          "name": "Definition of 'Costs'",
-          "page_number": 7
-        },
-        {
-          "name": "Definition of 'Cost Overruns'",
-          "page_number": 7
-        },
-        {
-          "name": "Definition of 'Cost to Complete'",
-          "page_number": 7
-        },
-        {
-          "name": "Definition of 'Court'",
-          "page_number": 7
-        },
-        {
-          "name": "Definition of 'CP Outside Date'",
-          "page_number": 7
-        },
-        {
-          "name": "Definition of 'Craft'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Craft C&D Contracts'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Craft Cash Collateral'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Craft Construction Contract'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Craft Development Contract'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Craft Loan Agreement'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Craft Loans'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Craft Security'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Credit Facility'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Credit Facility Commitment'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Curzon Purchasers'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Debt'",
-          "page_number": 8
-        },
-        {
-          "name": "Definition of 'Declaration'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Default'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Defaulted Cost Overruns'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Deferred Commitment Fee'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Development Approvals'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Development Budget'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Development Cost Overruns'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Development Costs'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Development Services'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Development Tranche'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Disposition'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Drawdown'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Drawdown Date'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Drawdown Notice'",
-          "page_number": 9
-        },
-        {
-          "name": "Definition of 'Encumbrance'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Engineers'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Engineering Contracts'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Environmental Law'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Event of Default'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Existing Curzon Purchasers'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Existing Purchaser Deposits'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Existing Syndicate Credit Agreement'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Existing Syndicate Debt'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'Existing Syndicate Security'",
-          "page_number": 10
-        },
-        {
-          "name": "Definition of 'First Advance Date'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Fixed Price'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Force Majeure'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'FP Tranche'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'GAAP'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Geo-thermal System Costs'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Geo-thermal System'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Governmental Authority'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Gross Sale Proceeds'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Hazardous Substance'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Holdback'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'HST'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Independent Cost Consultant'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Independent Cost Consultant’s Certificate'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Initial Development Budget'",
-          "page_number": 11
-        },
-        {
-          "name": "Definition of 'Insolvent'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'Interbank Reference Rate'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'ITC Condition'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'ITC Increase'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'ITC Tranche'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'Latent Defect'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'Lenders'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'Lenders’ Counsel'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'Lending Office'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'Leslieville Project'",
-          "page_number": 12
-        },
-        {
-          "name": "Definition of 'Leslieville Project Lands'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'List Price'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'Loan'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'Loan Disbursement Account'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'Loan Documents'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'Marketing Plan'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'Material Project Agreements'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'New APS'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'New Curzon Purchasers'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'Obligations'",
-          "page_number": 13
-        },
-        {
-          "name": "Definition of 'Operating Budget'",
-          "page_number": 14
-        },
-        {
-          "name": "Definition of 'Operating Manager'",
-          "page_number": 14
-        },
-        {
-          "name": "Definition of 'Operating Phase'",
-          "page_number": 14
-        },
-        {
-          "name": "Definition of 'Opt-In Leslieville Purchasers'",
-          "page_number": 14
-        },
-        {
-          "name": "Definition of 'Outside Date'",
-          "page_number": 14
-        },
-        {
-          "name": "Definition of 'Permitted Debt'",
-          "page_number": 14
-        },
-        {
-          "name": "Definition of 'Permitted Encumbrances'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Person'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Plans and Specifications'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Prime Rate'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Prime Rate Loan'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Prime Rate Margin'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Proceeds for Distribution'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Proforma Sale Price'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Project Status Certificate'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Property'",
-          "page_number": 15
-        },
-        {
-          "name": "Definition of 'Purchaser Deposits'",
-          "page_number": 16
-        },
-        {
-          "name": "Definition of 'Purchaser Information Package'",
-          "page_number": 16
-        },
-        {
-          "name": "Definition of 'Purchaser Package Approval Order'",
-          "page_number": 16
-        },
-        {
-          "name": "Definition of 'Receivership Administration Order'",
-          "page_number": 16
-        },
-        {
-          "name": "Definition of 'Receivership Order'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Receiver’s Expense Reimbursement Charge'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Release'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Required Lenders'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Security'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Settlement Approval Order'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'sole and absolute discretion'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Standard Form Sales Agreement'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Substantial Performance of the Work'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Tarion'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Tarion Home Warranty Program'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Tarion/Travelers Settlement Acknowledgements'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Taxes'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Terra Firma'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'TF Cost Overrun Guarantee'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'TF Defaulted Cost Overruns'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Total Performance of the Work'",
-          "page_number": 17
-        },
-        {
-          "name": "Definition of 'Tranches'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'Travelers'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'Travelers Agreements'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'Travelers Mortgage'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'UC Beach'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'UC Leslieville'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'UC Receivership Proceedings'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'UC Riverdale'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'Unit'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'Upgrades'",
-          "page_number": 18
-        },
-        {
-          "name": "Definition of 'Waterfall'",
-          "page_number": 18
-        },
-        {
-          "name": "1.02 Extended Meanings",
-          "page_number": 18
-        },
-        {
-          "name": "1.03 Interest Calculations and Payments",
-          "page_number": 19
-        },
-        {
-          "name": "1.04 Permitted Encumbrances",
-          "page_number": 19
-        },
-        {
-          "name": "1.05 Time of the Essence",
-          "page_number": 19
-        },
-        {
-          "name": "1.06 Currency",
-          "page_number": 19
-        },
-        {
-          "name": "1.07 Conflicts",
-          "page_number": 19
-        },
-        {
-          "name": "1.08 Nature of Lenders’ Obligations",
-          "page_number": 19
-        },
-        {
-          "name": "1.09 Limitation of Recourse against Construction Receiver",
-          "page_number": 20
-        },
-        {
-          "name": "1.10 Schedules",
-          "page_number": 20
-        },
-        {
-          "name": "ARTICLE 2 THE CREDIT FACILITY",
-          "page_number": 20
-        },
-        {
-          "name": "2.01 Credit Facility",
-          "page_number": 20
-        },
-        {
-          "name": "2.02 Purpose of Credit Facility",
-          "page_number": 21
-        },
-        {
-          "name": "2.03 Drawdowns",
-          "page_number": 21
-        },
-        {
-          "name": "2.04 Administrative Agent’s Obligations with Respect to Loans",
-          "page_number": 22
-        },
-        {
-          "name": "2.05 Lenders’ and Administrative Agent’s Obligations with Respect to Loans",
-          "page_number": 22
-        },
-        {
-          "name": "2.06 Irrevocability",
-          "page_number": 22
-        },
-        {
-          "name": "2.07 Account of Record",
-          "page_number": 22
-        },
-        {
-          "name": "2.08 Interest on Excess Loans, Unpaid Costs and Expenses",
-          "page_number": 22
-        },
-        {
-          "name": "ARTICLE 3 DISBURSEMENT CONDITIONS",
+        "effective_date": {
+          "value": "\"Effective Date\" (as defined in the Settlement Approval Order)",
           "page_number": 23
         },
-        {
-          "name": "3.01 Conditions Precedent to First Drawdown",
-          "page_number": 23
+        "maturity_date": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "3.02 Conditions Precedent to all Subsequent Drawdowns – Leslieville Facilities",
+        "end_date_of_respective_facility": {
+          "value": null,
+          "page_number": 0
+        },
+        "start_date_of_facility_availability_period_facility_a": {
+          "value": null,
+          "page_number": 0
+        },
+        "end_date_of_facility_availability_period_facility_a": {
+          "value": null,
+          "page_number": 0
+        },
+        "start_date_of_facility_availability_period_facility_b": {
+          "value": null,
+          "page_number": 0
+        },
+        "end_date_of_facility_availability_period_facility_b": {
+          "value": null,
+          "page_number": 0
+        }
+      },
+      "general": {
+        "borrower": {
+          "value": "ALVAREZ & MARSAL CANADA INC., solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC. and not in its personal or corporate capacity (the “Construction Receiver”)",
+          "page_number": 4
+        },
+        "agent": {
+          "value": "CANADIAN IMPERIAL BANK OF COMMERCE, in its capacity as administrative agent for the Lenders (the “Administrative Agent”)",
+          "page_number": 4
+        },
+        "security_agent": {
+          "value": "Administrative Agent",
+          "page_number": 32
+        },
+        "sponsor_name": {
+          "value": "Terra Firma Capital Corporation",
+          "page_number": 17
+        },
+        "majority_lenders": {
+          "value": "Required Lenders means (i) if no Loans are outstanding under this Agreement, the Lenders holding at least 66 2/3% of the aggregate amount of Commitments, (ii) if any Loans are outstanding under this Agreement, the Lenders to which an amount in aggregate equal to at least 66 2/3% of such Loans is owed, and (iii) where there are only two Lenders, both such Lenders.",
+          "page_number": 16
+        }
+      },
+      "definitions": {
+        "lma_defined_term": {
+          "value": "The attached model credit agreement provisions, which have been revised under the direction of the Canadian Bankers' Association Secondary Loan Market Specialist Group from provisions prepared by The Loan Syndications and Trading Association, Inc., form part of this Agreement, except for the footnotes to the model credit agreement provisions and subject to the following variations",
+          "page_number": 52
+        },
+        "reference_bank_definition": {
+          "value": null,
+          "page_number": 0
+        },
+        "base_currency": {
+          "value": "Canadian Dollars and Cdn. $ mean the lawful money of Canada.",
+          "page_number": 5
+        },
+        "optional_currencies": {
+          "value": null,
+          "page_number": 0
+        },
+        "disqualified_lender_definition": {
+          "value": null,
+          "page_number": 0
+        }
+      },
+      "credit_facilities": {
+        "stated_term_of_facility": {
+          "value": null,
+          "page_number": 0
+        },
+        "facility_name": {
+          "value": "Credit Facility",
+          "page_number": 17
+        },
+        "facility_type": {
+          "value": "non-revolving, term credit facility",
+          "page_number": 20
+        },
+        "facility_size_term": {
+          "value": null,
+          "page_number": 0
+        },
+        "facility_size_revolver": {
+          "value": null,
+          "page_number": 0
+        },
+        "total_facility_size": {
+          "value": "$4,500,000.00",
+          "page_number": 7
+        },
+        "total_commitments": {
+          "value": "Credit Facility Commitment means (a) $4,500,000.00, plus (b) if and for so long as the ITC Condition exists, an amount up to the ITC Increase.",
+          "page_number": 7
+        },
+        "loan_commitments": {
+          "value": null,
+          "page_number": 0
+        },
+        "term_loan_commitments": {
+          "value": null,
+          "page_number": 0
+        },
+        "revolving_loan_commitments": {
+          "value": null,
+          "page_number": 0
+        },
+        "repayment_provision": {
+          "value": "ARTICLE 5 REPAYMENT",
           "page_number": 26
         },
-        {
-          "name": "3.03 Provisos",
-          "page_number": 28
+        "repayment_type": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "3.04 Waiver",
-          "page_number": 28
+        "mandatory_repayment": {
+          "value": "5.01 Mandatory Repayment (1) The Loans and all other Obligations shall shall become due by the Construction Receiver upon the occurrence of an Event of Default hereunder which has been accelerated by the Lenders in accordance with Section 9.02, and subject to compliance with any conditions to such acceleration set forth therein. (2) Notwithstanding any other section of this Agreement, including without limitation, anything to the contrary in Sections 4.01 or 5.01(1) (but subject to Sections 5.01(4) and 5.01(5)), the Construction Receiver shall only be required to pay interest accrued on the Loans (including default interest pursuant to Section 2.08), the Deferred Commitment Fee, the principal amount of the Loans outstanding under the Credit Facility (whether before or after an Event of Default or acceleration) and all other Obligations from time to time only out of and from (i) receipts of Gross Sale Proceeds from the sale of Units or other income from the Units or the realization thereof, and (ii) receipts of sales proceeds, rental (including occupation rent) or other income from, or the realization of, the Beach Remaining Lands, the Leslieville Project (other than the Units) and any and all other property, assets and undertaking of UC Leslieville, UC Beach and UC Riverdale (collectively the amounts in clauses (i) and (ii) being herein called “Proceeds for Distribution”), in each case, as and when such Proceeds for Distribution become available for distribution by the Construction Receiver to the Lenders in the UC Receivership Proceedings; provided that nothing hereinbefore provided shall limit any right or remedy which the Administrative Agent or the Lenders may have under Article 9, subject to compliance with the Settlement Approval Order and any other applicable order of the Court in the UC Receivership Proceedings.",
+          "page_number": 26
         },
-        {
-          "name": "3.05 Condition to Construction Receiver’s Execution",
-          "page_number": 28
+        "mandatory_prepayment_due_to_change_of_control": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "ARTICLE 4 PAYMENTS OF INTEREST AND COMMITMENT FEES",
-          "page_number": 28
+        "voluntary_prepayment": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "4.01 Interest on Prime Rate Loans",
-          "page_number": 28
+        "call_protection_prepayment_clause": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "4.02 Deferred Commitment Fee",
-          "page_number": 29
+        "facility_extension_options": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "4.03 Maximum Rate of Interest",
-          "page_number": 29
+        "facility_extension_option_how_many_years": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "ARTICLE 5 REPAYMENT",
-          "page_number": 29
+        "amend_to_extend_clause": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "5.01 Mandatory Repayment",
-          "page_number": 29
+        "number_of_extension_options": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "ARTICLE 6 PLACE AND APPLICATION OF PAYMENTS",
-          "page_number": 31
+        "lender_discretion": {
+          "value": "If the first advance under the Credit Facility does not occur on or before the First Advance Date, the Required Lenders may, in their sole and absolute discretion, cancel the Credit Facility, in which event, the Lenders will have no further obligation to make Drawdowns available to the Construction Receiver under the Credit Facility. In addition, at any time after that date which is 30 days after (a) the earlier of Total Completion of the Work and completion of the Development Services and (b) the Outside Date (or such later date as may be agreed in writing by the Required Lenders), the Required Lenders may, in their sole and absolute discretion, cancel all or any unutilized portion of the Commitment.",
+          "page_number": 21
         },
-        {
-          "name": "6.01 Place of Payment of Principal, Interest and Fees",
-          "page_number": 31
+        "calculation_of_interest": {
+          "value": "Unless otherwise stated, wherever in this Agreement reference is made to a rate of interest “per annum” or a similar expression is used, such interest will be calculated on the basis of a calendar year of 365 days, and using the nominal rate method of calculation and not the effective rate method of calculation or on any other basis that gives effect to the principle of deemed reinvestment of interest. Interest will continue to accrue after maturity and default and/or judgment, if any, until payment thereof, and interest will accrue and be compounded monthly on overdue interest, if any.",
+          "page_number": 16
         },
-        {
-          "name": "ARTICLE 7 COVENANTS",
-          "page_number": 31
+        "initial_margin_text": {
+          "value": "Prime Rate Margin means 5% per annum.",
+          "page_number": 15
         },
-        {
-          "name": "7.01 Positive Covenants",
-          "page_number": 31
+        "initial_margin_tables": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "7.02 Negative Covenants",
+        "interest_rate_convention": {
+          "value": "calculated on the basis of a calendar year of 365 days, and using the nominal rate method of calculation and not the effective rate method of calculation or on any other basis that gives effect to the principle of deemed reinvestment of interest.",
+          "page_number": 16
+        },
+        "interest_rate_floor": {
+          "value": null,
+          "page_number": 0
+        },
+        "libor_definition": {
+          "value": "Section 3.5 Inability to Determine Rates Etc. If the Required Lenders determine that for any reason a market for bankers' acceptances does not exist at any time or the Lenders cannot for other reasons, after reasonable efforts, readily sell bankers' acceptances or perform their other obligations under this Agreement with respect to bankers' acceptances, the Administrative Agent will promptly so notify the Borrower and each Lender. Thereafter, the Borrower's right to request the acceptance of bankers' acceptances shall be and remain suspended until the Required Lenders determine and the Agent notifies the Borrower and each Lender that the condition causing such determination no longer exists. If the Required Lenders determine that for any reason adequate and reasonable means do not exist for determining the LIBO Rate for any requested Interest Period with respect to a proposed LIBO Rate Loan, or that the LIBO Rate for any requested Interest Period with respect to a proposed LIBO Rate Loan does not adequately and fairly reflect the cost to such Lenders of funding such Loan, the Administrative Agent will promptly so notify the Borrower and each Lender. Thereafter, the obligation of the Lenders to make or maintain LIBO Rate Loans shall be suspended until the Administrative Agent (upon the instruction of the Required Lenders) revokes such notice. Upon receipt of such notice, the Borrower may revoke any pending request for a borrowing, conversion or continuation of LIBO Rate Loans or, failing that, will be deemed to have converted such request into a request for a borrowing of Base Rate Loans in the amount specified therein.",
+          "page_number": 60
+        },
+        "arrangement_fees": {
+          "value": null,
+          "page_number": 0
+        },
+        "agency_fees": {
+          "value": null,
+          "page_number": 0
+        }
+      },
+      "representations_and_warranties": {
+        "use_of_proceeds": {
+          "value": "Loans made under the Credit Facility will only be used by the Construction Receiver for the following purposes: (1) with respect to the FP Tranche, to finance the Fixed Price payable to Craft under the Craft Construction Contract; and (2) with respect to the Development Tranche, to finance the payment of the Budgeted Development Costs set out in the Initial Development Budget agreed pursuant to the Craft Development Contract.",
+          "page_number": 21
+        },
+        "material_adverse_change_clause": {
+          "value": null,
+          "page_number": 0
+        }
+      },
+      "covenants": {
+        "interest_coverage_covenant": {
+          "value": null,
+          "page_number": 0
+        },
+        "interest_coverage_text": {
+          "value": null,
+          "page_number": 0
+        },
+        "interest_coverage_tables": {
+          "value": null,
+          "page_number": 0
+        },
+        "total_leverage_covenant": {
+          "value": null,
+          "page_number": 0
+        },
+        "total_leverage_text": {
+          "value": null,
+          "page_number": 0
+        },
+        "total_leverage_tables": {
+          "value": null,
+          "page_number": 0
+        },
+        "restricted_asset_sales_permitted_transfers": {
+          "value": "No Sale of Project Dispose of or Lease any of the Leslieville Project or the Beach Remaining Lands other than: (a) (i) sales of Units to Opt-In Leslieville Purchasers made pursuant to the terms of the Standard Form Sales Agreement relating thereto and at the prices agreed in or pursuant to the Settlement Approval Order and (ii) interim occupancy of such Units by the Opt-In Leslieville Purchasers; (b) (i) sales of Units to New Curzon Purchasers made pursuant to the terms of the Standard Form Sales Agreement for purchase prices at no less than Proforma Sales Prices as agreed pursuant to the Marketing Plan under the Craft Development Contract as approved by the Required Lenders (as such Proforma Sales Prices may be amended from time to time with the approval of the Required Lenders to the extent contemplated under the Craft Development Contract), (ii) interim occupancy of such Units by the New Curzon Purchasers; (c) sales of unallocated parking spaces and extra storage spaces at the Leslieville Project pursuant to a sales process, and for prices no less than the minimum prices as agreed pursuant to the Marketing Plan under the Craft Development Contract as approved by the Required Lenders (as such minimum prices may be amended from time to time with the approval of the Required Lenders to the extent contemplated under the Craft Development Contract); (d) sales of all or a portion of the Beach Remaining Lands pursuant to a sales process acceptable to the Required Lenders and approved by the Court in the UC Receivership Proceedings and only for a price acceptable to the Required Lenders or as may be directed by the Court; or (e) with the prior written consent of the Required Lenders;",
           "page_number": 33
         },
-        {
-          "name": "ARTICLE 8 SECURITY",
-          "page_number": 34
+        "permitted_acquisitions_clause_text": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "8.01 Security",
-          "page_number": 34
+        "permitted_indebtedness_basket": {
+          "value": "Permitted Debt means: (a) the Debt under this Agreement; (b) the Craft Loan up to a maximum principal amount of $2,000,000, except as such maximum principal amount may be increased as contemplated under the Settlement Approval Order in order to cover additional principal advances to be made by Craft in connection with (i) the Geo-Thermal Costs, and (ii) without duplication of clause (g) below, the funding of TF Defaulted Cost Overruns under and in accordance with the provisions of the TF Cost Overrun Guarantee; (c) liabilities due and payable to Craft from time to time under the terms of the Craft C&D Contracts; (d) the Existing Syndicate Debt; (e) the Debt of UC Leslieville owing under the Travelers Agreements and Travelers Mortgage; (f) the Debt of UC Leslieville, UC Riverdale and UC Beach owing to Terra Firma on or prior to the date hereof and secured under the mortgage granted by UC Leslie in favour of Terra Firma registered against the Leslieville Project Lands on July 22, 2015; (g) additional debt incurred by the Construction Receiver to cover TF Defaulted Cost Overruns or Defaulted Cost Overruns under and in accordance with the provisions of the TF Cost Overrun Guarantee; (h) any other Debt owed by the Construction Receiver to the Lenders; (i) any liabilities secured by the Receiver’s Expense Reimbursement Charge; (j) any liabilities secured by the Receiver’s Borrowings Charge and the Construction Lien Trustee’s Borrowing Charge (as each term is set forth in Section 22 of the Receivership Order), including as Section 22 may be varied by order of the Court in the UC Receivership Proceedings; (k) any additional Craft Loans to fund Geo-Thermal Costs, to the extent permitted under and made pursuant to the terms of the Settlement Approval Order; and (l) any other Debt which is approved by the Court in the UC Receivership Proceedings.",
+          "page_number": 14
         },
-        {
-          "name": "ARTICLE 9 DEFAULT",
-          "page_number": 34
+        "permitted_financial_indebtedness_text": {
+          "value": "Permitted Debt",
+          "page_number": 14
         },
-        {
-          "name": "9.01 Events of Default",
-          "page_number": 34
+        "prepayment_from_asset_sales_proceeds_clause": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "9.02 Acceleration and Enforcement",
-          "page_number": 35
+        "percent_of_net_cash_proceeds": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "9.03 Remedies Cumulative",
-          "page_number": 36
+        "permitted_reinvestment_period": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "9.04 Perform Obligations",
-          "page_number": 36
+        "equity_cure_provision": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "9.05 Third Parties",
-          "page_number": 37
+        "number_of_equity_cures": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "9.06 Application of Payments",
-          "page_number": 37
+        "subsidiary_guarantees": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "ARTICLE 10 THE ADMINISTRATIVE AGENT AND THE LENDERS",
-          "page_number": 37
+        "transfer_provisions": {
+          "value": "Section 10 Successors and Assigns",
+          "page_number": 68
         },
-        {
-          "name": "10.01 Payments by the Construction Receiver",
-          "page_number": 37
-        },
-        {
-          "name": "10.02 Payments by Administrative Agent",
-          "page_number": 38
-        },
-        {
-          "name": "10.03 Administration of the Credit Facility",
-          "page_number": 38
-        },
-        {
-          "name": "10.04 Rights of Administrative Agent",
+        "amendment_clause": {
+          "value": "No amendment to this Agreement will be valid or binding unless set forth in writing and duly executed by the Construction Receiver and the Administrative Agent for and on behalf of the Lenders or the Required Lenders, as the case may be.",
           "page_number": 41
         },
-        {
-          "name": "10.05 Representations, Acknowledgements and Covenants of Lenders",
-          "page_number": 41
+        "snooze_lose_clause": {
+          "value": null,
+          "page_number": 0
         },
-        {
-          "name": "10.06 Provisions Operative Between Lenders and Administrative Agent Only",
-          "page_number": 41
-        },
-        {
-          "name": "10.07 Maintenance of Security",
-          "page_number": 41
-        },
-        {
-          "name": "10.08 Application of Proceeds for Distribution",
-          "page_number": 42
-        },
-        {
-          "name": "10.09 No Partnership",
-          "page_number": 42
-        },
-        {
-          "name": "10.10 Sharing of Information",
-          "page_number": 42
-        },
-        {
-          "name": "ARTICLE 11 GENERAL",
-          "page_number": 42
-        },
-        {
-          "name": "11.01 Addresses, Etc. for Notices",
-          "page_number": 42
-        },
-        {
-          "name": "11.02 Governing Law and Submission to Jurisdiction",
-          "page_number": 42
-        },
-        {
-          "name": "11.03 Effect of Assignment",
-          "page_number": 43
-        },
-        {
-          "name": "11.04 Survival",
-          "page_number": 43
-        },
-        {
-          "name": "11.05 Severability",
-          "page_number": 43
-        },
-        {
-          "name": "11.06 Further Assurances",
-          "page_number": 43
-        },
-        {
-          "name": "11.07 Amendments and Waivers",
-          "page_number": 43
-        },
-        {
-          "name": "11.08 Reasonableness",
-          "page_number": 43
-        },
-        {
-          "name": "11.09 Time of the Essence",
-          "page_number": 44
-        },
-        {
-          "name": "SCHEDULE A MODEL CREDIT AGREEMENT PROVISIONS",
-          "page_number": 51
-        },
-        {
-          "name": "SCHEDULE B LENDERS AND COMMITMENTS",
-          "page_number": 79
-        },
-        {
-          "name": "SCHEDULE C LEGAL DESCRIPTION OF PROJECT LANDS",
-          "page_number": 80
-        },
-        {
-          "name": "SCHEDULE D LEGAL DESCRIPTION OF BEACH REMAINING LANDS",
-          "page_number": 81
-        },
-        {
-          "name": "SCHEDULE 1.01(A) DRAWDOWN NOTICE",
-          "page_number": 83
-        },
-        {
-          "name": "SCHEDULE 1.01(B) INITIAL DEVELOPMENT BUDGET",
-          "page_number": 85
-        },
-        {
-          "name": "SCHEDULE 1.01(1)(C) PROJECT STATUS CERTIFICATE",
-          "page_number": 87
-        },
-        {
-          "name": "SCHEDULE 1.01(1)(D) INDEPENDENT COST CONSULTANT’S CERTIFICATE",
-          "page_number": 89
+        "disqualified_lender_list": {
+          "value": null,
+          "page_number": 0
         }
-      ]
+      },
+      "defaults": {
+        "events_of_default": {
+          "value": "9.01 Events of Default",
+          "page_number": 32
+        },
+        "payment_default_provision": {
+          "value": "if the Construction Receiver fails to pay any Obligation when due",
+          "page_number": 32
+        },
+        "insolvency_default": {
+          "value": "none of Craft, the Builder or Terra Firma shall be Insolvent",
+          "page_number": 23
+        },
+        "misrepresentation_default": {
+          "value": null,
+          "page_number": 0
+        },
+        "market_disruption_clause": {
+          "value": null,
+          "page_number": 0
+        },
+        "cross_default": {
+          "value": null,
+          "page_number": 0
+        },
+        "cross_acceleration": {
+          "value": null,
+          "page_number": 0
+        },
+        "no_set_off": {
+          "value": null,
+          "page_number": 0
+        },
+        "set_off_prohibited_for_borrower": {
+          "value": null,
+          "page_number": 0
+        }
+      },
+      "miscellaneous": {
+        "bilateral_or_syndicated": {
+          "value": "THE FINANCIAL INSTITUTIONS from time to time party to this Agreement and designated as Lenders on the signatures pages hereto (each, a “Lender” and collectively, the “Lenders”)",
+          "page_number": 4
+        },
+        "business_days_convention_calendar": {
+          "value": "Business Day means a day of the year, other than a Saturday, Sunday or statutory holiday, on which the Administrative Agent is open for business at its executive offices in Toronto, Ontario.",
+          "page_number": 5
+        },
+        "business_days_payments_non_business_day_rule": {
+          "value": "All payments of principal, interest, fees and other amounts to be made by the Construction Receiver to the Administrative Agent and the Lenders pursuant to this Agreement will be made in the currency in which the Loans are outstanding for value on the day such amount(s) are distributed by the Construction Receiver in accordance with the Settlement Approval Order or, if such day is not a Business Day, on the Business Day next following with interest, by deposit or transfer thereof to the account of the Administrative Agent maintained at the Administrative Agent’s Office in Toronto or at such other place as the Construction Receiver and the Administrative Agent may from time to time agree.",
+          "page_number": 28
+        },
+        "business_days_rate_setting_quotation_day": {
+          "value": null,
+          "page_number": 0
+        },
+        "governing_law": {
+          "value": "Ontario is the Province for the purposes of Sections 11(a) and (b) of Schedule A. This Agreement shall be governed by, and construed in accordance with, the laws of the Province specified elsewhere in this Agreement and the laws of Canada applicable in that Province.",
+          "page_number": 40
+        },
+        "confidentiality_clause": {
+          "value": "Section 14 Treatment of Certain Information: Confidentiality",
+          "page_number": 71
+        },
+        "language_for_client_communication": {
+          "value": null,
+          "page_number": 0
+        }
+      }
     },
-    "filename": "2-syndicate_construction_loan_agreement_0 (1).pdf",
+    "filename": "2-syndicate_construction_loan_agreement_0.pdf",
     "pages": {
       "1": "EXECUTION VERSION \nCREDIT AGREEMENT \nBETWEEN \nALVAREZ & MARSAL CANADA INC., solely in its capacity as  \nCourt Appointed Receiver and Manager and Construction Lien Trustee of  \nURBANCORP (LESLIEVILLE) DEVELOPMENTS INC.,  \nURBANCORP (RIVERDALE) DEVELOPMENTS INC. and  \nURBANCORP (THE BEACH) DEVELOPMENTS INC. \nand not in its personal or corporate capacity \nas Construction Receiver \nAND \nCANADIAN IMPERIAL BANK OF COMMERCE \nas Administrative Agent \nAND \nTHE FINANCIAL INSTITUTIONS \nfrom time to time parties hereto \nas Lenders \nMADE AS OF \nApril 18, 2017 \nGowling WLG (Canada) LLP \n",
       "2": "TABLE OF CONTENTS \nARTICLE 1 INTERPRETATION .................................................................................................................. 1\n1.01 \nDefinitions ........................................................................................................................ 1\n1.02 \nExtended Meanings ....................................................................................................... 15\n1.03 \nInterest Calculations and Payments .............................................................................. 16\n1.04 \nPermitted Encumbrances .............................................................................................. 16\n1.05 \nTime of the Essence ...................................................................................................... 16\n1.06 \nCurrency ........................................................................................................................ 16\n1.07 \nConflicts ......................................................................................................................... 16\n1.08 \nNature of Lenders’ Obligations ...................................................................................... 16\n1.09 \nLimitation of Recourse against Construction Receiver ................................................. 17\n1.10 \nSchedules ...................................................................................................................... 17\nARTICLE 2 THE CREDIT FACILITY ......................................................................................................... 17\n2.01 \nCredit Facility ................................................................................................................. 17\n2.02 \nPurpose of Credit Facility .............................................................................................. 18\n2.03 \nDrawdowns .................................................................................................................... 18\n2.04 \nAdministrative Agent’s Obligations with Respect to Loans ........................................... 19\n2.05 \nLenders’ and Administrative Agent’s Obligations with Respect to Loans ..................... 19\n2.06 \nIrrevocability .................................................................................................................. 19\n2.07 \nAccount of Record ......................................................................................................... 19\n2.08 \nInterest on Excess Loans, Unpaid Costs and Expenses .............................................. 19\nARTICLE 3 DISBURSEMENT CONDITIONS ........................................................................................... 20\n3.01 \nConditions Precedent to First Drawdown ...................................................................... 20\n3.02 \nConditions Precedent to all Subsequent Drawdowns – Leslieville Facilities ................ 23\n3.03 \nProvisos ......................................................................................................................... 25\n3.04 \nWaiver ........................................................................................................................... 25\n3.05 \nCondition to Construction Receiver’s Execution ........................................................... 25\nARTICLE 4 PAYMENTS OF INTEREST AND COMMITMENT FEES ..................................................... 25\n4.01 \nInterest on Prime Rate Loans ........................................................................................ 25\n4.02 \nDeferred Commitment Fee ............................................................................................ 26\n4.03 \nMaximum Rate of Interest ............................................................................................. 26\nARTICLE 5 REPAYMENT ......................................................................................................................... 26\n5.01 \nMandatory Repayment .................................................................................................. 26\nARTICLE 6 PLACE AND APPLICATION OF PAYMENTS ...................................................................... 28\n6.01 \nPlace of Payment of Principal, Interest and Fees ......................................................... 28\nARTICLE 7 COVENANTS ......................................................................................................................... 28\n7.01 \nPositive Covenants ........................................................................................................ 28\n7.02 \nNegative Covenants ...................................................................................................... 30\nARTICLE 8 SECURITY 32\n8.01 \nSecurity .......................................................................................................................... 32\nARTICLE 9 DEFAULT 32\n9.01 \nEvents of Default ........................................................................................................... 32\n",
