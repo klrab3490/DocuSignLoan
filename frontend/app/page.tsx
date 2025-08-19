@@ -45,6 +45,13 @@ type RawField = {
     page_number: number
 }
 
+// Status
+type JobSummary = {
+    job_id: string
+    status: string
+    filename: string
+}
+
 export default function Home() {
     const [file, setFile] = useState<File | null>(null)
     const [status, setStatus] = useState<string | null>(null)
@@ -53,7 +60,7 @@ export default function Home() {
     const [result, setResult] = useState<JobResult | null>(null)
     const [editableData, setEditableData] = useState<RawResult | null>(null)
     const [isEditing, setIsEditing] = useState(false)
-    const [jobs, setJobs] = useState<string[]>([])
+    const [jobs, setJobs] = useState<JobSummary[] | null>([])
     const [fetchStatus, setFetchStatus] = useState<string | null>(null)
 
     const handleUpload = async () => {
@@ -94,7 +101,7 @@ export default function Home() {
             if (!result.ok) throw new Error("Failed to fetch data")
             const data = await result.json()
             setJobs(data)
-            // console.log("Fetched jobs:", data);
+            console.log("Fetched jobs:", data);
         } catch (error) {
             console.error(error)
             throw error
@@ -108,7 +115,7 @@ export default function Home() {
         if (!id) return
 
         try {
-            const result = await fetch(`http://localhost:8000/pdf/status/${id}/`)
+            const result = await fetch(`http://localhost:8000/pdf/jobs/${id}`)
             if (!result.ok) throw new Error("Failed to fetch data")
             const data = await result.json()
 
@@ -241,7 +248,7 @@ export default function Home() {
                                     </div>
 
                                     <div className="space-y-4">
-                                        {jobs.length == 0 && (
+                                        {jobs && jobs.length === 0 && (
                                             <Button
                                                 onClick={fetchJobs}
                                                 variant="outline"
@@ -262,9 +269,9 @@ export default function Home() {
                                                 onChange={(e) => setJobID(e.target.value)}
                                             >
                                                 <option value="">Select a Job ID</option>
-                                                {jobs.map((id) => (
-                                                    <option key={id} value={id}>
-                                                        {id}
+                                                {(jobs ?? []).map((job) => (
+                                                    <option key={job.job_id} value={job.job_id}>
+                                                        {job.job_id}
                                                     </option>
                                                 ))}
                                             </select>
@@ -346,7 +353,7 @@ export default function Home() {
                                     Agreement Data
                                 </CardTitle>
                                 <p className="text-sm text-muted-foreground">
-                                    {result.filename} • Job ID: {result.job_id}
+                                    • File Name: {result.filename} <br />• Job ID: {result.job_id}
                                 </p>
                             </div>
                             <div className="flex gap-3">
@@ -365,14 +372,29 @@ export default function Home() {
                                         </Button>
                                     </>
                                 ) : (
-                                    <Button
-                                        onClick={handleEditToggle}
-                                        variant="outline"
-                                        size="sm"
-                                        className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
-                                    >
-                                        Edit Data
-                                    </Button>
+                                    <>
+                                        <Button
+                                            onClick={handleEditToggle}
+                                            variant="outline"
+                                            size="sm"
+                                            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+                                        >
+                                            Edit Data
+                                        </Button>
+                                        <Button
+                                            onClick={() => {
+                                                setJobID(null)
+                                                setResult(null)
+                                                setEditableData(null)
+                                                setIsEditing(false)
+                                            }}
+                                            variant="destructive"
+                                            size="sm"
+                                            className="ml-2"
+                                        >
+                                            Restart
+                                        </Button>
+                                    </>
                                 )}
                             </div>
                         </CardHeader>
