@@ -31,9 +31,9 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex">
-            <div>
+            {/* <div>
               <Sidepanel />
-            </div>
+            </div> */}
             <div className="flex flex-col w-full">
               <Navbar />
               {children}
