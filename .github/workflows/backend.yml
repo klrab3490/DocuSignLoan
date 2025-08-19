@@ -3,6 +3,8 @@ name: Backend CI Workflow
 on:
   push:
     branches: [main]
+    paths:
+      - 'backend/**'
 
 jobs:
   build:

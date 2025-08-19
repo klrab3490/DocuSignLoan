@@ -3,6 +3,8 @@ name: Frontend CI Workflow
 on:
   push:
     branches: [main]
+    paths:
+      - 'frontend/**'
 
 jobs:
   build:
