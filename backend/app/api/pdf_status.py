@@ -1,22 +1,26 @@
-from fastapi import APIRouter, HTTPException
-from typing import Optional, List, Dict, Any
-from pydantic import BaseModel
+from typing import Dict, Optional
 from app.utils import load_jobs_from_file
+from pydantic import BaseModel, RootModel
+from fastapi import APIRouter, HTTPException
 
 router = APIRouter()
 
-class PageResult(BaseModel):
+
+class ExtractedField(BaseModel):
+    value: Optional[str] = None
     page_number: int
-    extracted_data: Dict[str, Any]  # allows nested dicts inside
+
+class JobResult(RootModel):
+    root: Dict[str, Dict[str, ExtractedField]]
 
 class JobStatusResponse(BaseModel):
     job_id: str
     status: str
     filename: str
-    result: Optional[List[PageResult]] = None  # list of structured results
-    pages: Optional[Dict[int, str]] = None  # page_number → text
+    result: Optional[JobResult] = None
+    pages: Optional[Dict[int, str]] = None
 
-
+# Route: /jobs/{job_id}
 @router.get("/jobs/{job_id}", response_model=JobStatusResponse)
 async def get_job_status(job_id: str):
     """
@@ -32,13 +36,25 @@ async def get_job_status(job_id: str):
         status=job.get("status", "unknown"),
         filename=job.get("filename", ""),
         result=job.get("result"),
+        pages=job.get("pages"),
     )
 
 
-@router.get("/status", response_model=List[str])
+class JobSummary(BaseModel):
+    job_id: str
+    status: str
+    filename: str
+
+# Route: /status
+@router.get("/status", response_model=Dict[str, JobSummary])
 async def get_all_jobs():
     """
     Get statuses of all jobs.
     """
     data = load_jobs_from_file()
-    return list(data.keys())
+    return {
+        job_id: JobSummary(job_id=job_id,
+                           status=job["status"],
+                           filename=job["filename"])
+        for job_id, job in data.items()
+    }
