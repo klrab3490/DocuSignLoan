@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 from app.utils import load_jobs_from_file
 from pydantic import BaseModel, RootModel
 from fastapi import APIRouter, HTTPException
@@ -46,15 +46,17 @@ class JobSummary(BaseModel):
     filename: str
 
 # Route: /status
-@router.get("/status", response_model=Dict[str, JobSummary])
+@router.get("/status", response_model=List[JobSummary])
 async def get_all_jobs():
     """
     Get statuses of all jobs.
     """
     data = load_jobs_from_file()
-    return {
-        job_id: JobSummary(job_id=job_id,
-                           status=job["status"],
-                           filename=job["filename"])
+    return [
+        JobSummary(
+            job_id=job_id,
+            status=job["status"],
+            filename=job["filename"]
+        )
         for job_id, job in data.items()
-    }
+    ]
