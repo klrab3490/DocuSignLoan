@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Navbar from "@/components/custom/Navbar";
+// import Navbar from "@/components/custom/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
 // import Sidepanel from "@/components/custom/Sidepanel";
 import { ThemeProvider } from "@/components/theme/theme-provider";
@@ -33,9 +33,9 @@ export default function RootLayout({
           <div className="flex">
             {/* <div>
               <Sidepanel />
+              <Navbar />
             </div> */}
             <div className="flex flex-col w-full">
-              <Navbar />
               {children}
             </div>
 
