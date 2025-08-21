@@ -8,63 +8,63 @@
           "page_number": 1
         },
         "effective_date": {
-          "value": "\"Effective Date\" (as defined in the Settlement Approval Order)",
+          "value": "the “Effective Date” (as defined in the Settlement Approval Order)",
           "page_number": 23
         },
         "maturity_date": {
-          "value": null,
-          "page_number": 0
+          "value": "The Loans and all other Obligations shall become due by the Construction Receiver upon the occurrence of an Event of Default hereunder which has been accelerated by the Lenders in accordance with Section 9.02, and subject to compliance with any conditions to such acceleration set forth therein. All Proceeds for Distribution shall be distributed by the Construction Receiver in accordance with and subject to the Waterfall approved under the Settlement Approval Order.",
+          "page_number": 26
         },
         "end_date_of_respective_facility": {
-          "value": null,
-          "page_number": 0
+          "value": "If the first advance under the Credit Facility does not occur on or before the First Advance Date, the Required Lenders may, in their sole and absolute discretion, cancel the Credit Facility. In addition, at any time after that date which is 30 days after (a) the earlier of Total Completion of the Work and completion of the Development Services and (b) the Outside Date (or such later date as may be agreed in writing by the Required Lenders), the Required Lenders may, in their sole and absolute discretion, cancel all or any unutilized portion of the Commitment.",
+          "page_number": 21
         },
         "start_date_of_facility_availability_period_facility_a": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "end_date_of_facility_availability_period_facility_a": {
-          "value": null,
-          "page_number": 0
+          "value": "the First Advance Date",
+          "page_number": 21
         },
         "start_date_of_facility_availability_period_facility_b": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "end_date_of_facility_availability_period_facility_b": {
-          "value": null,
+          "value": "",
           "page_number": 0
         }
       },
       "general": {
         "borrower": {
-          "value": "ALVAREZ & MARSAL CANADA INC., solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC. and not in its personal or corporate capacity (the “Construction Receiver”)",
-          "page_number": 4
+          "value": "ALVAREZ & MARSAL CANADA INC., solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC. and not in its personal or corporate capacity as Construction Receiver",
+          "page_number": 1
         },
         "agent": {
-          "value": "CANADIAN IMPERIAL BANK OF COMMERCE, in its capacity as administrative agent for the Lenders (the “Administrative Agent”)",
-          "page_number": 4
+          "value": "CANADIAN IMPERIAL BANK OF COMMERCE as Administrative Agent",
+          "page_number": 1
         },
         "security_agent": {
-          "value": "Administrative Agent",
-          "page_number": 32
+          "value": "the Administrative Agent on behalf of the Lenders shall be granted a fixed and specific Court ordered charge of all of the Beach Remaining Lands, the Leslieville Project, each New APS, the Craft C&D Contracts, the Craft Cash Collateral, the TF Cost Overrun Guarantee, the Craft Loan and all other property, assets and undertaking of each of UC Leslieville, UC Beach and UC Riverdale",
+          "page_number": 35
         },
         "sponsor_name": {
           "value": "Terra Firma Capital Corporation",
           "page_number": 17
         },
         "majority_lenders": {
-          "value": "Required Lenders means (i) if no Loans are outstanding under this Agreement, the Lenders holding at least 66 2/3% of the aggregate amount of Commitments, (ii) if any Loans are outstanding under this Agreement, the Lenders to which an amount in aggregate equal to at least 66 2/3% of such Loans is owed, and (iii) where there are only two Lenders, both such Lenders.",
+          "value": "(i) if no Loans are outstanding under this Agreement, the Lenders holding at least 66 2/3% of the aggregate amount of Commitments, (ii) if any Loans are outstanding under this Agreement, the Lenders to which an amount in aggregate equal to at least 66 2/3% of such Loans is owed, and (iii) where there are only two Lenders, both such Lenders.",
           "page_number": 16
         }
       },
       "definitions": {
         "lma_defined_term": {
-          "value": "The attached model credit agreement provisions, which have been revised under the direction of the Canadian Bankers' Association Secondary Loan Market Specialist Group from provisions prepared by The Loan Syndications and Trading Association, Inc., form part of this Agreement, except for the footnotes to the model credit agreement provisions and subject to the following variations",
+          "value": "LSTA Model Credit Agreement Provisions",
           "page_number": 52
         },
         "reference_bank_definition": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "base_currency": {
@@ -72,18 +72,18 @@
           "page_number": 5
         },
         "optional_currencies": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "disqualified_lender_definition": {
-          "value": null,
+          "value": "",
           "page_number": 0
         }
       },
       "credit_facilities": {
         "stated_term_of_facility": {
-          "value": null,
-          "page_number": 0
+          "value": "non-revolving, term credit facility",
+          "page_number": 20
         },
         "facility_name": {
           "value": "Credit Facility",
@@ -94,79 +94,79 @@
           "page_number": 20
         },
         "facility_size_term": {
-          "value": null,
-          "page_number": 0
+          "value": "The Credit Facility Commitment will be allocated between the FP Tranche and the Development Tranche, and if made available by the Lenders, the ITC Tranche.",
+          "page_number": 8
         },
         "facility_size_revolver": {
-          "value": null,
-          "page_number": 0
+          "value": "Not applicable; facility is non-revolving.",
+          "page_number": 20
         },
         "total_facility_size": {
           "value": "$4,500,000.00",
-          "page_number": 7
+          "page_number": 8
         },
         "total_commitments": {
-          "value": "Credit Facility Commitment means (a) $4,500,000.00, plus (b) if and for so long as the ITC Condition exists, an amount up to the ITC Increase.",
-          "page_number": 7
+          "value": "$4,500,000.00",
+          "page_number": 8
         },
         "loan_commitments": {
-          "value": null,
-          "page_number": 0
+          "value": "$4,500,000.00",
+          "page_number": 8
         },
         "term_loan_commitments": {
-          "value": null,
-          "page_number": 0
+          "value": "$4,500,000.00",
+          "page_number": 8
         },
         "revolving_loan_commitments": {
-          "value": null,
-          "page_number": 0
+          "value": "Not applicable; facility is non-revolving.",
+          "page_number": 20
         },
         "repayment_provision": {
-          "value": "ARTICLE 5 REPAYMENT",
+          "value": "Mandatory Repayment, Section 5.01",
           "page_number": 26
         },
         "repayment_type": {
-          "value": null,
-          "page_number": 0
+          "value": "The Loans and all other Obligations shall become due by the Construction Receiver upon the occurrence of an Event of Default hereunder which has been accelerated by the Lenders in accordance with Section 9.02. Repayment is also made only out of and from receipts of Gross Sale Proceeds from the sale of Units or other income from the Units or the realization thereof, and receipts of sales proceeds, rental or other income from, or the realization of, the Beach Remaining Lands, the Leslieville Project (other than the Units) and any and all other property, assets and undertaking of UC Leslieville, UC Beach and UC Riverdale (collectively the amounts in clauses (i) and (ii) being herein called “Proceeds for Distribution”), in each case, as and when such Proceeds for Distribution become available for distribution by the Construction Receiver to the Lenders in the UC Receivership Proceedings.",
+          "page_number": 26
         },
         "mandatory_repayment": {
-          "value": "5.01 Mandatory Repayment (1) The Loans and all other Obligations shall shall become due by the Construction Receiver upon the occurrence of an Event of Default hereunder which has been accelerated by the Lenders in accordance with Section 9.02, and subject to compliance with any conditions to such acceleration set forth therein. (2) Notwithstanding any other section of this Agreement, including without limitation, anything to the contrary in Sections 4.01 or 5.01(1) (but subject to Sections 5.01(4) and 5.01(5)), the Construction Receiver shall only be required to pay interest accrued on the Loans (including default interest pursuant to Section 2.08), the Deferred Commitment Fee, the principal amount of the Loans outstanding under the Credit Facility (whether before or after an Event of Default or acceleration) and all other Obligations from time to time only out of and from (i) receipts of Gross Sale Proceeds from the sale of Units or other income from the Units or the realization thereof, and (ii) receipts of sales proceeds, rental (including occupation rent) or other income from, or the realization of, the Beach Remaining Lands, the Leslieville Project (other than the Units) and any and all other property, assets and undertaking of UC Leslieville, UC Beach and UC Riverdale (collectively the amounts in clauses (i) and (ii) being herein called “Proceeds for Distribution”), in each case, as and when such Proceeds for Distribution become available for distribution by the Construction Receiver to the Lenders in the UC Receivership Proceedings; provided that nothing hereinbefore provided shall limit any right or remedy which the Administrative Agent or the Lenders may have under Article 9, subject to compliance with the Settlement Approval Order and any other applicable order of the Court in the UC Receivership Proceedings.",
+          "value": "Section 5.01, Mandatory Repayment",
           "page_number": 26
         },
         "mandatory_prepayment_due_to_change_of_control": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "voluntary_prepayment": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "call_protection_prepayment_clause": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "facility_extension_options": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "facility_extension_option_how_many_years": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "amend_to_extend_clause": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "number_of_extension_options": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "lender_discretion": {
-          "value": "If the first advance under the Credit Facility does not occur on or before the First Advance Date, the Required Lenders may, in their sole and absolute discretion, cancel the Credit Facility, in which event, the Lenders will have no further obligation to make Drawdowns available to the Construction Receiver under the Credit Facility. In addition, at any time after that date which is 30 days after (a) the earlier of Total Completion of the Work and completion of the Development Services and (b) the Outside Date (or such later date as may be agreed in writing by the Required Lenders), the Required Lenders may, in their sole and absolute discretion, cancel all or any unutilized portion of the Commitment.",
+          "value": "If the first advance under the Credit Facility does not occur on or before the First Advance Date, the Required Lenders may, in their sole and absolute discretion, cancel the Credit Facility.",
           "page_number": 21
         },
         "calculation_of_interest": {
-          "value": "Unless otherwise stated, wherever in this Agreement reference is made to a rate of interest “per annum” or a similar expression is used, such interest will be calculated on the basis of a calendar year of 365 days, and using the nominal rate method of calculation and not the effective rate method of calculation or on any other basis that gives effect to the principle of deemed reinvestment of interest. Interest will continue to accrue after maturity and default and/or judgment, if any, until payment thereof, and interest will accrue and be compounded monthly on overdue interest, if any.",
+          "value": "Interest will be calculated on the basis of a calendar year of 365 days, and using the nominal rate method of calculation and not the effective rate method of calculation or on any other basis that gives effect to the principle of deemed reinvestment of interest.",
           "page_number": 16
         },
         "initial_margin_text": {
@@ -174,7 +174,7 @@
           "page_number": 15
         },
         "initial_margin_tables": {
-          "value": null,
+          "value": "No tables provided, margin is stated as text.",
           "page_number": 0
         },
         "interest_rate_convention": {
@@ -182,171 +182,171 @@
           "page_number": 16
         },
         "interest_rate_floor": {
-          "value": null,
-          "page_number": 0
+          "value": "Not explicitly stated as a floor for the Prime Rate, but regular interest is Prime Rate plus Prime Rate Margin (5% per annum). Default interest is Prime Rate plus 7.0% per annum.",
+          "page_number": 19
         },
         "libor_definition": {
-          "value": "Section 3.5 Inability to Determine Rates Etc. If the Required Lenders determine that for any reason a market for bankers' acceptances does not exist at any time or the Lenders cannot for other reasons, after reasonable efforts, readily sell bankers' acceptances or perform their other obligations under this Agreement with respect to bankers' acceptances, the Administrative Agent will promptly so notify the Borrower and each Lender. Thereafter, the Borrower's right to request the acceptance of bankers' acceptances shall be and remain suspended until the Required Lenders determine and the Agent notifies the Borrower and each Lender that the condition causing such determination no longer exists. If the Required Lenders determine that for any reason adequate and reasonable means do not exist for determining the LIBO Rate for any requested Interest Period with respect to a proposed LIBO Rate Loan, or that the LIBO Rate for any requested Interest Period with respect to a proposed LIBO Rate Loan does not adequately and fairly reflect the cost to such Lenders of funding such Loan, the Administrative Agent will promptly so notify the Borrower and each Lender. Thereafter, the obligation of the Lenders to make or maintain LIBO Rate Loans shall be suspended until the Administrative Agent (upon the instruction of the Required Lenders) revokes such notice. Upon receipt of such notice, the Borrower may revoke any pending request for a borrowing, conversion or continuation of LIBO Rate Loans or, failing that, will be deemed to have converted such request into a request for a borrowing of Base Rate Loans in the amount specified therein.",
-          "page_number": 60
+          "value": "LIBOR is referenced as being removed/not applicable through amendments to Schedule A. The Credit Agreement primarily uses 'Prime Rate' and 'Interbank Reference Rate'.",
+          "page_number": 52
         },
         "arrangement_fees": {
-          "value": null,
-          "page_number": 0
+          "value": "Deferred Commitment Fee of $200,000",
+          "page_number": 29
         },
         "agency_fees": {
-          "value": null,
-          "page_number": 0
+          "value": "Not explicitly defined as 'agency fees'. The Deferred Commitment Fee is payable to the Administrative Agent for the account of the Lenders.",
+          "page_number": 29
         }
       },
       "representations_and_warranties": {
         "use_of_proceeds": {
-          "value": "Loans made under the Credit Facility will only be used by the Construction Receiver for the following purposes: (1) with respect to the FP Tranche, to finance the Fixed Price payable to Craft under the Craft Construction Contract; and (2) with respect to the Development Tranche, to finance the payment of the Budgeted Development Costs set out in the Initial Development Budget agreed pursuant to the Craft Development Contract.",
-          "page_number": 21
+          "value": "Loans made under the Credit Facility will only be used by the Construction Receiver for: (1) with respect to the FP Tranche, to finance the Fixed Price payable to Craft under the Craft Construction Contract; and (2) with respect to the Development Tranche, to finance the payment of the Budgeted Development Costs set out in the Initial Development Budget agreed pursuant to the Craft Development Contract.",
+          "page_number": 18
         },
         "material_adverse_change_clause": {
-          "value": null,
+          "value": "",
           "page_number": 0
         }
       },
       "covenants": {
         "interest_coverage_covenant": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "interest_coverage_text": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "interest_coverage_tables": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "total_leverage_covenant": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "total_leverage_text": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "total_leverage_tables": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "restricted_asset_sales_permitted_transfers": {
-          "value": "No Sale of Project Dispose of or Lease any of the Leslieville Project or the Beach Remaining Lands other than: (a) (i) sales of Units to Opt-In Leslieville Purchasers made pursuant to the terms of the Standard Form Sales Agreement relating thereto and at the prices agreed in or pursuant to the Settlement Approval Order and (ii) interim occupancy of such Units by the Opt-In Leslieville Purchasers; (b) (i) sales of Units to New Curzon Purchasers made pursuant to the terms of the Standard Form Sales Agreement for purchase prices at no less than Proforma Sales Prices as agreed pursuant to the Marketing Plan under the Craft Development Contract as approved by the Required Lenders (as such Proforma Sales Prices may be amended from time to time with the approval of the Required Lenders to the extent contemplated under the Craft Development Contract), (ii) interim occupancy of such Units by the New Curzon Purchasers; (c) sales of unallocated parking spaces and extra storage spaces at the Leslieville Project pursuant to a sales process, and for prices no less than the minimum prices as agreed pursuant to the Marketing Plan under the Craft Development Contract as approved by the Required Lenders (as such minimum prices may be amended from time to time with the approval of the Required Lenders to the extent contemplated under the Craft Development Contract); (d) sales of all or a portion of the Beach Remaining Lands pursuant to a sales process acceptable to the Required Lenders and approved by the Court in the UC Receivership Proceedings and only for a price acceptable to the Required Lenders or as may be directed by the Court; or (e) with the prior written consent of the Required Lenders;",
-          "page_number": 33
+          "value": "Section 7.02(1) No Sale of Project: Dispose of or Lease any of the Leslieville Project or the Beach Remaining Lands other than specified sales of Units and Beach Remaining Lands.",
+          "page_number": 30
         },
         "permitted_acquisitions_clause_text": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "permitted_indebtedness_basket": {
-          "value": "Permitted Debt means: (a) the Debt under this Agreement; (b) the Craft Loan up to a maximum principal amount of $2,000,000, except as such maximum principal amount may be increased as contemplated under the Settlement Approval Order in order to cover additional principal advances to be made by Craft in connection with (i) the Geo-Thermal Costs, and (ii) without duplication of clause (g) below, the funding of TF Defaulted Cost Overruns under and in accordance with the provisions of the TF Cost Overrun Guarantee; (c) liabilities due and payable to Craft from time to time under the terms of the Craft C&D Contracts; (d) the Existing Syndicate Debt; (e) the Debt of UC Leslieville owing under the Travelers Agreements and Travelers Mortgage; (f) the Debt of UC Leslieville, UC Riverdale and UC Beach owing to Terra Firma on or prior to the date hereof and secured under the mortgage granted by UC Leslie in favour of Terra Firma registered against the Leslieville Project Lands on July 22, 2015; (g) additional debt incurred by the Construction Receiver to cover TF Defaulted Cost Overruns or Defaulted Cost Overruns under and in accordance with the provisions of the TF Cost Overrun Guarantee; (h) any other Debt owed by the Construction Receiver to the Lenders; (i) any liabilities secured by the Receiver’s Expense Reimbursement Charge; (j) any liabilities secured by the Receiver’s Borrowings Charge and the Construction Lien Trustee’s Borrowing Charge (as each term is set forth in Section 22 of the Receivership Order), including as Section 22 may be varied by order of the Court in the UC Receivership Proceedings; (k) any additional Craft Loans to fund Geo-Thermal Costs, to the extent permitted under and made pursuant to the terms of the Settlement Approval Order; and (l) any other Debt which is approved by the Court in the UC Receivership Proceedings.",
+          "value": "Permitted Debt defined in Section 1.01 includes Debt under this Agreement, Craft Loan, liabilities under Craft C&D Contracts, Existing Syndicate Debt, Debt under Travelers Agreements and Travelers Mortgage, Debt to Terra Firma, additional debt for TF Defaulted Cost Overruns, other Debt owed to Lenders, liabilities secured by Receiver’s Expense Reimbursement Charge, Receiver’s Borrowings Charge and Construction Lien Trustee’s Borrowing Charge, additional Craft Loans for Geo-Thermal Costs, and any other Debt approved by the Court.",
           "page_number": 14
         },
         "permitted_financial_indebtedness_text": {
-          "value": "Permitted Debt",
+          "value": "Permitted Debt defined in Section 1.01 includes Debt under this Agreement, Craft Loan, liabilities under Craft C&D Contracts, Existing Syndicate Debt, Debt under Travelers Agreements and Travelers Mortgage, Debt to Terra Firma, additional debt for TF Defaulted Cost Overruns, other Debt owed to Lenders, liabilities secured by Receiver’s Expense Reimbursement Charge, Receiver’s Borrowings Charge and Construction Lien Trustee’s Borrowing Charge, additional Craft Loans for Geo-Thermal Costs, and any other Debt approved by the Court.",
           "page_number": 14
         },
         "prepayment_from_asset_sales_proceeds_clause": {
-          "value": null,
-          "page_number": 0
+          "value": "Section 5.01(2) specifies repayment from 'Proceeds for Distribution' which include 'receipts of Gross Sale Proceeds from the sale of Units or other income from the Units or the realization thereof, and receipts of sales proceeds, rental or other income from, or the realization of, the Beach Remaining Lands'.",
+          "page_number": 26
         },
         "percent_of_net_cash_proceeds": {
-          "value": null,
-          "page_number": 0
+          "value": "All Proceeds for Distribution (net of the Construction Receiver’s Reserve as contemplated by the Settlement Approval Order) shall be distributed by the Construction Receiver in accordance with and subject to the Waterfall approved under the Settlement Approval Order.",
+          "page_number": 27
         },
         "permitted_reinvestment_period": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "equity_cure_provision": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "number_of_equity_cures": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "subsidiary_guarantees": {
-          "value": null,
-          "page_number": 0
+          "value": "The Construction Receiver acts on behalf of UC Leslieville, UC Riverdale and UC Beach. The term 'Obligors' includes the Borrower and each of the guarantors of the Borrower's obligations identified elsewhere in this Agreement. The document refers to 'UC Riverdale and UC Beach (as guarantors)' in the context of the 'Existing Syndicate Credit Agreement'.",
+          "page_number": 1
         },
         "transfer_provisions": {
-          "value": "Section 10 Successors and Assigns",
+          "value": "Article 10 Successors and Assigns",
           "page_number": 68
         },
         "amendment_clause": {
-          "value": "No amendment to this Agreement will be valid or binding unless set forth in writing and duly executed by the Construction Receiver and the Administrative Agent for and on behalf of the Lenders or the Required Lenders, as the case may be.",
+          "value": "Section 11.07 Amendments and Waivers: 'No amendment to this Agreement will be valid or binding unless set forth in writing and duly executed by the Construction Receiver and the Administrative Agent for and on behalf of the Lenders or the Required Lenders, as the case may be.' Also Section 10.03(2) and (3) detail required consents for amendments by the Administrative Agent.",
           "page_number": 41
         },
         "snooze_lose_clause": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "disqualified_lender_list": {
-          "value": null,
+          "value": "",
           "page_number": 0
         }
       },
       "defaults": {
         "events_of_default": {
-          "value": "9.01 Events of Default",
-          "page_number": 32
+          "value": "Article 9 Default, Section 9.01 Events of Default",
+          "page_number": 35
         },
         "payment_default_provision": {
-          "value": "if the Construction Receiver fails to pay any Obligation when due",
-          "page_number": 32
+          "value": "Section 9.01(1) 'if the Construction Receiver fails to pay any Obligation when due'",
+          "page_number": 35
         },
         "insolvency_default": {
-          "value": "none of Craft, the Builder or Terra Firma shall be Insolvent",
-          "page_number": 23
+          "value": "The definition of 'Insolvent' (Section 1.01) outlines conditions such as 'has committed an “act of bankruptcy”, has admitted in writing that it is unable to pay its debts as they become due, or has become insolvent', 'has made any assignment in bankruptcy', etc. While Section 3.01(15) and 3.02(3) state that Craft, the Builder or Terra Firma becoming Insolvent is a condition for drawdown, such an event by the Construction Receiver would likely trigger a general Event of Default.",
+          "page_number": 12
         },
         "misrepresentation_default": {
-          "value": null,
+          "value": "Not explicitly listed as a separate Event of Default, but could fall under Section 9.01(3) for breach of covenant or obligation.",
           "page_number": 0
         },
         "market_disruption_clause": {
-          "value": null,
-          "page_number": 0
+          "value": "Section 3.5 Inability to Determine Rates Etc.",
+          "page_number": 60
         },
         "cross_default": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "cross_acceleration": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "no_set_off": {
-          "value": null,
-          "page_number": 0
+          "value": "Section 4 'Right of Setoff' explicitly grants Lenders and their Affiliates the right to set off against any Obligor's deposits or obligations.",
+          "page_number": 60
         },
         "set_off_prohibited_for_borrower": {
-          "value": null,
+          "value": "The document does not explicitly state that set-off is prohibited for the borrower, but it explicitly grants lenders the right of set-off.",
           "page_number": 0
         }
       },
       "miscellaneous": {
         "bilateral_or_syndicated": {
-          "value": "THE FINANCIAL INSTITUTIONS from time to time party to this Agreement and designated as Lenders on the signatures pages hereto (each, a “Lender” and collectively, the “Lenders”)",
-          "page_number": 4
+          "value": "Syndicated, indicated by 'THE FINANCIAL INSTITUTIONS from time to time parties hereto as Lenders' and references to 'syndication of the credit facilities'.",
+          "page_number": 1
         },
         "business_days_convention_calendar": {
-          "value": "Business Day means a day of the year, other than a Saturday, Sunday or statutory holiday, on which the Administrative Agent is open for business at its executive offices in Toronto, Ontario.",
+          "value": "A day of the year, other than a Saturday, Sunday or statutory holiday, on which the Administrative Agent is open for business at its executive offices in Toronto, Ontario.",
           "page_number": 5
         },
         "business_days_payments_non_business_day_rule": {
-          "value": "All payments of principal, interest, fees and other amounts to be made by the Construction Receiver to the Administrative Agent and the Lenders pursuant to this Agreement will be made in the currency in which the Loans are outstanding for value on the day such amount(s) are distributed by the Construction Receiver in accordance with the Settlement Approval Order or, if such day is not a Business Day, on the Business Day next following with interest, by deposit or transfer thereof to the account of the Administrative Agent maintained at the Administrative Agent’s Office in Toronto or at such other place as the Construction Receiver and the Administrative Agent may from time to time agree.",
+          "value": "if such day is not a Business Day, on the Business Day next following with interest",
           "page_number": 28
         },
         "business_days_rate_setting_quotation_day": {
-          "value": null,
+          "value": "",
           "page_number": 0
         },
         "governing_law": {
-          "value": "Ontario is the Province for the purposes of Sections 11(a) and (b) of Schedule A. This Agreement shall be governed by, and construed in accordance with, the laws of the Province specified elsewhere in this Agreement and the laws of Canada applicable in that Province.",
+          "value": "laws of the Province of Ontario and the laws of Canada applicable in that Province.",
           "page_number": 40
         },
         "confidentiality_clause": {
@@ -354,7 +354,7 @@
           "page_number": 71
         },
         "language_for_client_communication": {
-          "value": null,
+          "value": "Not explicitly stated, but the document is in English.",
           "page_number": 0
         }
       }
@@ -453,7 +453,8 @@
       "90": "- 2 - \n7. \nThe statutory declarations and/or other evidence provided by Craft and any and all \nrelevant sub-contractors on the Project confirm that, as of the date hereof: (i) no claims \nfor lien have been registered against the Project by Craft, the Builder or such sub-\ncontractors, (ii) Craft, the Builder and each such sub-contractor is not aware of any \ngrounds supporting any claim for lien against the Project, and (iii) Craft is not aware of \nany breach or non-compliance under the Construction Contract that would constitute a \nConstruction Breach. \n8. \nThere is no “Dispute Work” (as defined under either of the Craft C&D Contracts) that has \nnot been pre-funded by Craft or Terra Firma except for:  \n___________________________________________________ (Add schedule as \nnecessary). \n9. \nWe are not aware of any Minor Construction Breaches, Minor Development Breaches or \nMajor Events of Default (as each term is defined under either of the Craft C&D \nContracts) except for:  ___________________________________________________ \n(Add schedule as necessary). \n10. \nIn my/our opinion, as of the date hereof, the figures set forth below accurately reflect the \nProject costs or work completed on the Project and the costs of the remaining work \nrequired to complete the Project in accordance with the plans and specifications and the \nConstruction Schedule. A report setting out in greater detail those elements comprising \nthe figures set out below is attached hereto and forms part of this Certificate. \n(a) \nProject costs of work completed to date: \n $____________ \n(b) \nProject costs of remaining work: \n $____________ \n(c) \nEstimated total Project costs (a+b): \n $____________ \n(d) \nOriginal estimate of total Project costs: \n $____________ \n(e) \nAmount of additional costs, if any (c-d):          $____________ \n11. \nI/we confirm that the Cost Overruns associated with the Project to date are as follows: \n(a) \nTotal Cost Overruns to date: \n  $____________ \n(b) \nCost Overruns not currently pre-funded  \nby Craft or Terra Firma Capital Corporation:   $____________ \nDetails to any new Cost Overruns are set forth in greater detail in the accompanying \nreport.  \n12. \nAfter giving effect to the requested advance, the Cost to Complete the Project (excluding \nDevelopment Costs to be funded under the Development Tranche) does not exceed (a) \nthe undrawn Credit Facility Commitment allocated to the FP Tranche, (b) the funding \npreviously received and then currently held by the Construction Receiver for Cost \nOverruns under the Craft Construction Contract provided by Terra Firma, Craft or the \nLenders under the TF Cost Overrun Guarantee; and (c) if the Geo-thermal System Costs \n",
       "91": "- 3 - \nare being funded through a Craft Loan, the amount of Craft Loans received and then \ncurrently held by the Construction Receiver to fund Geo-thermal System Costs. \n13. \nIn the case of a Drawdown under the Development Tranche, the Costs of Craft to be \npaid with the proceeds of such Drawdown are within the current Development Budget. \n14. \nAfter giving effect to the requested Drawdown, the remaining Budgeted Development \nCosts do not exceed (a) the undrawn Credit Facility Commitment allocated to the \nDevelopment Tranche and (b) the funding previously received and then currently held by \nthe Construction Receiver for Cost Overruns under the Craft Development Contract \nprovided by Terra Firma, Craft or the Lenders under the TF Cost Overrun Guarantee. \n15. \nI/we confirm, in respect of any Application for Payment (or Application for Final Payment \nas applicable) under the Construction Contract pending as of the date hereof, that the \nrequisite holdback amounts for the payments thereunder and consistent with that portion \nof the Project Costs for which payment is being sought, are properly shown in such \nApplication, i.e., as deductions from the net payment to be made thereunder. \n16. \nIn my/our opinion, as of the date hereof, Substantial Performance of the Work is \nprojected to occur on or before: \n[  ]  \nthe original Scheduled Substantial Performance Date set forth in the \nConstruction Contract, namely n, 201n, and in any event, by no later than the Outside \nDate, namely [June 15, 2018].  \nor \n[  ]   \n___________, 201n. \nReasons for delay, if applicable, are outlined in the attached schedule. \n",
       "92": "- 4 - \nThis certificate is given in connection with the abovementioned Advance to be made to the \nConstruction Receiver under the Credit Agreement, and you may rely upon it in making such \nadvance. \nDated this ______ day of _______, 20___. \nALTUS GROUP LIMITED \nPer:   _______________________________ \nName: ______________________________ \nTitle:  _______________________________ \nT1006349\\TOR_LAW\\ 9034402\\26\ni Note 1: It should be noted that cost consultants are not qualified to confirm that construction work has \nbeen completed in accordance with plans and specifications. In this regard, we will forward certificates \nprovided by the design consultants as available to confirm that the Project is being constructed in \naccordance with the approved plans and specifications, and the provincial building code. The experience, \nexpressed herein with the respect to environmental issues, is limited to the anticipated impact on budget \nand schedule based on the experts reports provided. \n"
-    }
+    },
+    "file_path": "uploads\\2-syndicate_construction_loan_agreement_0.pdf"
   },
   "3265da9b-08f5-4c68-9333-54859f41cac9": {
     "status": "completed",
@@ -464,37 +465,37 @@
           "page_number": 1
         },
         "effective_date": {
-          "value": "Closing Date (date on which the first Utilisation of Facility B occurs)",
+          "value": "The date on which the first Utilisation of Facility B occurs (Closing Date)",
           "page_number": 20
         },
         "maturity_date": {
-          "value": "7 years after the Closing Date (for Facility B and Acquisition / Capex Facility)",
+          "value": "For Facility B and Acquisition / Capex Facility: 7 years after the Closing Date; for Original Revolving Facility: 6 years and 6 months after the Closing Date; for any Additional Facility Commitments: the date specified in the relevant Additional Facility Notice.",
           "page_number": 95
         },
         "end_date_of_respective_facility": {
-          "value": "Facility B: 7 years after the Closing Date; Acquisition / Capex Facility: 7 years after the Closing Date; Original Revolving Facility: 6 years and 6 months after the Closing Date; Additional Facility: as specified in relevant Additional Facility Notice.",
+          "value": "For Facility B and Acquisition / Capex Facility: 7 years after the Closing Date; for Original Revolving Facility: 6 years and 6 months after the Closing Date; for any Additional Facility Commitments: the date specified in the relevant Additional Facility Notice.",
           "page_number": 95
         },
         "start_date_of_facility_availability_period_facility_a": {
-          "value": "Closing Date",
-          "page_number": 16
+          "value": "The date of this Agreement",
+          "page_number": 12
         },
         "end_date_of_facility_availability_period_facility_a": {
-          "value": "date falling 36 Months from the Closing Date",
-          "page_number": 16
+          "value": "11:59 p.m. on the last day of the Certain Funds Period (earliest of Mandatory Cancellation Event, Final Closing Date, or Long-Stop Date)",
+          "page_number": 12
         },
         "start_date_of_facility_availability_period_facility_b": {
-          "value": "date of this Agreement",
-          "page_number": 16
+          "value": "Closing Date",
+          "page_number": 12
         },
         "end_date_of_facility_availability_period_facility_b": {
-          "value": "11:59 p.m. on the last day of the Certain Funds Period",
-          "page_number": 16
+          "value": "36 Months from the Closing Date",
+          "page_number": 12
         }
       },
       "general": {
         "borrower": {
-          "value": "SEED BIDCO LIMITED (Original Borrower and the Company); Additional Borrower; Affiliate of a Borrower (for Ancillary Facility only)",
+          "value": "SEED BIDCO LIMITED (Original Borrower and Company); also Facility B Borrower, Acquisition / Capex Facility Borrower, Revolving Facility Borrower, Additional Facility Borrower, and Ancillary Facility borrower affiliates.",
           "page_number": 5
         },
         "agent": {
@@ -510,8 +511,8 @@
           "page_number": 90
         },
         "majority_lenders": {
-          "value": "Lender or Lenders whose Commitments aggregate 50.01 per cent. or more of the Total Commitments (or, if the Total Commitments have been reduced to zero, aggregated 50.01 per cent. or more of the Total Commitments immediately prior to that reduction) (and for this purpose the amount of an Ancillary Lender’s Revolving Facility Commitment shall not be reduced by the amount of its Ancillary Commitment), subject to specific conditions for certain actions as detailed in the definition.",
-          "page_number": 43
+          "value": "A Lender or Lenders whose Commitments aggregate 50.01 per cent. or more of the Total Commitments (or, if the Total Commitments have been reduced to zero, aggregated 50.01 per cent. or more of the Total Commitments immediately prior to that reduction) (and for this purpose the amount of an Ancillary Lender’s Revolving Facility Commitment shall not be reduced by the amount of its Ancillary Commitment), with specific rules for different contexts (e.g., Original Revolving Facility, Acquisition / Capex Facility, Additional Facility, and Acceleration actions).",
+          "page_number": 39
         }
       },
       "definitions": {
@@ -524,21 +525,21 @@
           "page_number": 84
         },
         "base_currency": {
-          "value": "In relation to Facility B, the Acquisition / Capex Facility and the Revolving Facility, GBP; and in relation to any Additional Facility, as agreed between the Company and the applicable Additional Facility Lenders.",
-          "page_number": 18
+          "value": "For Facility B, the Acquisition / Capex Facility and the Revolving Facility, GBP; and in relation to any Additional Facility, as agreed between the Company and the applicable Additional Facility Lenders.",
+          "page_number": 14
         },
         "optional_currencies": {
-          "value": "A currency (other than the Base Currency) which complies with the conditions set out in Clause 4.3 (Conditions relating to Optional Currencies).",
+          "value": "For Acquisition / Capex Facility or Original Revolving Facility: EUR, US$ or any other currency that is readily available, freely convertible, agreed by Lenders, and has Reference Rate Terms. For Additional Facility: any currencies specified in the Additional Facility Notice.",
           "page_number": 50
         },
         "disqualified_lender_definition": {
-          "value": "Not explicitly defined as 'Disqualified Lender'. However, transferees/assignees may not be (i) an Industry Competitor, private equity sponsor (excluding independent debt fund whose principal business is investing in performing debt and which is an Affiliate of a private equity sponsor), or a loan to own/distressed investor (unless specific Event of Default occurred); (ii) a person whose business is similar or related to the Group’s business; or (iii) any person that is (or would, upon becoming a Lender, be) a Defaulting Lender. Additionally, the Approved List may not include distressed debt fund, loan-to-own fund or other equity fund. No Sponsor Affiliate or member of the Group may be a Lender or a party to a Debt Purchase Transaction except as permitted.",
-          "page_number": 253
+          "value": "Not explicitly defined as 'Disqualified Lender', but certain transferees are excluded from transfers under Clause 27.3(D), including an 'Industry Competitor' (trade competitor of Group), private equity sponsors (excluding independent debt funds whose principal business is investing in performing debt and are affiliates of a private equity sponsor), loan to own/distressed investors (unless an Event of Default exists), persons whose business is similar or related to the Group’s business, or persons who are (or would be) Defaulting Lenders.",
+          "page_number": 257
         }
       },
       "credit_facilities": {
         "stated_term_of_facility": {
-          "value": "7 years (for Facility B and Acquisition / Capex Facility); 6 years and 6 months (for Original Revolving Facility)",
+          "value": "7 years after the Closing Date (for Facility B and Acquisition / Capex Facility); 6 years and 6 months after the Closing Date (for Original Revolving Facility).",
           "page_number": 95
         },
         "facility_name": {
@@ -546,259 +547,259 @@
           "page_number": 111
         },
         "facility_type": {
-          "value": "Term loan facility (Facility B, Acquisition / Capex Facility, Additional Term Facility), Revolving credit facility (Original Revolving Facility, Additional Revolving Facility), Ancillary Facility (overdraft, guarantee, credit card, short term loan, derivatives, foreign exchange, other accommodation)",
+          "value": "Term Loan (Facility B, Acquisition / Capex Facility, Additional Term Facility); Revolving Credit (Original Revolving Facility, Additional Revolving Facility)",
           "page_number": 111
         },
         "facility_size_term": {
-          "value": "Total Facility B Commitments: £174,000,000; Total Acquisition / Capex Facility Commitments: £36,000,000",
-          "page_number": 95
+          "value": "£210,000,000 (composed of £174,000,000 for Facility B and £36,000,000 for Acquisition / Capex Facility)",
+          "page_number": 99
         },
         "facility_size_revolver": {
-          "value": "Total Original Revolving Facility Commitments: £27,000,000",
-          "page_number": 96
+          "value": "£27,000,000 (Original Revolving Facility)",
+          "page_number": 99
         },
         "total_facility_size": {
-          "value": "£237,000,000 (excluding Additional Facilities which are initially zero)",
-          "page_number": 95
+          "value": "£237,000,000 (Aggregate of Total Facility B Commitments (£174,000,000), Total Acquisition / Capex Facility Commitments (£36,000,000), Total Additional Facility Commitments (zero at agreement date), and Total Original Revolving Facility Commitments (£27,000,000))",
+          "page_number": 99
         },
         "total_commitments": {
-          "value": "Aggregate of the Total Facility B Commitments, the Total Acquisition / Capex Facility Commitments, the Total Additional Facility Commitments and the Total Original Revolving Facility Commitments.",
-          "page_number": 95
+          "value": "£237,000,000 (Aggregate of Total Facility B Commitments, Total Acquisition / Capex Facility Commitments, Total Additional Facility Commitments, and Total Original Revolving Facility Commitments)",
+          "page_number": 99
         },
         "loan_commitments": {
-          "value": "Aggregate of the Total Facility B Commitments, the Total Acquisition / Capex Facility Commitments, the Total Additional Facility Commitments and the Total Original Revolving Facility Commitments.",
-          "page_number": 95
+          "value": "£237,000,000 (Aggregate of Total Facility B Commitments, Total Acquisition / Capex Facility Commitments, Total Additional Facility Commitments, and Total Original Revolving Facility Commitments)",
+          "page_number": 99
         },
         "term_loan_commitments": {
-          "value": "Total Facility B Commitments (£174,000,000) and Total Acquisition / Capex Facility Commitments (£36,000,000), plus any Additional Term Facility Commitments.",
-          "page_number": 95
+          "value": "£210,000,000 (composed of £174,000,000 for Facility B and £36,000,000 for Acquisition / Capex Facility)",
+          "page_number": 99
         },
         "revolving_loan_commitments": {
-          "value": "Total Original Revolving Facility Commitments (£27,000,000) and any Additional Revolving Facility Commitments.",
-          "page_number": 96
+          "value": "£27,000,000 (Original Revolving Facility)",
+          "page_number": 99
         },
         "repayment_provision": {
-          "value": "Term Loans repaid in full on Termination Date (Clause 8.1); Additional Facility Loans repaid in instalments or in full on Termination Date (Clause 8.2); Revolving Facility Loans repaid on last day of Interest Period (Clause 8.3).",
+          "value": "Repayment of Term Loans (Facility B and Acquisition / Capex Facility) in full on the Termination Date. Additional Facility Loans repaid according to schedule in Additional Facility Notice or in full on Termination Date. Revolving Facility Loans repaid on the last day of their Interest Period.",
           "page_number": 141
         },
         "repayment_type": {
-          "value": "Bullet repayment (Term Facilities), Amortising (some Additional Term Facilities), Revolving (Revolving Facilities)",
+          "value": "Term Loans are generally bullet (Facility B, Acquisition/Capex Facility). Additional Facility Loans can be amortising or bullet. Revolving Facility Loans are revolving (repaid at end of Interest Period and can be reborrowed).",
           "page_number": 141
         },
         "mandatory_repayment": {
-          "value": "Upon Exit Event (Change of Control, Sale, Listing resulting in Change of Control), IPO Proceeds (Listing not resulting in Change of Control), Disposal Proceeds, Insurance Proceeds, Recovery Proceeds, Specified Asset Disposal Proceeds, Third Party IDP Net Cash Disposal Proceeds.",
+          "value": "Mandatory prepayment upon Exit Event (Change of Control, Sale, or Listing resulting in Change of Control), and a portion of IPO Proceeds upon Listing (not resulting in Change of Control). Also, a portion of Disposal, Insurance, and Recovery Proceeds. Specific percentages and conditions apply.",
           "page_number": 147
         },
         "mandatory_prepayment_due_to_change_of_control": {
-          "value": "Yes, upon Change of Control (as part of Exit Event), Lenders entitled to cancel Commitments and require repayment of Utilisations and other amounts.",
+          "value": "Upon occurrence of a Change of Control, a Sale or a Listing which results in a Change of Control, each Lender may cancel Commitments and require repayment of Utilisations and other amounts owing to it.",
           "page_number": 147
         },
         "voluntary_prepayment": {
-          "value": "Borrower may prepay whole or part of Term Loan with 3 Business Days' notice (Term Rate Loan) or 3 RFR Banking Days' notice (Compounded Rate Loan). Revolving Facility Utilisations may be prepaid with 3 Business Days' or 3 RFR Banking Days' notice.",
+          "value": "Borrower may prepay whole or part of Term Loan (minimum £1,000,000) with 3 Business Days' notice (Term Rate) or 3 RFR Banking Days' notice (Compounded Rate). Revolving Facility Utilisations may be prepaid whole or part (minimum £1,000,000) with 3 Business Days' notice (Term Rate) or 3 RFR Banking Days' notice (Compounded Rate).",
           "page_number": 145
         },
         "call_protection_prepayment_clause": {
-          "value": "If voluntary or mandatory prepayment of a Term Facility (Relevant Prepayment) is made prior to the first anniversary of Closing Date (MW End Date), a prepayment fee equal to the greater of (i) 2% of Relevant Prepayment Amount and (ii) Make Whole Amount. If made from MW End Date to second anniversary of Closing Date, a prepayment fee equal to 2% of Relevant Prepayment Amount (unless Further Specified Asset Disposal Refusal occurred). No fee on or after second anniversary or for certain other prepayments (e.g., illegality, specific asset disposal proceeds).",
+          "value": "Prepayment fee payable for voluntary prepayment or mandatory prepayment due to Exit Event if made prior to the first anniversary of the Closing Date (greater of 2% of Relevant Prepayment Amount and Make Whole Amount), or between the first and second anniversary (2% of Relevant Prepayment Amount, unless Further Specified Asset Disposal Refusal occurred). No fee after the second anniversary or for other specific prepayments/repayments.",
           "page_number": 168
         },
         "facility_extension_options": {
-          "value": "Not explicitly defined as 'Facility Extension Options'. However, Clause 39.2(a)(i)(A) mentions 'an extension to the availability or date of payment of or redenomination of any amount under the Finance Documents' as a 'Structural Adjustment' which can be amended with specific consents.",
-          "page_number": 291
+          "value": "Not explicitly defined as an 'extension option' clause, but the Termination Date for Additional Facilities can be specified in the Additional Facility Notice (Clause 1.1, page 95). Structural Adjustments (Clause 39.2(a)(i)(A)) also contemplate extensions to availability or payment dates.",
+          "page_number": 95
         },
         "facility_extension_option_how_many_years": {
-          "value": "Not specified. Extensions are subject to 'Structural Adjustment' amendments as per Clause 39.2.",
-          "page_number": 291
+          "value": "N/A",
+          "page_number": -1
         },
         "amend_to_extend_clause": {
-          "value": "Yes, an 'extension to the availability or date of payment of or redenomination of any amount under the Finance Documents' is classified as a 'Structural Adjustment' and can be agreed with specific lender consents as per Clause 39.2.",
-          "page_number": 291
+          "value": "Clause 39.2 (a)(i)(A) refers to 'an extension to the availability or date of payment of or redenomination of any amount under the Finance Documents' as part of a 'Structural Adjustment'.",
+          "page_number": 295
         },
         "number_of_extension_options": {
-          "value": "Not specified.",
-          "page_number": 291
+          "value": "N/A",
+          "page_number": -1
         },
         "lender_discretion": {
-          "value": "For 'Structural Adjustments' including extensions, it requires the prior consent of the Obligors’ Agent and each Lender that is participating in that Structural Adjustment, and Majority Lenders' consent if increasing commitments or reducing tenor.",
-          "page_number": 293
+          "value": "Various actions by the Agent or Majority Lenders require them to act 'reasonably'. The Obligors' Agent has 'sole discretion' in some contexts, such as reclassifying basket amounts (1.7(b)), electing prepayment application (8.4(b)), or consenting to transfers during Certain Funds Period (27.3(c)).",
+          "page_number": 109
         },
         "calculation_of_interest": {
-          "value": "Term Rate Loans: Margin + Term Reference Rate. Compounded Rate Loans: Margin + Compounded Reference Rate (Daily Non-Cumulative Compounded RFR Rate + applicable Credit Adjustment Spread).",
+          "value": "For Term Rate Loans: Margin + Term Reference Rate. For Compounded Rate Loans: Margin + Compounded Reference Rate. If any day during an Interest Period for a Compounded Rate Loan is not an RFR Banking Day, the rate for that day will be the rate applicable to the immediately preceding RFR Banking Day.",
           "page_number": 160
         },
         "initial_margin_text": {
-          "value": "Facility B: 7.00% p.a.; Acquisition / Capex Facility: 7.00% p.a.; Original Revolving Facility: 3.75% p.a. (increased by 0.25% p.a. for US$ loans). Subject to PIK Toggle and Margin ratchet based on Leverage Ratio.",
+          "value": "For Facility B Loan and Acquisition / Capex Facility Loan: 7.00% per annum (subject to PIK Toggle). For Original Revolving Facility Loan: 3.75% per annum (US$ loans increased by 0.25%). For Additional Facility Loan: the percentage rate per annum specified in the relevant Additional Facility Notice. Margin adjusts based on Leverage Ratio (tables provided). Default interest is 2.00% p.a. higher than the rate that would have been payable.",
           "page_number": 44
         },
         "initial_margin_tables": {
-          "value": "Yes, a table is provided in the Margin definition showing Leverage Ratio tiers and corresponding margins for Facility B, Acquisition / Capex Facility, and Original Revolving Facility.",
+          "value": "Leverage Ratio | Facility B (p.a.) | Acquisition / Capex Facility (p.a.) | Original Revolving Facility (p.a.)\nGreater than 5.00:1 | 7.50 | 7.50 | 3.75\nEqual to or less than 5.00:1 but greater than 4.00:1 | 7.00 | 7.00 | 3.75\nEqual to or less than 4.00:1 but greater than 3.50:1 | 6.50 | 6.50 | 3.625\nEqual to or less than 3.50:1 | 6.00 | 6.00 | 3.50",
           "page_number": 45
         },
         "interest_rate_convention": {
-          "value": "Interest accrues daily; calculated on actual days elapsed; year of 365 days for Sterling, 360 days for other currencies (or market practice). Rounded to two decimal places for Compounded Rate Loans.",
+          "value": "Any interest, commission or fee accrues from day to day and is calculated on the basis of the actual number of days elapsed and a year of 365 days for Sterling and 360 days for any other currency (or market practice). Without rounding, except for Compounded Rate Loan interest, which is rounded to two decimal places.",
           "page_number": 290
         },
         "interest_rate_floor": {
-          "value": "EURIBOR below 1.00% p.a. deemed 1.00% p.a. Term SOFR below 1.00% p.a. deemed 1.00% p.a.",
+          "value": "EURIBOR and Term SOFR have a floor of 1.00% per annum. If any such rate is below 1.00% per annum, it is deemed to be 1.00% per annum.",
           "page_number": 26
         },
         "libor_definition": {
-          "value": "Not defined or used. Reference rates include EURIBOR, SONIA (for Sterling), and Term SOFR (for US Dollars).",
-          "page_number": 369
+          "value": "LIBOR is not directly defined or used. Instead, 'Term Reference Rate' refers to EURIBOR (for Euro) and Term SOFR (for US Dollars), with specific definitions and fallback mechanisms.",
+          "page_number": 94
         },
         "arrangement_fees": {
-          "value": "Upfront fee (paid to Backstop Lender and Alternative Facility B Lenders, and Original Revolving Facility Lender), agency fees (paid to Agent and Security Agent). Other non-recurring fees for equity offering, investments, acquisitions or Financial Indebtedness.",
+          "value": "Upfront fee payable to Backstop Lender and/or Alternative Facility B Lenders as agreed in the Upfront Fee Letter. RCF Upfront fee payable to Original Revolving Facility Lender as agreed in the RCF Upfront Fee Letter.",
           "page_number": 168
         },
         "agency_fees": {
-          "value": "Yes, payable to the Agent and the Security Agent (for their own account) as agreed in a Fee Letter.",
+          "value": "Obligors’ Agent shall pay (or procure there is paid) to the Agent and the Security Agent (in each case for its own account) a fee in the amount and at the times agreed in a Fee Letter.",
           "page_number": 168
         }
       },
       "representations_and_warranties": {
         "use_of_proceeds": {
-          "value": "Purpose of loans for Facility B, Acquisition / Capex Facility, Original Revolving Facility and Additional Facility are detailed in Clause 3.1. Use of proceeds is an undertaking.",
+          "value": "Facility B: financing/refinancing Acquisition consideration, fees, costs, expenses, and refinancing existing Target Group indebtedness. Acquisition / Capex Facility: financing/refinancing Permitted Acquisitions, Permitted Joint Ventures, capital expenditure, and funding commitments to funds. Original Revolving Facility: general corporate purposes, working capital, purchase price adjustments, Permitted Payments, operational restructurings, refinancing Group/target indebtedness. Additional Facilities: purposes agreed with relevant Lenders.",
           "page_number": 122
         },
         "material_adverse_change_clause": {
-          "value": "Any event or circumstance which after taking into account all mitigating factors or circumstances (including warranty/indemnity/other resources) (a) has a material effect on the consolidated business, assets or financial condition of the Group (taken as a whole) or the ability of the Group (taken as a whole) to perform its payment obligations under the Finance Documents, or (b) affects the validity/enforceability of Finance Documents materially adversely to Finance Parties and not remedied within 20 Business Days.",
-          "page_number": 47
+          "value": "Any event or circumstance which, after considering mitigating factors, has a material effect on the consolidated business, assets, or financial condition of the Group (taken as a whole) (excluding financial covenant impact alone), or affects the validity/enforceability of Finance Documents materially adversely to Finance Parties, and is not remedied within 20 Business Days.",
+          "page_number": 43
         }
       },
       "covenants": {
         "interest_coverage_covenant": {
-          "value": "Not explicitly defined as 'Interest Coverage Covenant'. The document defines 'Debt Service Coverage Ratio' which includes Consolidated Total Net Cash Interest Expenses.",
+          "value": "Debt Service Coverage Ratio covenant requires the ratio to be not less than 1.00:1 for the First Test Date and each Quarter Date thereafter. This covenant benefits only Senior Lenders.",
           "page_number": 220
         },
         "interest_coverage_text": {
-          "value": "Not explicitly defined as 'Interest Coverage Covenant'. See Debt Service Coverage Ratio instead, which states it shall not be less than 1.00:1 for the First Test Date and each Quarter Date thereafter.",
-          "page_number": 220
+          "value": "The ratio of Consolidated Pro Forma EBITDA less any change in net working capital, maintenance capex, taxes and deferred consideration plus any net proceeds from Development Projects (and any net proceeds of Balance Sheet Investments, to the extent not already included in Consolidated Pro Forma EBITDA) to Consolidated Debt Service.",
+          "page_number": 22
         },
         "interest_coverage_tables": {
-          "value": "Not applicable as a standalone covenant or with dedicated tables.",
-          "page_number": 220
+          "value": "N/A",
+          "page_number": -1
         },
         "total_leverage_covenant": {
-          "value": "Company shall ensure that the Leverage Ratio (ratio of Consolidated Total Net Debt to Consolidated Pro Forma EBITDA) does not exceed specified thresholds on Quarter Dates.",
+          "value": "For Senior Lenders: Leverage Ratio not to exceed 6.75:1 (first 11 Quarter Dates after First Test Date), 6.50:1 (next 3 Quarter Dates), 6.25:1 (thereafter). For Super Senior Lenders: Leverage Ratio not to exceed 7.50:1 (first 11 Quarter Dates), 7.22:1 (next 3 Quarter Dates), 6.94:1 (thereafter).",
           "page_number": 219
         },
         "total_leverage_text": {
-          "value": "For Senior Lenders: not exceed 6.75:1 for first 11 Quarter Dates after First Test Date, then 6.50:1 for next 3, then 6.25:1 thereafter. For Super Senior Lenders: not exceed 7.50:1 for first 11 Quarter Dates after First Test Date, then 7.22:1 for next 3, then 6.94:1 thereafter.",
-          "page_number": 219
+          "value": "At the end of a Relevant Period, the ratio of Consolidated Total Net Debt on the last day of that Relevant Period to Consolidated Pro Forma EBITDA in respect of that Relevant Period.",
+          "page_number": 218
         },
         "total_leverage_tables": {
-          "value": "Leverage Ratio thresholds are presented in text format within Clause 24.2, not as a separate table.",
+          "value": "Senior Lenders:\nQuarter Dates after First Test Date | Max Leverage Ratio\nFirst 11 | 6.75:1\nNext 3 | 6.50:1\nThereafter | 6.25:1\n\nSuper Senior Lenders:\nQuarter Dates after First Test Date | Max Leverage Ratio\nFirst 11 | 7.50:1\nNext 3 | 7.22:1\nThereafter | 6.94:1",
           "page_number": 219
         },
         "restricted_asset_sales_permitted_transfers": {
-          "value": "Disposals are restricted except for 'Permitted Disposals' which include: ordinary course of trading, cash/cash equivalent exchanges, asset replacement, intra-group disposals (Obligor to Obligor or Non-Obligor to Group), loss-making/obsolete assets, Permitted Transactions, seized assets, leasehold/licence grants, existing contractual arrangements, Permitted Factoring, Permitted Security, conversion of intra-group loan to equity, Permitted Joint Venture interests, Treasury Transactions, Debt Purchase Transactions, specified value baskets (e.g., Permitted Disposals Basket), IP licenses, management share transfers, accounts receivable, SPV disposals, competition authority requirements, Balance Sheet Investment/Development Project disposals, employee incentive schemes.",
+          "value": "Various types of disposals are permitted, including: in ordinary course of trading, of cash/cash equivalents, replacement of assets, intra-group to Obligors, loss-making/obsolete assets, pursuant to contractual arrangements, subject to Permitted Factoring/Sale and Leaseback, arising from Permitted Security/Transactions, intra-group loan conversions to equity, to Permitted Joint Ventures, Treasury Transactions, approved by Majority Lenders (or Majority Lenders & Majority RCF Lenders for Significant Disposal), Obligor to Non-Obligor (within basket), asset reinvestment, and others. Permitted Disposals Basket: £2,750,000 or 7.5% of Consolidated Pro Forma EBITDA per Financial Year.",
           "page_number": 55
         },
         "permitted_acquisitions_clause_text": {
-          "value": "Acquisitions are restricted except for 'Permitted Acquisitions' which include: the Acquisition, minority shareholder acquisitions, intra-group asset acquisitions, cash/cash equivalent acquisitions, Permitted Joint Venture interests, acquisitions meeting specific financial/legal conditions (e.g., positive EBITDA or specific loss limit, no Event of Default, incorporated in non-Sanctioned Country, similar business, due diligence for larger amounts), Permitted Reorganization/Transaction, Permitted Share Issue, management/employee share/loan note acquisitions, conversion of intra-group loan to equity, new limited liability entity formation, existing agreements/Existing Facility Agreement, Permitted Investment, nominee/trustee acquisitions, or with Majority Lenders' consent.",
-          "page_number": 52
+          "value": "The Acquisition itself; acquisitions of minority shares in Group members; asset acquisitions from other Group members (Permitted Disposal/Transaction); cash/cash equivalent acquisitions; interests in Permitted Joint Ventures; acquisitions of controlling interests (50%+ voting shares, control of board) in entities/businesses provided target has positive or non-negative (>-£2M or >-5% CPEBITDA) LTM EBITDA and expected to be positive within 24 months, and no Event of Default. For acquisitions >£7.5M, due diligence reports provided.",
+          "page_number": 53
         },
         "permitted_indebtedness_basket": {
-          "value": "Permitted Financial Indebtedness (Clause 1.1) and Permitted Indebtedness Cap (Clause 1.1) which includes (a) aggregate of voluntary prepayment of Term Facility or Permitted Acquired Indebtedness and extensions/buy-backs/cancellations/refinancings of Permitted Financial Indebtedness; and (b) unlimited amount if Leverage Ratio does not exceed 4.50:1 (or for Permitted Acquired Indebtedness, compliance with its definition). Super Senior Basket for revolving facilities: not to exceed £36,000,000 or 100% of Consolidated Pro Forma EBITDA.",
-          "page_number": 58
+          "value": "An amount equal to the aggregate of: (a)(ii) any voluntary prepayment of any Term Facility or Permitted Acquired Indebtedness since the agreement date; plus (a)(iii) aggregate amount of extensions, buy-backs, cancellations, and refinancings of Permitted Financial Indebtedness since the agreement date; AND (b) an unlimited amount to the extent Leverage Ratio on pro forma basis does not exceed 4.50:1 (or in compliance with Permitted Acquired Indebtedness criteria). Super Senior Basket: £36,000,000 or, if higher, an amount equal to 100% of the Consolidated Pro Forma EBITDA.",
+          "page_number": 64
         },
         "permitted_financial_indebtedness_text": {
-          "value": "Financial Indebtedness under Finance Documents (including Additional Facilities, Ancillary Facilities), Permitted Guarantees, Permitted Loans, Permitted Factoring, Permitted Sale and Leaseback, Permitted Finance Lease, Treasury Transactions. Also, Existing Debt (until Clean-up Date), facilities backed by Ancillary Facilities, with Majority Lender consent, Permitted Acquired Indebtedness, daylight exposures/cash pooling, local working capital/overdrafts (up to £5,000,000 or 13.5% of Consolidated Pro Forma EBITDA), Shareholder Loans, earn-outs/deferred consideration, insurance premium financing, workers' compensation/social security, deferred compensation, unfunded pension obligations, Development Project Indebtedness, uncalled investment commitments. Excludes pension/post-employment liabilities, certain Treasury Transactions, ordinary course licenses/permits, general partner indebtedness limited by recourse, Trade Instruments.",
+          "value": "Financial Indebtedness arising under Finance Documents (including Additional Facilities, Ancillary Facilities), Permitted Guarantees, Permitted Loans, Permitted Factoring, Permitted Sale and Leaseback, Permitted Finance Lease, Treasury Transactions. Also, until Clean-up Date, Existing Debt; facilities supported by Ancillary Facilities; with Agent's consent; Permitted Acquired Indebtedness; daylight exposures/cash pooling; local working capital/overdrafts (up to £5,000,000 or 13.5% Consolidated Pro Forma EBITDA); Shareholder Loans; earn-out/deferred consideration (Permitted Acquisition/Disposal); insurance premiums financing; workers' compensation/social security; deferred compensation; unfunded pension obligations; Development Project Indebtedness; uncalled commitments; and certain others.",
           "page_number": 58
         },
         "prepayment_from_asset_sales_proceeds_clause": {
-          "value": "Yes, specified percentages of Disposal Proceeds, Specified Asset Disposal Proceeds, Third Party IDP Net Cash Disposal Proceeds, Insurance Proceeds, and Recovery Proceeds must be applied in prepayment of Facilities unless excluded.",
+          "value": "The Obligors’ Agent shall ensure an amount equal to Disposal Proceeds, 25% of Specified Asset Disposal Proceeds, 50% of Third Party IDP Net Cash Disposal Proceeds, Insurance Proceeds, and Recovery Proceeds is applied in prepayment of Facilities. Exclusions and reinvestment periods apply. Prepayment is pro rata to Term Loans initially.",
           "page_number": 153
         },
         "percent_of_net_cash_proceeds": {
-          "value": "100% of Disposal Proceeds, 25% of Specified Asset Disposal Proceeds, 50% of Third Party IDP Net Cash Disposal Proceeds, 100% of Insurance Proceeds, 100% of Recovery Proceeds. IPO Proceeds: 50% if Leverage Ratio > 4.00:1, then 25% if Leverage Ratio > 3.50:1 (subject to conditions).",
-          "page_number": 148
+          "value": "25% of any Specified Asset Disposal Proceeds; 50% of any Third Party IDP Net Cash Disposal Proceeds.",
+          "page_number": 157
         },
         "permitted_reinvestment_period": {
-          "value": "12 Months (for application or commitment to apply proceeds), with an additional 6 Months (total 18 Months) if committed, for Excluded Disposal Proceeds (paragraph (iv)) and Excluded Insurance Proceeds (paragraph (ii)).",
+          "value": "Generally 12 months for application (with an additional 6 months if committed) for Disposal, Insurance, and Recovery Proceeds. 18 months for IPO Proceeds used for Permitted Acquisitions or Capital Expenditure.",
           "page_number": 150
         },
         "equity_cure_provision": {
-          "value": "Yes, if financial covenant breached, New Shareholder Injections can be provided within 20 Business Days of Compliance Certificate delivery to increase Consolidated Pro Forma EBITDA (EBITDA Cure) or decrease Consolidated Total Net Debt (Net Debt Cure).",
+          "value": "If a financial covenant breach occurs, it can be cured by New Shareholder Injections (cash) within 20 Business Days of Compliance Certificate delivery. Cure amount can be an EBITDA Cure (increasing Consolidated Pro Forma EBITDA) or a Net Debt Cure (decreasing Consolidated Total Net Debt) to restore compliance. Cannot exercise Equity Cures in consecutive Financial Quarters.",
           "page_number": 227
         },
         "number_of_equity_cures": {
-          "value": "Not more than four occasions (overall). EBITDA Cure only once from Closing Date. No Equity Cures in consecutive Financial Quarters.",
+          "value": "Not more than four occasions (total Equity Cures). Not more than one EBITDA Cure from the Closing Date.",
           "page_number": 227
         },
         "subsidiary_guarantees": {
-          "value": "Guarantor Coverage Test requires aggregate EBITDA of Guarantors to be not less than 80% of Consolidated EBITDA of members of Group incorporated in a Security Jurisdiction. Exclusions apply for unlawfulness, personal/criminal liability, Regulated Group Companies, general partners of funds, and Excluded Entities. Subject to Agreed Security Principles.",
-          "page_number": 238
+          "value": "Company to ensure that the aggregate earnings before interest, tax, depreciation and amortisation (calculated on same basis as Consolidated EBITDA) of Guarantors represents not less than 80% of Consolidated EBITDA of members of the Group incorporated in a Security Jurisdiction (Guarantor Coverage Test), to be complied with within 120 days of Closing Date and then annually.",
+          "page_number": 242
         },
         "transfer_provisions": {
-          "value": "Lenders may assign or transfer rights/obligations to New Lenders (banks, financial institutions, funds, etc.) subject to conditions (e.g., Obligors' Agent consent unless to Affiliates/Related Funds, Approved List, or Event of Default; minimum transfer amounts; restrictions on Industry Competitors, distressed investors, etc.). Sub-participations are also allowed with restrictions.",
+          "value": "Lenders can assign or transfer rights/obligations to New Lenders, subject to Obligors' Agent consent (unless to Affiliates, Related Funds, Approved List entities, or during certain EoD). Minimum transfer amounts apply. Obligors cannot assign/transfer rights/obligations. Subsidiaries can become Additional Borrowers/Guarantors. Obligors can resign under specific conditions (e.g., Third Party Disposal, Guarantor Coverage Test compliance).",
           "page_number": 252
         },
         "amendment_clause": {
-          "value": "Generally, Majority Lenders and Company consent required. Specific actions require all Lenders' consent (e.g., Change of Control definition change, introduction of senior ranking loan, specific clauses). Structural Adjustments require consent of participating Lenders. Agent/Security Agent can amend for minor/technical/administrative changes or to cure defects/omissions. Super Senior Lenders have specific consent rights for Super Senior Consent Provisions.",
+          "value": "Generally, any term can be amended or waived with consent of Majority Lenders and the Company. Exceptions apply requiring consent of all Lenders (e.g., Change of Control definition, introduction of senior loans, major changes to guarantees/security, specific key clauses) or Majority RCF Lenders (for Revolving Facility specific terms). Structural Adjustments and Additional Facilities have specific consent rules.",
           "page_number": 291
         },
         "snooze_lose_clause": {
-          "value": "Yes, in the case of an Exit Event, Lenders must notify the Agent within 30 days to exercise their right to cancel commitments and require repayment, otherwise they lose that right for that specific Exit Event (Clause 10.1(a)). Also, a Lender may become an 'Excluded Lender' if it fails to respond to a consent/waiver request within 10 Business Days (or 5 for Defaulting Lender), thereby losing its vote (Clause 39.5).",
-          "page_number": 147
+          "value": "If a Lender does not accept or reject a consent/agreement request (requiring greater than Majority Lender consent) within 10 Business Days (or 5 for Defaulting Lenders), or fails to assist with replacement, that Lender becomes an 'Excluded Lender' and is automatically excluded from participating in that vote.",
+          "page_number": 306
         },
         "disqualified_lender_list": {
-          "value": "Not an explicit list named 'disqualified lender list'. However, the document specifies categories of entities (e.g., Industry Competitors, private equity sponsors (with exceptions), loan to own/distressed investors (with exceptions), persons similar/related to Group's business, Defaulting Lenders) to whom transfers/assignments are restricted without specific consent (Clause 27.3).",
-          "page_number": 253
+          "value": "Not a public list per se, but certain entities are disqualified from receiving transfers/assignments without specific consent: Industry Competitors, private equity sponsors (with exceptions), loan to own/distressed investors (with exceptions), persons whose business is similar or related to the Group’s business, or Defaulting Lenders. The 'Approved List' can be amended.",
+          "page_number": 257
         }
       },
       "defaults": {
         "events_of_default": {
-          "value": "Clauses 26.1 (Payment Default), 26.2 (Financial covenants and other obligations), 26.3 (Other obligations), 26.4 (Misrepresentation), 26.5 (Cross default), 26.6 (Insolvency), 26.7 (Insolvency proceedings), 26.8 (Creditors’ process), 26.9 (Similar Events), 26.10 (Unlawfulness and invalidity), 26.11 (Intercreditor Agreement and other Finance Documents), 26.12 (Cessation of business), 26.13 (Expropriation), 26.14 (Repudiation and rescission of agreements), 26.15 (Litigation).",
+          "value": "A list of events (Payment Default, Financial covenants and other obligations, Other obligations, Misrepresentation, Cross default, Insolvency, Insolvency proceedings, Creditors’ process, Similar Events, Unlawfulness and invalidity, Intercreditor Agreement and other Finance Documents, Cessation of business, Expropriation, Repudiation and rescission of agreements, Litigation).",
           "page_number": 244
         },
         "payment_default_provision": {
-          "value": "Failure to pay any amount payable pursuant to a Finance Document on its due date unless such failure to pay is caused by administrative or technical error and payment is made within 3 Business Days (principal/interest) or 5 Business Days (any other amount).",
+          "value": "Failure by an Obligor to pay any amount due under a Finance Document on its due date, unless caused by administrative or technical error and payment is made within 3 Business Days (principal/interest) or 5 Business Days (other amounts).",
           "page_number": 244
         },
         "insolvency_default": {
-          "value": "A Material Subsidiary or the Parent: (i) is unable or admits in writing its inability to pay its debts as they fall due; (ii) ceases or suspends making payments on its debt generally or publicly announces an intention to do so; (iii) is deemed to, or is declared to, be unable to pay its debts under applicable law; or (iv) by reason of actual or anticipated financial difficulties commences negotiations with its financial creditors generally (other than Finance Parties) with a view to a general rescheduling of its indebtedness. Also, a moratorium declared.",
+          "value": "A Material Subsidiary or Parent unable or admits inability to pay debts (other than solely balance sheet liabilities exceeding assets), ceases/suspends payments on debt generally, deemed/declared unable to pay debts, or commences negotiations with financial creditors generally for rescheduling indebtedness.",
           "page_number": 246
         },
         "misrepresentation_default": {
-          "value": "Any representation or statement made or deemed to be made by an Obligor or the Parent in the Finance Documents or any other document delivered by or on behalf of any Obligor or the Parent under or in connection with any Finance Document is or proves to have been incorrect or misleading when made or deemed to be made by reference to the facts and circumstances then existing, unless capable of remedy and remedied within 20 Business Days.",
+          "value": "Any representation or statement made or deemed made by an Obligor or Parent in Finance Documents or other related document is or proves incorrect/misleading when made/deemed made, unless capable of remedy and remedied within 20 Business Days.",
           "page_number": 245
         },
         "market_disruption_clause": {
-          "value": "Market Disruption Event definition in Clause 14.2(b) refers to absence of EURIBOR reference banks or notification from Lenders that funding cost exceeds EURIBOR for Term Rate Loan in Euro.",
-          "page_number": 166
+          "value": "A material disruption to payment/communications systems or financial markets required for payments in connection with Facilities (not caused by, beyond control of, parties), or a technical/systems disruption to treasury/payments operations preventing a Party from performing obligations or communicating.",
+          "page_number": 24
         },
         "cross_default": {
-          "value": "Any Financial Indebtedness of any Material Subsidiary is not paid when due, declared due prior to maturity, or a creditor becomes entitled to declare it due prior to maturity, if the aggregate amount exceeds £2,700,000 or 7.5% of Consolidated Pro Forma EBITDA (with specific exclusions).",
+          "value": "Financial Indebtedness of any Material Subsidiary (aggregate >£2,700,000 or 7.5% Consolidated Pro Forma EBITDA) is not paid when due, becomes due and payable prior to maturity due to default, or any creditor becomes entitled to declare it due and payable (excluding Hedging Agreements). Intra-Group Financial Indebtedness is excluded.",
           "page_number": 245
         },
         "cross_acceleration": {
-          "value": "Included within the 'Cross default' provision (Clause 26.5(b)), where Financial Indebtedness of a Material Subsidiary becoming due and payable prior to its specified maturity due to an event of default constitutes a cross-default.",
-          "page_number": 246
+          "value": "Implied within the 'Cross default' clause (26.5(b)): any Financial Indebtedness of any Material Subsidiary is declared to be or otherwise becomes due and payable prior to its specified maturity as a result of an event of default.",
+          "page_number": 245
         },
         "no_set_off": {
-          "value": "All payments by Parent or an Obligor under Finance Documents must be made without (and free and clear of any deduction for) set off or counterclaim (Clause 33.7). Finance Party may set off matured obligations due from Obligor against matured obligations owed to Obligor if a Declared Default is continuing (Clause 34(a)). Ancillary Lender set-off is specified (Clause 34(b)).",
+          "value": "All payments by Parent or Obligor under Finance Documents are without set off or counterclaim. Finance Party may set off matured obligations of Obligor/Parent against matured obligations owed by Finance Party to Obligor/Parent only while a Declared Default is continuing.",
           "page_number": 284
         },
         "set_off_prohibited_for_borrower": {
-          "value": "Yes, all payments to be made by the Parent or an Obligor under the Finance Documents shall be calculated and be made without (and free and clear of any deduction for) set off or counterclaim.",
+          "value": "All payments to be made by the Parent or an Obligor under the Finance Documents shall be calculated and be made without (and free and clear of any deduction for) set off or counterclaim.",
           "page_number": 284
         }
       },
       "miscellaneous": {
         "bilateral_or_syndicated": {
-          "value": "Syndicated (Senior Facilities Agreement implies a syndicate of Lenders)",
-          "page_number": 1
+          "value": "Syndicated, evidenced by the presence of multiple Lenders, an Agent, and Security Agent roles, and references to syndication activities and services.",
+          "page_number": 5
         },
         "business_days_convention_calendar": {
-          "value": "For Sterling and US Dollars, specific rules are provided in Schedule 14. Generally, if an Interest Period would otherwise end on a non-Business Day, it ends on the next Business Day in the same month (if any) or the preceding Business Day (if none). Similar rules for periods accruing by Month.",
-          "page_number": 369
+          "value": "A day (other than Saturday or Sunday) on which banks are open for general business in London (United Kingdom) and Guernsey, plus specific conditions for other currencies (e.g., principal financial centre, TARGET Day, Additional Business Day). Specific conventions for Month and Interest Periods are detailed in Schedule 14.",
+          "page_number": 16
         },
         "business_days_payments_non_business_day_rule": {
-          "value": "Any payment under any Finance Document which is due to be made on a day that is not a Business Day shall be made on the next Business Day in the same calendar month (if there is one) or the preceding Business Day (if there is not).",
+          "value": "Any payment due on a day that is not a Business Day shall be made on the next Business Day in the same calendar month (if there is one) or the preceding Business Day (if there is not).",
           "page_number": 284
         },
         "business_days_rate_setting_quotation_day": {
-          "value": "For Euro: two TARGET Days before first day of period. For Sterling: first day of period. For other currencies: two Business Days before first day of period (unless market practice differs). For US$: two Additional Business Days before first day of period (unless market practice differs).",
+          "value": "For Euro: two TARGET Days before the first day of that period. For Sterling: the first day of that period. For any other currency: two Business Days before the first day of that period, unless market practice differs. For US$: two Additional Business Days before the first day of the relevant Interest Period.",
           "page_number": 80
         },
         "governing_law": {
@@ -806,11 +807,11 @@
           "page_number": 312
         },
         "confidentiality_clause": {
-          "value": "Clause 40 outlines obligations of Finance Parties to keep Confidential Information confidential, with permitted disclosures to affiliates, transferees, advisers, regulatory authorities, etc., under certain conditions (e.g., confidentiality undertakings).",
-          "page_number": 305
+          "value": "Finance Parties agree to keep Confidential Information confidential, with permitted disclosures to Affiliates, Related Funds, professional advisers, assignees/transferees, sub-participants, investors, courts/governmental bodies, for litigation, or with Obligors' Agent consent. Special rules for numbering service providers and internal information barriers.",
+          "page_number": 309
         },
         "language_for_client_communication": {
-          "value": "Any notice given under or in connection with any Finance Document must be in English. All other documents provided must be in English or, if not, accompanied by a certified English translation (English translation prevails unless constitutional/statutory document).",
+          "value": "Any notice under Finance Document must be in English. All other documents provided under or in connection with any Finance Document must be: in English; or if not in English, and if so required by the Agent, accompanied by a certified English translation (English translation prevails unless the document is a constitutional, statutory or other official document).",
           "page_number": 289
         }
       }
@@ -1232,6 +1233,7 @@
       "413": "",
       "414": "",
       "415": ""
-    }
+    },
+    "file_path": "uploads\\23.1-Senior-Facilities-Agreement-Ares-Management-Limited-dated-27-November-2023.pdf"
   }
 }

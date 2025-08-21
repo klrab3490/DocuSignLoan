@@ -6,7 +6,7 @@ from fastapi import APIRouter, File, UploadFile, HTTPException
 from pydantic import BaseModel
 from typing import Dict, Any, Optional
 
-from app.utils import save_jobs_to_file, load_jobs_from_file, client, MAX_FILE_SIZE_BYTES, MAX_FILE_SIZE_MB
+from app.utils import save_jobs_to_file, load_jobs_from_file, save_file_permanent, client, MAX_FILE_SIZE_BYTES, MAX_FILE_SIZE_MB
 
 router = APIRouter()
 processing_jobs = load_jobs_from_file()
@@ -266,7 +266,13 @@ async def extract_and_format_pdf(
     if file.content_type != "application/pdf":
         raise HTTPException(status_code=400, detail="Invalid file type. Please upload a PDF.")
 
-    pdf_bytes = await file.read()
+    # Save uploaded file permanently in uploads/
+    file_path = await save_file_permanent(file)
+
+    # Reopen the saved file for PyMuPDF
+    with open(file_path, "rb") as f:
+        pdf_bytes = f.read()
+
     if len(pdf_bytes) > MAX_FILE_SIZE_BYTES:
         raise HTTPException(status_code=413, detail=f"File too large. Max size is {MAX_FILE_SIZE_MB} MB.")
 
@@ -329,6 +335,7 @@ async def extract_and_format_pdf(
         processing_jobs[job_id]["status"] = "completed"
         processing_jobs[job_id]["result"] = parsed_json
         processing_jobs[job_id]["pages"] = page_texts
+        processing_jobs[job_id]["file_path"] = file_path
         save_jobs_to_file(processing_jobs)
 
         return ExtractResponse(
