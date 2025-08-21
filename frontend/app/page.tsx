@@ -1,14 +1,20 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Button } from "@/components/ui/button"
-import { Textarea } from "@/components/ui/textarea"
-import { Save, Upload, FileText, Search, Database } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useState } from "react";
+import dynamic from "next/dynamic";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import { Save, Upload, FileText, Search, Database } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+const HighlightedPDFPage = dynamic(
+    () => import("@/components/custom/HighlightedPDFPage"),
+    { ssr: false }
+);
 
 type JobResult = {
     job_id: string
@@ -53,15 +59,20 @@ type JobSummary = {
 }
 
 export default function Home() {
-    const [file, setFile] = useState<File | null>(null)
-    const [status, setStatus] = useState<string | null>(null)
-    const [fetching, setFetching] = useState<boolean>(false)
-    const [jobID, setJobID] = useState<string | null>(null)
-    const [result, setResult] = useState<JobResult | null>(null)
-    const [editableData, setEditableData] = useState<RawResult | null>(null)
-    const [isEditing, setIsEditing] = useState(false)
-    const [jobs, setJobs] = useState<JobSummary[] | null>([])
-    const [fetchStatus, setFetchStatus] = useState<string | null>(null)
+    const [isEditing, setIsEditing] = useState(false);
+    const [file, setFile] = useState<File | null>(null);
+    const [jobID, setJobID] = useState<string | null>(null);
+    const [fetching, setFetching] = useState<boolean>(false);
+    const [jobs, setJobs] = useState<JobSummary[] | null>([]);
+    const [status, setStatus] = useState<string | null>(null);
+    const [fileUrl, setFileUrl] = useState<string | null>(null);
+    const [result, setResult] = useState<JobResult | null>(null);
+    const [highlights, setHighlights] = useState<Highlight[]>([]);
+    const [fetchingPDF, setFetchingPDF] = useState<boolean>(false);
+    const [pageNumber, setPageNumber] = useState<number | null>(null);
+    const [fetchStatus, setFetchStatus] = useState<string | null>(null);
+    const [editableData, setEditableData] = useState<RawResult | null>(null);
+
 
     const handleUpload = async () => {
         setStatus("Uploading")
@@ -74,7 +85,7 @@ export default function Home() {
         formData.append("file", file)
 
         try {
-            const result = await fetch("http://localhost:8000/pdf/extract-and-format/", {
+            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/pdf/extract-and-format/`, {
                 method: "POST",
                 body: formData,
             })
@@ -97,7 +108,8 @@ export default function Home() {
         setFetchStatus("Fetching data...")
 
         try {
-            const result = await fetch("http://localhost:8000/pdf/status/")
+            console.log(`Fetching jobs from backend... ${process.env.NEXT_PUBLIC_BACKEND_URL}`)
+            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/pdf/status`)
             if (!result.ok) throw new Error("Failed to fetch data")
             const data = await result.json()
             setJobs(data)
@@ -115,12 +127,58 @@ export default function Home() {
         if (!id) return
 
         try {
-            const result = await fetch(`http://localhost:8000/pdf/jobs/${id}`)
+            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/pdf/jobs/${id}`)
             if (!result.ok) throw new Error("Failed to fetch data")
             const data = await result.json()
 
             setResult(data)
             setEditableData(data.result)
+            fetchPDF(data.filename) // Fetch PDF after getting job data
+        } catch (error) {
+            console.error(error)
+        } finally {
+            setFetching(false)
+        }
+    }
+
+    // Fetch pdf
+    const fetchPDF = async (filename: string) => {
+        setFetchingPDF(true);
+        if (!filename) return
+
+        try {
+            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/uploads/${filename}`);
+            if (!result.ok) throw new Error("Failed to fetch data");
+            const data = await result.blob();
+            setFileUrl(URL.createObjectURL(data));
+        } catch (error) {
+            console.error(error)
+        } finally {
+            setFetchingPDF(false);
+        }
+    }
+
+    const fetchHighlights = async (id: string, page: number, content: string) => {
+        if (!id || !fetchingPDF) return
+
+        setFetching(true)
+
+        try {
+            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/pdf/highlights/`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    job_id: id,
+                    page_number: page,
+                    content: content,
+                }),
+            })
+            if (!result.ok) throw new Error("Failed to fetch data")
+            const data = await result.json()
+            setHighlights(data.highlights)
+            setPageNumber(data.page_number);
         } catch (error) {
             console.error(error)
         } finally {
@@ -344,7 +402,7 @@ export default function Home() {
                     </Card>
                 )}
 
-                {result && editableData && (
+                {result && editableData && fileUrl && (
                     <Card className="w-full shadow-lg border-0 bg-card/80 backdrop-blur-sm">
                         <CardHeader className="flex flex-row items-center justify-between border-b border-border/50 pb-4">
                             <div className="space-y-1">
@@ -398,145 +456,154 @@ export default function Home() {
                                 )}
                             </div>
                         </CardHeader>
-                        <CardContent className="space-y-8 pt-6">
-                            {Object.entries(editableData).map(([sectionKey, sectionValue]) => (
-                                <div key={sectionKey} className="space-y-4">
-                                    <div className="flex items-center gap-2 pb-2 border-b border-border/30">
-                                        <h3 className="text-lg font-semibold capitalize text-card-foreground">
-                                            {sectionKey.replace(/_/g, " ")}
-                                        </h3>
-                                        <Badge variant="secondary" className="text-xs">
-                                            {typeof sectionValue === "object" && sectionValue !== null
-                                                ? Array.isArray(sectionValue)
-                                                    ? `${sectionValue.length} items`
-                                                    : `${Object.keys(sectionValue).length} fields`
-                                                : "1 field"}
-                                        </Badge>
-                                    </div>
-
-                                    {typeof sectionValue === "object" && sectionValue !== null ? (
-                                        Array.isArray(sectionValue) ? (
-                                            <div className="grid gap-4">
-                                                {sectionValue.map((item, idx) => (
-                                                    <Card key={idx} className="bg-muted/30 border border-border/50">
-                                                        <CardContent className="p-4 space-y-3">
-                                                            {Object.entries(item).map(([fieldKey, fieldValue]) => (
-                                                                <div key={fieldKey} className="space-y-2">
-                                                                    <Label className="text-sm font-medium capitalize text-card-foreground">
-                                                                        {fieldKey.replace(/_/g, " ")}
-                                                                    </Label>
-                                                                    {isEditing ? (
-                                                                        typeof fieldValue === "string" ? (
-                                                                            <Input
-                                                                                value={fieldValue}
-                                                                                onChange={(e) => {
-                                                                                    const updatedArr = [...sectionValue]
-                                                                                    updatedArr[idx] = { ...updatedArr[idx], [fieldKey]: e.target.value }
-                                                                                    setEditableData({ ...editableData, [sectionKey]: updatedArr })
-                                                                                }}
-                                                                                className="bg-input border-border focus:border-primary"
-                                                                            />
-                                                                        ) : (
-                                                                            <Textarea
-                                                                                value={JSON.stringify(fieldValue, null, 2)}
-                                                                                onChange={(e) => {
-                                                                                    const updatedArr = [...sectionValue]
-                                                                                    updatedArr[idx] = { ...updatedArr[idx], [fieldKey]: e.target.value }
-                                                                                    setEditableData({ ...editableData, [sectionKey]: updatedArr })
-                                                                                }}
-                                                                                className="bg-input border-border focus:border-primary font-mono text-sm"
-                                                                                rows={3}
-                                                                            />
-                                                                        )
-                                                                    ) : (
-                                                                        <div className="p-3 bg-background rounded-md border border-border/50">
-                                                                            <p className="text-sm text-foreground">
-                                                                                {typeof fieldValue === "object"
-                                                                                    ? JSON.stringify(fieldValue, null, 2)
-                                                                                    : String(fieldValue)}
-                                                                            </p>
-                                                                        </div>
-                                                                    )}
-                                                                </div>
-                                                            ))}
-                                                        </CardContent>
-                                                    </Card>
-                                                ))}
-                                            </div>
-                                        ) : (
-                                            <div className="grid gap-4 md:grid-cols-2">
-                                                {Object.entries(sectionValue).map(([fieldKey, fieldValue]) => (
-                                                    <div key={fieldKey} className="space-y-2">
-                                                        <Label className="text-sm font-medium capitalize text-card-foreground">
-                                                            {fieldKey.replace(/_/g, " ")}
-                                                        </Label>
-                                                        {isEditing ? (
-                                                            typeof fieldValue === "object" && fieldValue !== null && "value" in fieldValue ? (
-                                                                <Input
-                                                                    value={fieldValue.value ?? ""}
-                                                                    onChange={(e) => {
-                                                                        setEditableData({
-                                                                            ...editableData,
-                                                                            [sectionKey]: {
-                                                                                ...sectionValue,
-                                                                                [fieldKey]: {
-                                                                                    ...fieldValue,
-                                                                                    value: e.target.value,
-                                                                                },
-                                                                            },
-                                                                        })
-                                                                    }}
-                                                                    className="bg-input border-border focus:border-primary"
-                                                                />
-                                                            ) : (
-                                                                <Textarea
-                                                                    value={
-                                                                        typeof fieldValue === "object"
-                                                                            ? JSON.stringify(fieldValue, null, 2)
-                                                                            : String(fieldValue)
-                                                                    }
-                                                                    onChange={(e) => {
-                                                                        setEditableData({
-                                                                            ...editableData,
-                                                                            [sectionKey]: {
-                                                                                ...sectionValue,
-                                                                                [fieldKey]: e.target.value,
-                                                                            },
-                                                                        })
-                                                                    }}
-                                                                    className="bg-input border-border focus:border-primary font-mono text-sm"
-                                                                    rows={3}
-                                                                />
-                                                            )
-                                                        ) : (
-                                                            <div className="p-3 bg-background rounded-md border border-border/50">
-                                                                <p className="text-sm text-foreground">
-                                                                    {typeof fieldValue === "object"
-                                                                        ? "value" in fieldValue
-                                                                            ? fieldValue.value || "No data"
-                                                                            : JSON.stringify(fieldValue, null, 2)
-                                                                        : String(fieldValue)}
-                                                                </p>
-                                                                {typeof fieldValue === "object" &&
-                                                                    fieldValue !== null &&
-                                                                    "page_number" in fieldValue && (
-                                                                        <Badge variant="outline" className="mt-2 text-xs">
-                                                                            Page {fieldValue.page_number}
-                                                                        </Badge>
-                                                                    )}
-                                                            </div>
-                                                        )}
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        )
-                                    ) : (
-                                        <div className="p-3 bg-background rounded-md border border-border/50">
-                                            <p className="text-sm text-foreground">{String(sectionValue)}</p>
+                        <CardContent className="space-y-8 pt-6 flex">
+                            <div className="w-1/2">
+                                {Object.entries(editableData).map(([sectionKey, sectionValue]) => (
+                                    <div key={sectionKey} className="space-y-4">
+                                        <div className="flex items-center gap-2 pb-2 border-b border-border/30">
+                                            <h3 className="text-lg font-semibold capitalize text-card-foreground">
+                                                {sectionKey.replace(/_/g, " ")}
+                                            </h3>
+                                            <Badge variant="secondary" className="text-xs">
+                                                {typeof sectionValue === "object" && sectionValue !== null
+                                                    ? Array.isArray(sectionValue)
+                                                        ? `${sectionValue.length} items`
+                                                        : `${Object.keys(sectionValue).length} fields`
+                                                    : "1 field"}
+                                            </Badge>
                                         </div>
-                                    )}
-                                </div>
-                            ))}
+
+                                        {typeof sectionValue === "object" && sectionValue !== null ? (
+                                            Array.isArray(sectionValue) ? (
+                                                <div className="grid gap-4">
+                                                    {sectionValue.map((item, idx) => (
+                                                        <Card key={idx} className="bg-muted/30 border border-border/50">
+                                                            <CardContent className="p-4 space-y-3">
+                                                                {Object.entries(item).map(([fieldKey, fieldValue]) => (
+                                                                    <div key={fieldKey} className="space-y-2">
+                                                                        <Label className="text-sm font-medium capitalize text-card-foreground">
+                                                                            {fieldKey.replace(/_/g, " ")}
+                                                                        </Label>
+                                                                        {isEditing ? (
+                                                                            typeof fieldValue === "string" ? (
+                                                                                <Input
+                                                                                    value={fieldValue}
+                                                                                    onChange={(e) => {
+                                                                                        const updatedArr = [...sectionValue]
+                                                                                        updatedArr[idx] = { ...updatedArr[idx], [fieldKey]: e.target.value }
+                                                                                        setEditableData({ ...editableData, [sectionKey]: updatedArr })
+                                                                                    }}
+                                                                                    className="bg-input border-border focus:border-primary"
+                                                                                />
+                                                                            ) : (
+                                                                                <Textarea
+                                                                                    value={JSON.stringify(fieldValue, null, 2)}
+                                                                                    onChange={(e) => {
+                                                                                        const updatedArr = [...sectionValue]
+                                                                                        updatedArr[idx] = { ...updatedArr[idx], [fieldKey]: e.target.value }
+                                                                                        setEditableData({ ...editableData, [sectionKey]: updatedArr })
+                                                                                    }}
+                                                                                    className="bg-input border-border focus:border-primary font-mono text-sm"
+                                                                                    rows={3}
+                                                                                />
+                                                                            )
+                                                                        ) : (
+                                                                            <div className="p-3 bg-background rounded-md border border-border/50">
+                                                                                <p className="text-sm text-foreground">
+                                                                                    {typeof fieldValue === "object"
+                                                                                        ? JSON.stringify(fieldValue, null, 2)
+                                                                                        : String(fieldValue)}
+                                                                                </p>
+                                                                            </div>
+                                                                        )}
+                                                                    </div>
+                                                                ))}
+                                                            </CardContent>
+                                                        </Card>
+                                                    ))}
+                                                </div>
+                                            ) : (
+                                                <div className="grid gap-4 md:grid-cols-2">
+                                                    {Object.entries(sectionValue).map(([fieldKey, fieldValue]) => (
+                                                        <div key={fieldKey} className="space-y-2">
+                                                            <Label className="text-sm font-medium capitalize text-card-foreground">
+                                                                {fieldKey.replace(/_/g, " ")}
+                                                            </Label>
+                                                            {isEditing ? (
+                                                                typeof fieldValue === "object" && fieldValue !== null && "value" in fieldValue ? (
+                                                                    <Input
+                                                                        value={fieldValue.value ?? ""}
+                                                                        onChange={(e) => {
+                                                                            setEditableData({
+                                                                                ...editableData,
+                                                                                [sectionKey]: {
+                                                                                    ...sectionValue,
+                                                                                    [fieldKey]: {
+                                                                                        ...fieldValue,
+                                                                                        value: e.target.value,
+                                                                                    },
+                                                                                },
+                                                                            })
+                                                                        }}
+                                                                        className="bg-input border-border focus:border-primary"
+                                                                    />
+                                                                ) : (
+                                                                    <Textarea
+                                                                        value={
+                                                                            typeof fieldValue === "object"
+                                                                                ? JSON.stringify(fieldValue, null, 2)
+                                                                                : String(fieldValue)
+                                                                        }
+                                                                        onChange={(e) => {
+                                                                            setEditableData({
+                                                                                ...editableData,
+                                                                                [sectionKey]: {
+                                                                                    ...sectionValue,
+                                                                                    [fieldKey]: e.target.value,
+                                                                                },
+                                                                            })
+                                                                        }}
+                                                                        className="bg-input border-border focus:border-primary font-mono text-sm"
+                                                                        rows={3}
+                                                                    />
+                                                                )
+                                                            ) : (
+                                                                <div className="p-3 bg-background rounded-md border border-border/50">
+                                                                    <p className="text-sm text-foreground">
+                                                                        {typeof fieldValue === "object"
+                                                                            ? "value" in fieldValue
+                                                                                ? fieldValue.value || "No data"
+                                                                                : JSON.stringify(fieldValue, null, 2)
+                                                                            : String(fieldValue)}
+                                                                    </p>
+                                                                    {typeof fieldValue === "object" &&
+                                                                        fieldValue !== null &&
+                                                                        "page_number" in fieldValue && (
+                                                                            <Badge variant="outline" className="mt-2 text-xs">
+                                                                                Page {fieldValue.page_number}
+                                                                            </Badge>
+                                                                        )}
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            )
+                                        ) : (
+                                            <div className="p-3 bg-background rounded-md border border-border/50">
+                                                <p className="text-sm text-foreground">{String(sectionValue)}</p>
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                            <div>
+                                <HighlightedPDFPage
+                                    fileUrl={fileUrl ?? ""}
+                                    pageNumber={pageNumber === null ? 1 : pageNumber}
+                                    highlights={highlights === null ? [] : highlights}
+                                />
+                            </div>
                         </CardContent>
                     </Card>
                 )}
