@@ -8,37 +8,37 @@
           "page_number": 1
         },
         "effective_date": {
-          "value": "the “Effective Date” (as defined in the Settlement Approval Order)",
-          "page_number": 23
+          "value": "the 'Effective Date' (as defined in the Settlement Approval Order)",
+          "page_number": 20
         },
         "maturity_date": {
-          "value": "The Loans and all other Obligations shall become due by the Construction Receiver upon the occurrence of an Event of Default hereunder which has been accelerated by the Lenders in accordance with Section 9.02, and subject to compliance with any conditions to such acceleration set forth therein. All Proceeds for Distribution shall be distributed by the Construction Receiver in accordance with and subject to the Waterfall approved under the Settlement Approval Order.",
-          "page_number": 26
+          "value": null,
+          "page_number": null
         },
         "end_date_of_respective_facility": {
-          "value": "If the first advance under the Credit Facility does not occur on or before the First Advance Date, the Required Lenders may, in their sole and absolute discretion, cancel the Credit Facility. In addition, at any time after that date which is 30 days after (a) the earlier of Total Completion of the Work and completion of the Development Services and (b) the Outside Date (or such later date as may be agreed in writing by the Required Lenders), the Required Lenders may, in their sole and absolute discretion, cancel all or any unutilized portion of the Commitment.",
+          "value": "that date which is 30 days after (a) the earlier of Total Completion of the Work and completion of the Development Services and (b) the Outside Date (June 15, 2018)",
           "page_number": 21
         },
         "start_date_of_facility_availability_period_facility_a": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "end_date_of_facility_availability_period_facility_a": {
-          "value": "the First Advance Date",
-          "page_number": 21
+          "value": null,
+          "page_number": null
         },
         "start_date_of_facility_availability_period_facility_b": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "end_date_of_facility_availability_period_facility_b": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         }
       },
       "general": {
         "borrower": {
-          "value": "ALVAREZ & MARSAL CANADA INC., solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC. and not in its personal or corporate capacity as Construction Receiver",
+          "value": "ALVAREZ & MARSAL CANADA INC., solely in its capacity as Court Appointed Receiver and Manager and Construction Lien Trustee of URBANCORP (LESLIEVILLE) DEVELOPMENTS INC., URBANCORP (RIVERDALE) DEVELOPMENTS INC. and URBANCORP (THE BEACH) DEVELOPMENTS INC.",
           "page_number": 1
         },
         "agent": {
@@ -46,7 +46,7 @@
           "page_number": 1
         },
         "security_agent": {
-          "value": "the Administrative Agent on behalf of the Lenders shall be granted a fixed and specific Court ordered charge of all of the Beach Remaining Lands, the Leslieville Project, each New APS, the Craft C&D Contracts, the Craft Cash Collateral, the TF Cost Overrun Guarantee, the Craft Loan and all other property, assets and undertaking of each of UC Leslieville, UC Beach and UC Riverdale",
+          "value": "the Administrative Agent on behalf of the Lenders",
           "page_number": 35
         },
         "sponsor_name": {
@@ -60,30 +60,30 @@
       },
       "definitions": {
         "lma_defined_term": {
-          "value": "LSTA Model Credit Agreement Provisions",
-          "page_number": 52
+          "value": "Applicable Law has the meaning set out in Schedule A.",
+          "page_number": 5
         },
         "reference_bank_definition": {
-          "value": "",
-          "page_number": 0
+          "value": "Interbank Reference Rate means the interest rate expressed as a percentage per annum that is customarily used by the Administrative Agent when calculating interest due by it or owing to it arising from adjustments between the Administrative Agent and other Canadian chartered banks.",
+          "page_number": 12
         },
         "base_currency": {
           "value": "Canadian Dollars and Cdn. $ mean the lawful money of Canada.",
           "page_number": 5
         },
         "optional_currencies": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "disqualified_lender_definition": {
-          "value": "",
-          "page_number": 0
+          "value": "Eligible Assignee means any Person (other than a natural person, any Obligor or any Affiliate of an Obligor)",
+          "page_number": 54
         }
       },
       "credit_facilities": {
         "stated_term_of_facility": {
-          "value": "non-revolving, term credit facility",
-          "page_number": 20
+          "value": "conditional term, subject to cancellation 30 days after the earlier of Total Completion of the Work and completion of the Development Services and the Outside Date (June 15, 2018)",
+          "page_number": 21
         },
         "facility_name": {
           "value": "Credit Facility",
@@ -91,250 +91,250 @@
         },
         "facility_type": {
           "value": "non-revolving, term credit facility",
-          "page_number": 20
+          "page_number": 17
         },
         "facility_size_term": {
-          "value": "The Credit Facility Commitment will be allocated between the FP Tranche and the Development Tranche, and if made available by the Lenders, the ITC Tranche.",
+          "value": "$4,500,000.00, plus (b) if and for so long as the ITC Condition exists, an amount up to the ITC Increase",
           "page_number": 8
         },
         "facility_size_revolver": {
-          "value": "Not applicable; facility is non-revolving.",
-          "page_number": 20
+          "value": "0",
+          "page_number": 17
         },
         "total_facility_size": {
-          "value": "$4,500,000.00",
+          "value": "$4,500,000.00, plus (b) if and for so long as the ITC Condition exists, an amount up to the ITC Increase",
           "page_number": 8
         },
         "total_commitments": {
           "value": "$4,500,000.00",
-          "page_number": 8
+          "page_number": 79
         },
         "loan_commitments": {
           "value": "$4,500,000.00",
-          "page_number": 8
+          "page_number": 79
         },
         "term_loan_commitments": {
           "value": "$4,500,000.00",
-          "page_number": 8
+          "page_number": 79
         },
         "revolving_loan_commitments": {
-          "value": "Not applicable; facility is non-revolving.",
-          "page_number": 20
+          "value": "0",
+          "page_number": 17
         },
         "repayment_provision": {
-          "value": "Mandatory Repayment, Section 5.01",
+          "value": "The Construction Receiver shall only be required to pay interest accrued on the Loans, the Deferred Commitment Fee, the principal amount of the Loans outstanding and all other Obligations from time to time only out of and from (i) receipts of Gross Sale Proceeds from the sale of Units or other income from the Units or the realization thereof, and (ii) receipts of sales proceeds, rental or other income from, or the realization of, the Beach Remaining Lands, the Leslieville Project (other than the Units) and any and all other property, assets and undertaking of UC Leslieville, UC Beach and UC Riverdale (collectively \"Proceeds for Distribution\"), as and when such Proceeds for Distribution become available for distribution.",
           "page_number": 26
         },
         "repayment_type": {
-          "value": "The Loans and all other Obligations shall become due by the Construction Receiver upon the occurrence of an Event of Default hereunder which has been accelerated by the Lenders in accordance with Section 9.02. Repayment is also made only out of and from receipts of Gross Sale Proceeds from the sale of Units or other income from the Units or the realization thereof, and receipts of sales proceeds, rental or other income from, or the realization of, the Beach Remaining Lands, the Leslieville Project (other than the Units) and any and all other property, assets and undertaking of UC Leslieville, UC Beach and UC Riverdale (collectively the amounts in clauses (i) and (ii) being herein called “Proceeds for Distribution”), in each case, as and when such Proceeds for Distribution become available for distribution by the Construction Receiver to the Lenders in the UC Receivership Proceedings.",
+          "value": "Mandatory repayment conditional on availability of Proceeds for Distribution, and upon occurrence of an Event of Default.",
           "page_number": 26
         },
         "mandatory_repayment": {
-          "value": "Section 5.01, Mandatory Repayment",
+          "value": "The Loans and all other Obligations shall become due by the Construction Receiver upon the occurrence of an Event of Default hereunder which has been accelerated by the Lenders. Repayment is to be made only out of and from Proceeds for Distribution.",
           "page_number": 26
         },
         "mandatory_prepayment_due_to_change_of_control": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "voluntary_prepayment": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "call_protection_prepayment_clause": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "facility_extension_options": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "facility_extension_option_how_many_years": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "amend_to_extend_clause": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "number_of_extension_options": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "lender_discretion": {
-          "value": "If the first advance under the Credit Facility does not occur on or before the First Advance Date, the Required Lenders may, in their sole and absolute discretion, cancel the Credit Facility.",
-          "page_number": 21
+          "value": "Sole and absolute discretion: discretion may be exercised unreasonably (e.g., cancellation of Credit Facility, extension of cure period for default, enforcement actions, application of payments).",
+          "page_number": 17
         },
         "calculation_of_interest": {
-          "value": "Interest will be calculated on the basis of a calendar year of 365 days, and using the nominal rate method of calculation and not the effective rate method of calculation or on any other basis that gives effect to the principle of deemed reinvestment of interest.",
+          "value": "Calculated on the basis of a calendar year of 365 days, using the nominal rate method, compounded monthly on overdue interest. Prime Rate Loans at Prime Rate + Prime Rate Margin. Excess Loans/Unpaid Costs at Prime Rate + 7.0% per annum.",
           "page_number": 16
         },
         "initial_margin_text": {
-          "value": "Prime Rate Margin means 5% per annum.",
+          "value": "Prime Rate Margin means 5% per annum. Interest on Prime Rate Loans is Prime Rate + Prime Rate Margin. Interest on Excess Loans is Prime Rate + 7.0% per annum.",
           "page_number": 15
         },
         "initial_margin_tables": {
-          "value": "No tables provided, margin is stated as text.",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "interest_rate_convention": {
-          "value": "calculated on the basis of a calendar year of 365 days, and using the nominal rate method of calculation and not the effective rate method of calculation or on any other basis that gives effect to the principle of deemed reinvestment of interest.",
+          "value": "calendar year of 365 days, and using the nominal rate method of calculation",
           "page_number": 16
         },
         "interest_rate_floor": {
-          "value": "Not explicitly stated as a floor for the Prime Rate, but regular interest is Prime Rate plus Prime Rate Margin (5% per annum). Default interest is Prime Rate plus 7.0% per annum.",
-          "page_number": 19
+          "value": null,
+          "page_number": null
         },
         "libor_definition": {
-          "value": "LIBOR is referenced as being removed/not applicable through amendments to Schedule A. The Credit Agreement primarily uses 'Prime Rate' and 'Interbank Reference Rate'.",
+          "value": "The definition of \"Loan\" has been amended to remove LIBO Rate Loan as a primary type, substituting Prime Rate Loan, Letter of Credit, Bankers' Acceptance or BA Equivalent Advance.",
           "page_number": 52
         },
         "arrangement_fees": {
-          "value": "Deferred Commitment Fee of $200,000",
-          "page_number": 29
+          "value": null,
+          "page_number": null
         },
         "agency_fees": {
-          "value": "Not explicitly defined as 'agency fees'. The Deferred Commitment Fee is payable to the Administrative Agent for the account of the Lenders.",
+          "value": "Deferred Commitment Fee of $200,000 payable to the Administrative Agent for the account of the Lenders.",
           "page_number": 29
         }
       },
       "representations_and_warranties": {
         "use_of_proceeds": {
-          "value": "Loans made under the Credit Facility will only be used by the Construction Receiver for: (1) with respect to the FP Tranche, to finance the Fixed Price payable to Craft under the Craft Construction Contract; and (2) with respect to the Development Tranche, to finance the payment of the Budgeted Development Costs set out in the Initial Development Budget agreed pursuant to the Craft Development Contract.",
+          "value": "For the FP Tranche, to finance the Fixed Price payable to Craft under the Craft Construction Contract. For the Development Tranche, to finance the payment of the Budgeted Development Costs set out in the Initial Development Budget.",
           "page_number": 18
         },
         "material_adverse_change_clause": {
-          "value": "",
-          "page_number": 0
+          "value": "Not explicitly found as a general MAC clause, but 'Catastrophic Event' (as defined in Craft Construction Contract) is an Event of Default. Delays of three or more months to Construction Completion also require notice.",
+          "page_number": 33
         }
       },
       "covenants": {
         "interest_coverage_covenant": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "interest_coverage_text": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "interest_coverage_tables": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "total_leverage_covenant": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "total_leverage_text": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "total_leverage_tables": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "restricted_asset_sales_permitted_transfers": {
-          "value": "Section 7.02(1) No Sale of Project: Dispose of or Lease any of the Leslieville Project or the Beach Remaining Lands other than specified sales of Units and Beach Remaining Lands.",
+          "value": "Construction Receiver will not Dispose of or Lease any of the Leslieville Project or the Beach Remaining Lands other than (a) sales of Units to Opt-In Leslieville Purchasers, (b) sales of Units to New Curzon Purchasers, (c) sales of unallocated parking spaces and extra storage spaces, (d) sales of all or a portion of the Beach Remaining Lands pursuant to an approved sales process, or (e) with prior written consent of Required Lenders.",
           "page_number": 30
         },
         "permitted_acquisitions_clause_text": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "permitted_indebtedness_basket": {
-          "value": "Permitted Debt defined in Section 1.01 includes Debt under this Agreement, Craft Loan, liabilities under Craft C&D Contracts, Existing Syndicate Debt, Debt under Travelers Agreements and Travelers Mortgage, Debt to Terra Firma, additional debt for TF Defaulted Cost Overruns, other Debt owed to Lenders, liabilities secured by Receiver’s Expense Reimbursement Charge, Receiver’s Borrowings Charge and Construction Lien Trustee’s Borrowing Charge, additional Craft Loans for Geo-Thermal Costs, and any other Debt approved by the Court.",
+          "value": "Permitted Debt includes: (a) Debt under this Agreement; (b) Craft Loan up to $2,000,000 (with potential for increase); (c) liabilities to Craft under Craft C&D Contracts; (d) Existing Syndicate Debt; (e) Debt under Travelers Agreements/Mortgage; (f) Debt to Terra Firma secured under mortgage; (g) additional debt for TF Defaulted Cost Overruns; (h) other Debt owed to Lenders; (i) liabilities secured by Receiver’s Expense Reimbursement Charge; (j) liabilities secured by Receiver’s Borrowings Charge/Construction Lien Trustee’s Borrowing Charge; (k) additional Craft Loans for Geo-Thermal Costs; and (l) any other Debt approved by the Court.",
           "page_number": 14
         },
         "permitted_financial_indebtedness_text": {
-          "value": "Permitted Debt defined in Section 1.01 includes Debt under this Agreement, Craft Loan, liabilities under Craft C&D Contracts, Existing Syndicate Debt, Debt under Travelers Agreements and Travelers Mortgage, Debt to Terra Firma, additional debt for TF Defaulted Cost Overruns, other Debt owed to Lenders, liabilities secured by Receiver’s Expense Reimbursement Charge, Receiver’s Borrowings Charge and Construction Lien Trustee’s Borrowing Charge, additional Craft Loans for Geo-Thermal Costs, and any other Debt approved by the Court.",
+          "value": "Permitted Debt includes: (a) Debt under this Agreement; (b) Craft Loan up to $2,000,000 (with potential for increase); (c) liabilities to Craft under Craft C&D Contracts; (d) Existing Syndicate Debt; (e) Debt under Travelers Agreements/Mortgage; (f) Debt to Terra Firma secured under mortgage; (g) additional debt for TF Defaulted Cost Overruns; (h) other Debt owed to Lenders; (i) liabilities secured by Receiver’s Expense Reimbursement Charge; (j) liabilities secured by Receiver’s Borrowings Charge/Construction Lien Trustee’s Borrowing Charge; (k) additional Craft Loans for Geo-Thermal Costs; and (l) any other Debt approved by the Court.",
           "page_number": 14
         },
         "prepayment_from_asset_sales_proceeds_clause": {
-          "value": "Section 5.01(2) specifies repayment from 'Proceeds for Distribution' which include 'receipts of Gross Sale Proceeds from the sale of Units or other income from the Units or the realization thereof, and receipts of sales proceeds, rental or other income from, or the realization of, the Beach Remaining Lands'.",
+          "value": "The Construction Receiver shall only be required to pay Obligations from \"Proceeds for Distribution\", which include Gross Sale Proceeds from the sale of Units and sales proceeds from the realization of the Beach Remaining Lands and Leslieville Project (other than Units).",
           "page_number": 26
         },
         "percent_of_net_cash_proceeds": {
-          "value": "All Proceeds for Distribution (net of the Construction Receiver’s Reserve as contemplated by the Settlement Approval Order) shall be distributed by the Construction Receiver in accordance with and subject to the Waterfall approved under the Settlement Approval Order.",
-          "page_number": 27
+          "value": "All Proceeds for Distribution (net of the Construction Receiver’s Reserve) shall be distributed by the Construction Receiver in accordance with and subject to the Waterfall approved under the Settlement Approval Order.",
+          "page_number": 30
         },
         "permitted_reinvestment_period": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "equity_cure_provision": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "number_of_equity_cures": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "subsidiary_guarantees": {
-          "value": "The Construction Receiver acts on behalf of UC Leslieville, UC Riverdale and UC Beach. The term 'Obligors' includes the Borrower and each of the guarantors of the Borrower's obligations identified elsewhere in this Agreement. The document refers to 'UC Riverdale and UC Beach (as guarantors)' in the context of the 'Existing Syndicate Credit Agreement'.",
-          "page_number": 1
+          "value": "Recourse against the Construction Receiver is limited to a claim against the proceeds of the property and assets of UC Leslieville, UC Beach and/or UC Riverdale.",
+          "page_number": 17
         },
         "transfer_provisions": {
-          "value": "Article 10 Successors and Assigns",
+          "value": "Lenders may assign all or a portion of their rights and obligations to Eligible Assignees, or sell participations to any Person (excluding natural persons, Obligors, or their Affiliates).",
           "page_number": 68
         },
         "amendment_clause": {
-          "value": "Section 11.07 Amendments and Waivers: 'No amendment to this Agreement will be valid or binding unless set forth in writing and duly executed by the Construction Receiver and the Administrative Agent for and on behalf of the Lenders or the Required Lenders, as the case may be.' Also Section 10.03(2) and (3) detail required consents for amendments by the Administrative Agent.",
+          "value": "No amendment to this Agreement will be valid or binding unless set forth in writing and duly executed by the Construction Receiver and the Administrative Agent for and on behalf of the Lenders or the Required Lenders, as the case may be.",
           "page_number": 41
         },
         "snooze_lose_clause": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "disqualified_lender_list": {
-          "value": "",
-          "page_number": 0
+          "value": "Any Person other than an Eligible Assignee, which excludes a natural person, any Obligor or any Affiliate of an Obligor.",
+          "page_number": 68
         }
       },
       "defaults": {
         "events_of_default": {
-          "value": "Article 9 Default, Section 9.01 Events of Default",
-          "page_number": 35
+          "value": "Failure to pay any Obligation when due; breach of any negative covenant; material breach of other covenants not remedied within 30 days (or longer agreed period); occurrence of any Catastrophic Event; or existence/occurrence of any event/circumstance effectively disentitling Drawdown.",
+          "page_number": 32
         },
         "payment_default_provision": {
-          "value": "Section 9.01(1) 'if the Construction Receiver fails to pay any Obligation when due'",
-          "page_number": 35
+          "value": "If the Construction Receiver fails to pay any Obligation when due.",
+          "page_number": 32
         },
         "insolvency_default": {
-          "value": "The definition of 'Insolvent' (Section 1.01) outlines conditions such as 'has committed an “act of bankruptcy”, has admitted in writing that it is unable to pay its debts as they become due, or has become insolvent', 'has made any assignment in bankruptcy', etc. While Section 3.01(15) and 3.02(3) state that Craft, the Builder or Terra Firma becoming Insolvent is a condition for drawdown, such an event by the Construction Receiver would likely trigger a general Event of Default.",
-          "page_number": 12
+          "value": "Insolvency of Craft, the Builder or Terra Firma is a condition precedent to first Drawdown, and failure of a condition precedent is an Event of Default.",
+          "page_number": 21
         },
         "misrepresentation_default": {
-          "value": "Not explicitly listed as a separate Event of Default, but could fall under Section 9.01(3) for breach of covenant or obligation.",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "market_disruption_clause": {
-          "value": "Section 3.5 Inability to Determine Rates Etc.",
+          "value": "If the Required Lenders determine that for any reason a market for bankers' acceptances does not exist or Lenders cannot readily sell bankers' acceptances or perform other obligations related to them, the Borrower's right to request acceptance of bankers' acceptances will be suspended.",
           "page_number": 60
         },
         "cross_default": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "cross_acceleration": {
-          "value": "",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         },
         "no_set_off": {
-          "value": "Section 4 'Right of Setoff' explicitly grants Lenders and their Affiliates the right to set off against any Obligor's deposits or obligations.",
+          "value": "Each of the Lenders and each of their respective Affiliates is authorized to set off and apply any and all deposits at any time held and other obligations owing by such Lender or Affiliate to or for the credit or account of any Obligor against any and all obligations of the Borrower.",
           "page_number": 60
         },
         "set_off_prohibited_for_borrower": {
-          "value": "The document does not explicitly state that set-off is prohibited for the borrower, but it explicitly grants lenders the right of set-off.",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         }
       },
       "miscellaneous": {
         "bilateral_or_syndicated": {
-          "value": "Syndicated, indicated by 'THE FINANCIAL INSTITUTIONS from time to time parties hereto as Lenders' and references to 'syndication of the credit facilities'.",
+          "value": "Syndicated",
           "page_number": 1
         },
         "business_days_convention_calendar": {
-          "value": "A day of the year, other than a Saturday, Sunday or statutory holiday, on which the Administrative Agent is open for business at its executive offices in Toronto, Ontario.",
+          "value": "a day of the year, other than a Saturday, Sunday or statutory holiday, on which the Administrative Agent is open for business at its executive offices in Toronto, Ontario.",
           "page_number": 5
         },
         "business_days_payments_non_business_day_rule": {
@@ -342,20 +342,20 @@
           "page_number": 28
         },
         "business_days_rate_setting_quotation_day": {
-          "value": "",
-          "page_number": 0
+          "value": "Drawdown Date must be a Business Day. Drawdown Notice must be delivered at least three Business Days prior to the proposed Drawdown Date.",
+          "page_number": 21
         },
         "governing_law": {
           "value": "laws of the Province of Ontario and the laws of Canada applicable in that Province.",
           "page_number": 40
         },
         "confidentiality_clause": {
-          "value": "Section 14 Treatment of Certain Information: Confidentiality",
+          "value": "Section 14 'Treatment of Certain Information: Confidentiality'",
           "page_number": 71
         },
         "language_for_client_communication": {
-          "value": "Not explicitly stated, but the document is in English.",
-          "page_number": 0
+          "value": null,
+          "page_number": null
         }
       }
     },

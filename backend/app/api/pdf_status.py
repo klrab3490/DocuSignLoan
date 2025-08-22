@@ -8,7 +8,7 @@ router = APIRouter()
 
 class ExtractedField(BaseModel):
     value: Optional[str] = None
-    page_number: int
+    page_number: Optional[int] = None
 
 class JobResult(RootModel):
     root: Dict[str, Dict[str, ExtractedField]]
