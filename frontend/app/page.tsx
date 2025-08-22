@@ -56,8 +56,6 @@ export default function Home() {
     const [fetchStatus, setFetchStatus] = useState<string | null>(null);
     const [editableData, setEditableData] = useState<RawResult | null>(null);
 
-    // console.log(highlights, pageNumber);
-
     const handleUpload = async () => {
         setStatus("Uploading")
         if (!file) {
@@ -155,6 +153,7 @@ export default function Home() {
             const data = await result.json();
             setHighlights(data.highlights);
             setPageNumber(data.page_number);
+            console.log(highlights, pageNumber);
         } catch (error) {
             console.error(error);
         } finally {
