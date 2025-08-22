@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Save, Upload, FileText, Search, Database } from "lucide-react";
-import LazyAppPdfViewer from "@/components/custom/react-pdf/LazyAppPdfViewer";
+import LazyAppPdfViewer from "@/components/custom/pdf-viewer/LazyAppPdfViewer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -15,6 +15,7 @@ type JobResult = {
     job_id: string
     status: string
     filename: string
+    file_path: string
     result: RawResult
 }
 
@@ -55,7 +56,7 @@ export default function Home() {
     const [fetchStatus, setFetchStatus] = useState<string | null>(null);
     const [editableData, setEditableData] = useState<RawResult | null>(null);
 
-    console.log(highlights, pageNumber);
+    // console.log(highlights, pageNumber);
 
     const handleUpload = async () => {
         setStatus("Uploading")
@@ -114,7 +115,7 @@ export default function Home() {
 
             setResult(data)
             setEditableData(data.result)
-            fetchPDF(data.filename)
+            fetchPDF(data.file_path)
         } catch (error) {
             console.error(error)
         } finally {
@@ -127,7 +128,9 @@ export default function Home() {
         if (!filename) return
 
         try {
-            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/uploads/${filename}`);
+            const normalizedFilename = filename.replace(/\\/g, "/");
+            console.log(`File path: ${process.env.NEXT_PUBLIC_BACKEND_URL}/${normalizedFilename}`);
+            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/${filename}`);
             if (!result.ok) throw new Error("Failed to fetch data");
             const data = await result.blob();
             setFileUrl(URL.createObjectURL(data));
@@ -474,7 +477,7 @@ export default function Home() {
                                     Agreement Data
                                 </CardTitle>
                                 <p className="text-sm text-muted-foreground">
-                                    • File Name: {result.filename} <br />• Job ID: {result.job_id}
+                                    • File Name: {result.filename} <br />• Job ID: {result.job_id} <br />• File URL: {result.file_path}
                                 </p>
                             </div>
                             <div className="flex gap-3">

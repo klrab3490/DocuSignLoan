@@ -17,6 +17,7 @@ class JobStatusResponse(BaseModel):
     job_id: str
     status: str
     filename: str
+    file_path: str
     result: Optional[JobResult] = None
     pages: Optional[Dict[int, str]] = None
 
@@ -35,6 +36,7 @@ async def get_job_status(job_id: str):
         job_id=job_id,
         status=job.get("status", "unknown"),
         filename=job.get("filename", ""),
+        file_path=job.get("file_path", ""),
         result=job.get("result"),
         pages=job.get("pages"),
     )
