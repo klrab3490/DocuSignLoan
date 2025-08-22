@@ -18,7 +18,6 @@ def find_phrase_coords(page, phrase: str):
 
     for i in range(len(words) - len(phrase_tokens) + 1):
         window = [w[4] for w in words[i:i + len(phrase_tokens)]]
-        print(f"Comparing window: {window} with phrase tokens: {phrase_tokens}")
         if window == phrase_tokens:
             print(f"Found phrase at index {i}: {window}")
             coords = [(w[0], w[1], w[2], w[3]) for w in words[i:i + len(phrase_tokens)]]
@@ -32,7 +31,7 @@ def find_phrase_coords(page, phrase: str):
                 return coords
     return None
 
-@router.get("/pdf/highlight/")
+@router.get("/highlight/")
 async def highlight_text(job_id: str, page_number: int, content: str):
     """
     Highlight a given content string on a specific page of a PDF.
@@ -77,6 +76,6 @@ async def highlight_text(job_id: str, page_number: int, content: str):
 
     # Save highlighted PDF
     output_path = file_path.replace(".pdf", "_highlighted.pdf")
-    doc.save(output_path, incremental=True, encryption=fitz.PDF_ENCRYPT_KEEP)
+    doc.save(output_path)
 
     return {"message": "Highlight added", "output_file": output_path}
