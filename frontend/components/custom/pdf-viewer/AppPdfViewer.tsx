@@ -4,11 +4,13 @@ import { RPProvider, RPDefaultLayout, RPPages } from '@pdf-viewer/react'
 
 interface AppPdfViewerProps {
   fileUrl: string;
+  initialPage?: number;
 }
 
-const AppPdfViewer = ({ fileUrl }: AppPdfViewerProps) => {
+
+const AppPdfViewer = ({ fileUrl, initialPage = 1 }: AppPdfViewerProps) => {
   return (
-    <RPProvider src={fileUrl}>
+    <RPProvider src={fileUrl} initialPage={initialPage}>
       <RPDefaultLayout>
         <RPPages />
       </RPDefaultLayout>

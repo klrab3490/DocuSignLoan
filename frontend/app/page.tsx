@@ -44,15 +44,14 @@ type JobSummary = {
 export default function Home() {
     const [isEditing, setIsEditing] = useState(false);
     const [file, setFile] = useState<File | null>(null);
+    const [pageNumber, setPageNumber] = useState<number>(1);
     const [jobID, setJobID] = useState<string | null>(null);
     const [fetching, setFetching] = useState<boolean>(false);
     const [jobs, setJobs] = useState<JobSummary[] | null>(null);
     const [status, setStatus] = useState<string | null>(null);
     const [fileUrl, setFileUrl] = useState<string | null>(null);
     const [result, setResult] = useState<JobResult | null>(null);
-    const [highlights, setHighlights] = useState<string>("");
     const [fetchingPDF, setFetchingPDF] = useState<boolean>(false);
-    const [pageNumber, setPageNumber] = useState<number | null>(null);
     const [fetchStatus, setFetchStatus] = useState<string | null>(null);
     const [editableData, setEditableData] = useState<RawResult | null>(null);
 
@@ -121,17 +120,20 @@ export default function Home() {
         }
     }
 
-    const fetchPDF = async (filename: string) => {
+    const fetchPDF = async (filename: string, page?: number) => {
         setFetchingPDF(true);
         if (!filename) return
 
         try {
             const normalizedFilename = filename.replace(/\\/g, "/");
-            console.log(`File path: ${process.env.NEXT_PUBLIC_BACKEND_URL}/${normalizedFilename}`);
-            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/${filename}`);
+            // console.log(`File path: ${process.env.NEXT_PUBLIC_BACKEND_URL}/${normalizedFilename}`);
+            const result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/${normalizedFilename}`);
             if (!result.ok) throw new Error("Failed to fetch data");
             const data = await result.blob();
             setFileUrl(URL.createObjectURL(data));
+            if (typeof page === "number") {
+                setPageNumber(page);
+            }
         } catch (error) {
             console.error(error)
         } finally {
@@ -151,9 +153,7 @@ export default function Home() {
             );
             if (!result.ok) throw new Error("Failed to fetch data");
             const data = await result.json();
-            setHighlights(data.highlights);
-            setPageNumber(data.page_number);
-            console.log(highlights, pageNumber);
+            fetchPDF(data.output_file, page);
         } catch (error) {
             console.error(error);
         } finally {
@@ -268,7 +268,7 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-background via-muted/30 to-muted/50 p-4 md:p-6">
-            <div className="max-w-6xl mx-auto space-y-8">
+            <div className="mx-auto space-y-8">
                 <div className="text-center space-y-2 mb-8">
                     <h1 className="text-3xl md:text-4xl font-bold text-foreground">PDF Document Processor</h1>
                     <p className="text-muted-foreground text-lg">Extract, analyze, and manage agreement data with ease</p>
@@ -523,7 +523,7 @@ export default function Home() {
                         </CardHeader>
                         <CardContent className="space-y-8 pt-6 flex">
                             <div className="flex w-full gap-8">
-                                <div className="w-full md:w-2/3 pr-4">
+                                <div className="w-1/2 pr-4">
                                     {Object.entries(editableData).map(([sectionKey, sectionValue]) => (
                                         <Card key={sectionKey} className="mb-8 bg-muted/40 border border-border/30 shadow-sm">
                                             <CardHeader className="flex items-center gap-3 pb-2 border-b border-border/20">
@@ -568,7 +568,7 @@ export default function Home() {
                                         </Card>
                                     ))}
                                 </div>
-                                <div className="hidden md:block w-1/3">
+                                <div className="w-1/2">
                                     <div className="sticky top-24 rounded-lg overflow-hidden shadow-lg border border-border/30 bg-background">
                                         <div className="bg-muted/20 px-4 py-2 border-b border-border/20">
                                             <h4 className="text-base font-semibold text-card-foreground flex items-center gap-2">
@@ -576,7 +576,7 @@ export default function Home() {
                                                 PDF Preview
                                             </h4>
                                         </div>
-                                        <LazyAppPdfViewer fileUrl={fileUrl} />
+                                        <LazyAppPdfViewer fileUrl={fileUrl} initialPage={pageNumber} />
                                     </div>
                                 </div>
                             </div>

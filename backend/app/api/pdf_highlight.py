@@ -1,5 +1,4 @@
-import os
-import fitz  # PyMuPDF
+import os, re, fitz
 from app.utils import load_jobs_from_file
 from fastapi import APIRouter, HTTPException
 
@@ -13,21 +12,34 @@ def find_phrase_coords(page, phrase: str):
     Returns list of bounding boxes if found, else None.
     """
     words = page.get_text("words")  # list of (x0, y0, x1, y1, "word")
-    phrase_tokens = phrase.split()  # split by spaces → ["27", "November", "2023"]
+
+    def normalize(token):
+        token_lc = token.lower()
+        # If token contains any symbol (non-alphanumeric except $ and .), keep as-is
+        if re.search(r'[^a-z0-9]', token_lc):
+            return token_lc
+        # Else, remove punctuation/quotes
+        return re.sub(r'[^a-z0-9]', '', token_lc)
+
+    phrase_tokens = [normalize(token) for token in phrase.split()]
     print(f"Searching for phrase: {phrase_tokens}")
 
-    for i in range(len(words) - len(phrase_tokens) + 1):
-        window = [w[4] for w in words[i:i + len(phrase_tokens)]]
+    words_norm = [(w[0], w[1], w[2], w[3], normalize(w[4])) for w in words]
+
+    for i in range(len(words_norm) - len(phrase_tokens) + 1):
+        window = [w[4] for w in words_norm[i:i + len(phrase_tokens)]]
         if window == phrase_tokens:
             print(f"Found phrase at index {i}: {window}")
-            coords = [(w[0], w[1], w[2], w[3]) for w in words[i:i + len(phrase_tokens)]]
+            coords = [(w[0], w[1], w[2], w[3]) for w in words_norm[i:i + len(phrase_tokens)]]
             return coords
         # If not exact match, check if any two words from phrase_tokens are found near each other
         for j in range(len(phrase_tokens) - 1):
             if window[j] == phrase_tokens[j] and window[j + 1] == phrase_tokens[j + 1]:
                 print(f"Found two words near at index {i + j}: {window[j]}, {window[j + 1]}")
-                coords = [(words[i + j][0], words[i + j][1], words[i + j][2], words[i + j][3]),
-                      (words[i + j + 1][0], words[i + j + 1][1], words[i + j + 1][2], words[i + j + 1][3])]
+                coords = [
+                    (words_norm[i + j][0], words_norm[i + j][1], words_norm[i + j][2], words_norm[i + j][3]),
+                    (words_norm[i + j + 1][0], words_norm[i + j + 1][1], words_norm[i + j + 1][2], words_norm[i + j + 1][3])
+                ]
                 return coords
     return None
 
@@ -56,8 +68,7 @@ async def highlight_text(job_id: str, page_number: int, content: str):
     page = doc[page_number - 1]
     # print(f"Page where content is located: {page_number} and {page}")
     # print(f"Content on page {page_number}:")
-    page_text = page.get_text()
-
+    
     coords = find_phrase_coords(page, content)
     if not coords:
         raise HTTPException(status_code=404, detail="Text not found in PDF")
