@@ -1,46 +1,36 @@
 import os, re, fitz
 from app.utils import load_jobs_from_file
 from fastapi import APIRouter, HTTPException
+import difflib
 
 router = APIRouter()
 
 UPLOADS_DIR = "uploads"
 
-def find_phrase_coords(page, phrase: str):
+def find_phrase_coords(page, phrase: str, threshold: float = 0.5):
     """
-    Find coordinates of a multi-word phrase on a PDF page.
-    Returns list of bounding boxes if found, else None.
+    Find coordinates of a phrase by matching sentences with at least `threshold` similarity.
+    Returns bounding box of the best match, else None.
     """
-    words = page.get_text("words")  # list of (x0, y0, x1, y1, "word")
 
-    def normalize(token):
-        token_lc = token.lower()
-        # If token contains any symbol (non-alphanumeric except $ and .), keep as-is
-        if re.search(r'[^a-z0-9]', token_lc):
-            return token_lc
-        # Else, remove punctuation/quotes
-        return re.sub(r'[^a-z0-9]', '', token_lc)
+    blocks = page.get_text("blocks")  # list of (x0, y0, x1, y1, "text", block_no)
+    phrase_norm = phrase.lower().strip()
 
-    phrase_tokens = [normalize(token) for token in phrase.split()]
-    print(f"Searching for phrase: {phrase_tokens}")
+    best_match = None
+    best_score = 0
 
-    words_norm = [(w[0], w[1], w[2], w[3], normalize(w[4])) for w in words]
+    for b in blocks:
+        if len(b) < 5:
+            continue
+        block_text = b[4].lower().strip()
+        score = difflib.SequenceMatcher(None, phrase_norm, block_text).ratio()
+        if score >= threshold and score > best_score:
+            best_match = b
+            best_score = score
 
-    for i in range(len(words_norm) - len(phrase_tokens) + 1):
-        window = [w[4] for w in words_norm[i:i + len(phrase_tokens)]]
-        if window == phrase_tokens:
-            print(f"Found phrase at index {i}: {window}")
-            coords = [(w[0], w[1], w[2], w[3]) for w in words_norm[i:i + len(phrase_tokens)]]
-            return coords
-        # If not exact match, check if any two words from phrase_tokens are found near each other
-        for j in range(len(phrase_tokens) - 1):
-            if window[j] == phrase_tokens[j] and window[j + 1] == phrase_tokens[j + 1]:
-                print(f"Found two words near at index {i + j}: {window[j]}, {window[j + 1]}")
-                coords = [
-                    (words_norm[i + j][0], words_norm[i + j][1], words_norm[i + j][2], words_norm[i + j][3]),
-                    (words_norm[i + j + 1][0], words_norm[i + j + 1][1], words_norm[i + j + 1][2], words_norm[i + j + 1][3])
-                ]
-                return coords
+    if best_match:
+        # Return bounding box for the best matching block
+        return [(best_match[0], best_match[1], best_match[2], best_match[3])]
     return None
 
 @router.get("/highlight/")
