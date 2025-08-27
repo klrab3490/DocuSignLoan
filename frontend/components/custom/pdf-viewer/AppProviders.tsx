@@ -1,4 +1,5 @@
 'use client'
+
 import { type PropsWithChildren } from 'react'
 import { RPConfig, RPConfigProps } from '@pdf-viewer/react'
 

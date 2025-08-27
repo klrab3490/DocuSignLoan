@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { LoadingSpinner } from "@/components/custom/LoadingSpinner";
 import { Save, Upload, FileText, Search, Database } from "lucide-react";
 import LazyAppPdfViewer from "@/components/custom/pdf-viewer/LazyAppPdfViewer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -141,14 +142,14 @@ export default function Home() {
         }
     }
 
-    const fetchHighlights = async (id: string, page: number, content: string) => {
+    const fetchHighlights = async (id: string, page: number, query: string) => {
         if (!id || fetchingPDF) return;
 
         setFetching(true);
 
         try {
             const result = await fetch(
-                `${process.env.NEXT_PUBLIC_BACKEND_URL}/pdf/highlight/?job_id=${encodeURIComponent(id)}&page_number=${page}&content=${encodeURIComponent(content)}`,
+                `${process.env.NEXT_PUBLIC_BACKEND_URL}/pdf/highlight/?job_id=${encodeURIComponent(id)}&page_number=${page}&query=${encodeURIComponent(query)}`,
                 { method: "GET" }
             );
             if (!result.ok) throw new Error("Failed to fetch data");
@@ -569,14 +570,24 @@ export default function Home() {
                                     ))}
                                 </div>
                                 <div className="w-1/2">
-                                    <div className="sticky top-24 rounded-lg overflow-hidden shadow-lg border border-border/30 bg-background">
+                                    <div className="sticky top-5 rounded-lg overflow-hidden shadow-lg border border-border/30 bg-background">
                                         <div className="bg-muted/20 px-4 py-2 border-b border-border/20">
                                             <h4 className="text-base font-semibold text-card-foreground flex items-center gap-2">
                                                 <FileText className="w-4 h-4 text-primary" />
                                                 PDF Preview
                                             </h4>
                                         </div>
-                                        <LazyAppPdfViewer fileUrl={fileUrl} initialPage={pageNumber} />
+                                        {fetching ? (
+                                            <div className="p-6 bg-card rounded-lg border text-center space-y-4">
+                                                <h3 className="font-medium">Loading PDF</h3>
+                                                <div className="flex flex-col items-center gap-3">
+                                                    <LoadingSpinner variant="dots" size="lg" />
+                                                    <p className="text-sm text-muted-foreground">Please wait...</p>
+                                                </div>
+                                            </div>
+                                        ) : (
+                                            <LazyAppPdfViewer fileUrl={fileUrl} initialPage={pageNumber} />
+                                        )}
                                     </div>
                                 </div>
                             </div>

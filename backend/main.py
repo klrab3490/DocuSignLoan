@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from dotenv import load_dotenv
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import authentication, pdf_extract, pdf_highlight, pdf_status, pdf_serve
+from app.api import authentication, pdf_extract, pdf_highlight, pdf_status
 
 # Load environment variables
 load_dotenv(dotenv_path=".env")
@@ -60,7 +60,6 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 app.include_router(pdf_extract.router, prefix="/pdf", tags=["PDF Extraction"])
 app.include_router(pdf_highlight.router, prefix="/pdf", tags=["PDF Highlight"])
 app.include_router(pdf_status.router, prefix="/pdf", tags=["PDF Status"])
-app.include_router(pdf_serve.router, prefix="/pdf", tags=["PDF Fetch"])
 
 if __name__ == "__main__":
     PORT = int(os.getenv("PORT", 8000))
