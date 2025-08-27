@@ -1,22 +1,27 @@
 import { render, screen } from "@testing-library/react";
-import Home from "../app/page"; // adjust the path if different
+import Home from "../app/page"; // adjust path if needed
 
 describe("Home Page", () => {
-  it("renders main heading", () => {
+  beforeEach(() => {
     render(<Home />);
-    expect(screen.getByText(/Document Processing Hub/i)).toBeInTheDocument();
+  });
+
+  it("renders main heading", () => {
+    // h1 -> "PDF Document Processor"
+    expect(
+      screen.getByRole("heading", { name: /PDF Document Processor/i })
+    ).toBeInTheDocument();
   });
 
   it("renders upload tab trigger", () => {
-    render(<Home />);
-    expect(screen.getByText(/Upload Document/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole("tab", { name: /Upload Document/i })
+    ).toBeInTheDocument();
   });
 
-  it("renders fetch tab trigger", () => {
-    render(<Home />);
-    // match "Fetch Data" or "Retrieve Data"
+  it("renders retrieve tab trigger", () => {
     expect(
-      screen.getByText(/(Fetch Data|Retrieve Data)/i)
+      screen.getByRole("tab", { name: /Retrieve Data/i })
     ).toBeInTheDocument();
   });
 });
