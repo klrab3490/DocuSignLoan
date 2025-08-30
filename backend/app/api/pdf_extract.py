@@ -2,11 +2,19 @@ import re
 import uuid
 import json
 import fitz
-from fastapi import APIRouter, File, UploadFile, HTTPException
 from pydantic import BaseModel
 from typing import Dict, Any, Optional
+from fastapi import APIRouter, File, UploadFile, HTTPException
 
-from app.utils import save_jobs_to_file, load_jobs_from_file, save_file_permanent, delete_temp_file, client, MAX_FILE_SIZE_BYTES, MAX_FILE_SIZE_MB
+from app.utils import (
+    client,
+    delete_temp_file,
+    load_jobs_from_file,
+    MAX_FILE_SIZE_BYTES,
+    MAX_FILE_SIZE_MB,
+    save_file_permanent,
+    save_jobs_to_file,
+)
 
 router = APIRouter()
 processing_jobs = load_jobs_from_file()

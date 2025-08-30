@@ -1,6 +1,6 @@
 import os, difflib, fitz
-from app.utils import client, load_jobs_from_file
 from fastapi import APIRouter, HTTPException
+from app.utils import client, load_jobs_from_file
 
 router = APIRouter()
 

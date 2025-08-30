@@ -30,7 +30,6 @@ app = FastAPI(
     version="1.0.0",
     openapi_tags=[
         {"name": "PDF Extraction", "description": "Extract and format content from PDFs"},
-        {"name": "PDF Fetch", "description": "Fetch uploaded PDF files"},
         {"name": "PDF Highlight", "description": "Highlight text in PDF files"},
         {"name": "PDF Status", "description": "Check status of PDF extraction jobs"},
     ],
