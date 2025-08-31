@@ -131,13 +131,64 @@ This project is proprietary and confidential. Unauthorized copying or distributi
 
 ```
 market-pulse/
-├── backend/
-│   ├── jobs.json         # Stores Data Fetched in JSON Format
-│   └── main.py           # FastAPI entry point(PORT: 8000)
-├── frontend/
-│   ├── app/page.js       # Next.js frontend UI(PORT: 3000)
-│   └── components/...    # (Optional) reusable components
-```
+├── .github/                 # GitHub Actions workflows and automation
+│   ├── backend.yml          # Backend CI/CD workflow
+│   ├── frontend.yml         # Frontend CI/CD workflow
+│   └── sync.yml             # Synchronization jobs
+│
+├── backend/                 # Python Backend
+│   ├── app/
+│   │   ├── api/             # API endpoints (authentication, PDF processing)
+│   │   │   ├── authentication.py
+│   │   │   ├── pdf_extract.py
+│   │   │   ├── pdf_highlight.py
+│   │   │   ├── pdf_status.py
+│   │   │   └── __init__.py
+│   │   ├── utils/           # Utility modules (config, jobs, storage)
+│   │   │   ├── config.py
+│   │   │   ├── file_utils.py
+│   │   │   ├── jobs.py
+│   │   │   ├── storage.py
+│   │   │   └── __init__.py
+│   ├── tests/               # Unit and integration tests
+│   ├── uploads/             # Uploaded PDF files and assets
+│   ├── jobs.json            # Stores data fetched in JSON format
+│   ├── main.py              # FastAPI entry point(PORT: 8000)
+│   ├── requirements.txt     # Python dependencies
+│   ├── .env.examples        # Example environment variables
+│   ├── .pytest_cache/       # Pytest cache directory
+│   └── venv/                # Python virtual environment
+│
+├── frontend/                # NextJS Frontend
+│   ├── __tests__/           # Test files
+│   ├── .next/               # Next.js build output
+│   ├── .swc/                # SWC cache
+│   ├── app/                 # Application entry (Next.js app directory)
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   ├── components/          # Reusable UI components
+│   ├── lib/                 # Utility libraries
+│   ├── node_modules/        # Node.js dependencies
+│   ├── public/              # Static assets
+│   ├── .env                 # Environment variables
+│   ├── .env.examples        # Example environment variables
+│   ├── components.json      # Component configuration
+│   ├── eslint.config.mjs    # ESLint configuration
+│   ├── jest.config.ts       # Jest configuration
+│   ├── jest.setup.ts        # Jest setup
+│   ├── next-env.d.ts        # Next.js environment types
+│   ├── next.config.ts       # Next.js configuration
+│   ├── package-lock.json    # NPM lock file
+│   ├── package.json         # NPM package manifest
+│   ├── postcss.config.mjs   # PostCSS configuration
+│   ├── README.md            # Project documentation
+│   └── tsconfig.json        # TypeScript configuration
+│
+├── .gitignore               # Git ignore rules
+├── LICENSE                  # License file
+└── README.md                # Project documentation
 
 ---
 
