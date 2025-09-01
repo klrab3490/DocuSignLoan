@@ -12,7 +12,7 @@ backend-test/__pycache__/
 backend-test/**/*.pyc
 backend-test/**/*.pyo
 backend-test/.pytest_cache/
-backend-test/venv/
+backend-test/venv-test/
 backend-test/.env
 
 # Python packaging
