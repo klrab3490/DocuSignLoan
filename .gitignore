@@ -1,21 +1,9 @@
 # --- Python backend ---
-backend/__pycache__/
-backend/**/*.pyc
-backend/**/*.pyo
-backend/.pytest_cache/
-backend/venv/
-backend/.env
-backend/upgrade_all.py
-
-# backend-test/
-backend-test/__pycache__/
-backend-test/**/*.pyc
-backend-test/**/*.pyo
-backend-test/.pytest_cache/
-backend-test/venv-test/
-backend-test/.env
-
-# Python packaging
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv*/
+.venv*/
 *.egg-info/
 dist/
 build/
@@ -24,11 +12,11 @@ build/
 frontend/node_modules/
 frontend/.next/
 frontend/out/
-frontend/.env
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
+
+# Environment files
+.env
+frontend/.env*
+!frontend/.env.example   # keep example envs
 
 # Logs
 *.log
@@ -41,11 +29,11 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
-# IDE / Editor files
+# IDE / Editor
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Environment variables
-.env
+# Local scripts
+upgrade_all.py
