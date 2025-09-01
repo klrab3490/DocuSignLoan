@@ -6,6 +6,7 @@ backend/.pytest_cache/
 backend/venv/
 backend/.env
 backend/upgrade_all.py
+backend-test/
 
 # Python packaging
 *.egg-info/

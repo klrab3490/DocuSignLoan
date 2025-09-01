@@ -157,6 +157,9 @@ export default function Home() {
             fetchPDF(data.output_file, page);
         } catch (error) {
             console.error(error);
+            if (result) {
+                fetchPDF(result.file_path, page);
+            }
         } finally {
             setFetching(false);
         }
