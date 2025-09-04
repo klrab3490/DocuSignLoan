@@ -22,7 +22,13 @@ if TESSERACT_CMD:
 def page_to_image(page: fitz.Page, zoom: float = 2.0) -> Image.Image:
     """
     Render a PDF page to a PIL Image using PyMuPDF.
-    - zoom=2.0 → ~144 DPI (higher zoom = better OCR but slower).
+    
+    Parameters:
+        page: PyMuPDF Page object
+        zoom: Rendering scale (2.0 ~ 144 DPI). Higher zoom -> better OCR.
+    
+    Returns:
+        PIL Image of the page.
     """
     mat = fitz.Matrix(zoom, zoom)
     pix = page.get_pixmap(matrix=mat, alpha=False)
@@ -32,32 +38,36 @@ def page_to_image(page: fitz.Page, zoom: float = 2.0) -> Image.Image:
 
 def extract_text_with_ocr(pdf_path: str, ocr_zoom: float = 2.5) -> Dict[int, str]:
     """
-    Extract text from a PDF with fallback to OCR.
-    - pdf_path: path to the PDF file
-    - ocr_zoom: rendering scale used for OCR (higher -> better OCR at cost of speed)
-    - Returns: {page_number: text}
-
-    Workflow:
-    1. Try extracting selectable text with page.get_text("text").
-    2. If no text, render the page as an image and run Tesseract OCR.
+    Extract text from a PDF, using native text where possible,
+    and Tesseract OCR for image-only pages.
+    
+    Parameters:
+        pdf_path: Path to the PDF file
+        ocr_zoom: Rendering scale used for OCR
+    
+    Returns:
+        Dict[int, str]: Mapping from page_number to extracted text.
     """
     doc = fitz.open(pdf_path)
     results: Dict[int, str] = {}
 
-    for i, page in enumerate(doc, start=1):
+    for page_number, page in enumerate(doc, start=1):
+        text = ""
         try:
             text = page.get_text("text") or ""
         except Exception:
-            # Defensive: if PyMuPDF throws, fallback to OCR
-            text = ""
+            pass  # fallback to OCR if PyMuPDF fails
 
         if text.strip():
-            results[i] = text
+            results[page_number] = text
             continue
 
         # Fallback to OCR
-        image = page_to_image(page, zoom=ocr_zoom)
-        ocr_text = pytesseract.image_to_string(image)
-        results[i] = ocr_text
+        try:
+            image = page_to_image(page, zoom=ocr_zoom)
+            ocr_text = pytesseract.image_to_string(image)
+            results[page_number] = ocr_text
+        except Exception:
+            results[page_number] = ""  # fallback if OCR fails
 
     return results

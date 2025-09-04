@@ -1,31 +1,47 @@
 from typing import Dict, List, Optional
+from app.utils import load_jobs_from_file
 from pydantic import BaseModel, RootModel
 from fastapi import APIRouter, HTTPException
-from app.utils import load_jobs_from_file
 
 router = APIRouter()
 
+
+# ----------------------------
+# Models
+# ----------------------------
 
 class ExtractedField(BaseModel):
     value: Optional[str] = None
     page_number: Optional[int] = None
 
 
-class JobResult(RootModel):
-    root: Dict[str, Dict[str, ExtractedField]]
+class JobResult(RootModel[Dict[str, Dict[str, ExtractedField]]]):
+    """Root model for the job extraction result."""
+    pass
 
 
 class JobStatusResponse(BaseModel):
     job_id: str
     status: str
     filename: str
-    file_path: str | None = None
+    file_path: Optional[str] = None
     result: Optional[JobResult] = None
     pages: Optional[Dict[int, str]] = None
 
 
+class JobSummary(BaseModel):
+    job_id: str
+    status: str
+    filename: str
+
+
+# ----------------------------
+# Routes
+# ----------------------------
+
 @router.get("/jobs/{job_id}", response_model=JobStatusResponse)
 async def get_job_status(job_id: str):
+    """Fetch the status of a single job by job_id."""
     data = load_jobs_from_file()
     job = data.get(job_id)
     if not job:
@@ -41,16 +57,15 @@ async def get_job_status(job_id: str):
     )
 
 
-class JobSummary(BaseModel):
-    job_id: str
-    status: str
-    filename: str
-
-
 @router.get("/status", response_model=List[JobSummary])
 async def get_all_jobs():
+    """Fetch a list of all jobs with minimal details."""
     data = load_jobs_from_file()
     return [
-        JobSummary(job_id=job_id, status=job["status"], filename=job["filename"])
+        JobSummary(
+            job_id=job_id,
+            status=job.get("status", "unknown"),
+            filename=job.get("filename", "")
+        )
         for job_id, job in data.items()
     ]
