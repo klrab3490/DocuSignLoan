@@ -291,6 +291,7 @@ async def extract_and_format_pdf(
         job_id = existing_job_id
         processing_jobs[job_id]["status"] = "processing"
         processing_jobs[job_id]["result"] = None
+        processing_jobs[job_id]["pages"] = {}
     else:
         job_id = str(uuid.uuid4())
         processing_jobs[job_id] = {
