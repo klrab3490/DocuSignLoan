@@ -151,6 +151,18 @@ def safe_json_parse(raw_text: str) -> Any:
         ).strip()
         return json.loads(fixed_text)
 
+def find_null_fields(data, prefix=""):
+    """Recursively find fields with null values in the extracted data."""
+    null_fields = []
+    if isinstance(data, dict):
+        for k, v in data.items():
+            path = f"{prefix}.{k}" if prefix else k
+            if v is None:
+                null_fields.append(path)
+            elif isinstance(v, dict):
+                null_fields.extend(find_null_fields(v, path))
+    return null_fields
+
 
 # -------------------------------
 # Endpoint
@@ -288,10 +300,65 @@ async def extract_and_format_pdf(
     existing_job_id = next((jid for jid, job in processing_jobs.items() if job.get("filename") == original_filename), None)
 
     if existing_job_id:
-        job_id = existing_job_id
-        processing_jobs[job_id]["status"] = "processing"
-        processing_jobs[job_id]["result"] = None
-        processing_jobs[job_id]["pages"] = {}
+        job = processing_jobs[existing_job_id]
+        result = job.get("result")
+        if result:
+            null_fields = find_null_fields(result)
+            if not null_fields:
+                await delete_temp_file(file)
+                return ExtractResponse(
+                    job_id=existing_job_id,
+                    text_content=json.dumps(result, ensure_ascii=False),
+                    pages=job.get("pages", {})
+                )
+            else:
+                # Prompt LLM for only null fields
+                doc = fitz.open(stream=pdf_bytes, filetype="pdf")
+                page_texts = {page_number + 1: doc[page_number].get_text("text") for page_number in range(len(doc))}
+                full_text_with_pages = "\n".join(
+                    f"--- PAGE {page_num} ---\n{text}"
+                    for page_num, text in page_texts.items()
+                )
+                prompt = f"""
+                You are a strict JSON formatter. Return ONLY valid JSON with no markdown fences or extra commentary.
+                Extract ONLY the following fields (return null for others): {null_fields}
+                {format_instructions}
+                Document text with page numbers:
+                {full_text_with_pages}
+                """
+                response = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=[prompt],
+                )
+                raw_output = response.text.strip()
+                clean_output = re.sub(
+                    r"^```json\s*|\s*```$",
+                    "",
+                    raw_output,
+                    flags=re.MULTILINE
+                ).strip()
+                parsed_json = safe_json_parse(clean_output)
+                # Merge new fields into result
+                def merge_nulls(orig, new):
+                    for k, v in new.items():
+                        if isinstance(v, dict) and k in orig and isinstance(orig[k], dict):
+                            merge_nulls(orig[k], v)
+                        elif v is not None:
+                            orig[k] = v
+                    return orig
+                merged_result = merge_nulls(result, parsed_json)
+                job["result"] = merged_result
+                job["status"] = "completed"
+                save_jobs_to_file(processing_jobs)
+                await delete_temp_file(file)
+                return ExtractResponse(
+                    job_id=existing_job_id,
+                    text_content=json.dumps(merged_result, ensure_ascii=False),
+                    pages=job.get("pages", {})
+                )
+        else:
+            job_id = existing_job_id
+            processing_jobs[job_id]["status"] = "re-processing"
     else:
         job_id = str(uuid.uuid4())
         processing_jobs[job_id] = {
