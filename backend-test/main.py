@@ -66,4 +66,4 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 if __name__ == "__main__":
     PORT = int(os.getenv("PORT", 8000))
-    uvicorn.run("main:app", host="0.0.0.0", port=PORT, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=PORT)

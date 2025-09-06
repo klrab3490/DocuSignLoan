@@ -44,6 +44,7 @@ async def delete_temp_file(file: UploadFile) -> None:
     """
     Delete the temporary copy of the uploaded file.
     """
+    print(f"Deleting temporary file: {file.filename}")
     temp_file_path = os.path.join(UPLOAD_DIR_TEMP, file.filename)
     if os.path.exists(temp_file_path):
         os.remove(temp_file_path)

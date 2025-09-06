@@ -71,7 +71,7 @@ async def extract_and_format_pdf(file: UploadFile = File(...)):
     save_jobs_to_file(processing_jobs)
 
     try:
-        run = run_pipeline_on_pdf(temp_file_path)
+        run = await run_pipeline_on_pdf(temp_file_path)
 
         processing_jobs[job_id].update({
             "status": "completed",
